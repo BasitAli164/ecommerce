@@ -1,6 +1,5 @@
 import FilterField from "@/components/filter/FilterField";
 import Cart from "@/components/cart/Cart";
-import HomeFooter from "@/components/home/HomeFooter";
 import TextCart from "@/components/cart/TextCart";
 
 export default function Shop(props) {
@@ -36,9 +35,8 @@ export default function Shop(props) {
         <FilterField />
 
         {/* Cart Items */}
-        <div className="flex flex-wrap gap-14 mb-10 justify-center mt-10">
+        <div className="flex flex-wrap  gap-16 mb-10 justify-center mt-10">
           <Cart />
-          {/* Add more <Cart /> components here or map through data */}
         </div>
         <TextCart/>
       </div>
