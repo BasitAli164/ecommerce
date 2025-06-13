@@ -80,16 +80,16 @@ export default function Header() {
         <div className="flex items-center gap-4 text-gray-700 hover:text-gray-900">
           {/* Desktop Icons */}
           <div className="hidden sm:flex gap-4 items-center">
-            <User className="w-6 h-6 cursor-pointer text-gray-700 hover:text-gray-900" />
-            <HelpCircleIcon className="w-6 h-6 cursor-pointer  text-gray-700 hover:text-gray-900" />
-            <ShoppingCartIcon className="w-6 h-6 cursor-pointer  text-gray-700 hover:text-gray-900" />
+            <User className="w-6 h-6 cursor-pointer text-gray-700 hover:text-amber-600 transition duration-700 delay-75" />
+            <HelpCircleIcon className="w-6 h-6 cursor-pointer  text-gray-700 hover:text-amber-600 transition duration-700 delay-75" />
+            <ShoppingCartIcon className="w-6 h-6 cursor-pointer  text-gray-700 hover:text-amber-600 transition duration-700 delay-75" />
           </div>
 
           {/* Mobile Icons: User + Menu */}
           <div className="sm:hidden flex items-center gap-4 relative">
-            <User className="w-6 h-6 cursor-pointer" />
+            <User className="w-6 h-6 cursor-pointer hover:text-amber-600 transition duration-700 delay-75" />
             <MenuIcon
-              className="w-6 h-6 cursor-pointer"
+              className="w-6 h-6 cursor-pointer hover:text-amber-600 transition duration-700 delay-75"
               onClick={() => setMenuOpen(!menuOpen)}
             />
             {menuOpen && (
