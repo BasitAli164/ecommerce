@@ -67,23 +67,18 @@ export default function HomePageComponent() {
             </h4>
             <p className="text-sm sm:text-sm lg:text-lg  ">
               Explore our wide range of high-quality products. We offer the best
-              selection of goods for{" "}
-              <Link href={"/men"} className="font-semibold text-md underline">
-                Men
-              </Link>{" "}
-              and{" "}
-              <Link href={"/women"} className="font-semibold text-md underline">
-                Women
-              </Link>
-              . Whether you're looking for the latest trends or timeless
-              classics, we have something for everyone. Our commitment to
-              quality ensures that you get the best value for your money.
+              selection of goods for men and women . Whether you're looking for the latest
+              trends or timeless classics, we have something for everyone. Our
+              commitment to quality ensures that you get the best value for your
+              money.
             </p>
           </div>
-          <Link href={'/shop'}><ButtonComp btnText={"Shop Now"} /></Link>
+          <Link href={"/shop"}>
+            <ButtonComp btnText={"Shop Now"} />
+          </Link>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center bg-gray-300 p-5 gap-5 overflow-hidden">
+      <div className="flex flex-col justify-center items-center bg-gray-50 p-5 gap-5 overflow-hidden">
         <h1 className="text-xl md:text-3xl font-bold text-gray-700 underline">
           Explore varients of shoes
         </h1>
@@ -112,11 +107,9 @@ export default function HomePageComponent() {
         </div>
       </div>
       <div>
-        <HomeFooter/>
-     
-        <TextCart/>
+        <HomeFooter />
 
-       
+        <TextCart />
       </div>
     </>
   );
