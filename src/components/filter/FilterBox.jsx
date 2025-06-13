@@ -1,6 +1,5 @@
 import { shoeSize } from "@/lib/dammyData";
 import { productTypes } from "@/lib/dammyData";
-import { shoeColors } from "@/lib/dammyData";
 import RadioButton from "../button/RadioButton";
 
 export default function FilterBox() {
@@ -24,6 +23,14 @@ export default function FilterBox() {
                 </li>
               ))}
             </ul>
+
+            <div>
+              <h2 className="font-semibold my-2">Category</h2>
+              <div className="flex justify-center items-center">
+                <button className="px-6 py-2 text-center border-none rounded-full shadow-2xl bg-amber-50 mx-2 hover:bg-amber-100 transition duration-700 delay-100 cursor-pointer">Men</button>
+                <button className="px-6 py-2 text-center border-none rounded-full shadow-2xl bg-amber-50 mx-2 hover:bg-amber-100 transition duration-700 delay-100 cursor-pointer">Women</button>
+              </div>
+            </div>
           </div>
           <div className="flex-1">
             <h3 className="font-semibold mb-2">Product Types</h3>
@@ -61,7 +68,9 @@ export default function FilterBox() {
               </div>
 
             </div>
+            
           </div>
+
         </div>
       </div>
     </div>
