@@ -10,11 +10,11 @@ export default function Cart() {
     <>
       {dammyDataForCarts.map((item) => (
         <div
-       
+        onClick={()=>route.push(`shop/${item.id}`)}
           key={item.id}
           className="w-[320px] h-[420px]  flex flex-col  justify-center p-2 rounded-3xl shadow bg-gray-200 text-black cursor-pointer"
         >
-          <LucideShoppingCart  onClick={()=>route.push(`shop/${item.id}`)}  className="hover:text-amber-600 transition duration-300 delay-50"/>
+          <LucideShoppingCart    className="hover:text-amber-600 transition duration-300 delay-50"/>
 
           <div
             className="max-w-[300px] h-[300px] bg-center bg-cover bg-no-repeat "
