@@ -36,7 +36,7 @@ export default function Shop(props) {
         <FilterField />
 
         {/* Cart Items */}
-        <div className="flex flex-wrap border-2 border-amber-800 gap-14 mb-10 justify-center mt-10">
+        <div className="flex flex-wrap gap-14 mb-10 justify-center mt-10">
           <Cart />
           {/* Add more <Cart /> components here or map through data */}
         </div>
