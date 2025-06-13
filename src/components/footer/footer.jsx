@@ -88,13 +88,13 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Basit's Collection. All rights reserved.
           </p>
           <div className="flex gap-4 mt-2 md:mt-0">
-            <Link href="www.facebook.com"  target="_blank" aria-label="Facebook" className="hover:text-gray-900 transition duration-700 delay-100 ease-in-out">
+            <Link href="www.facebook.com"  target="_blank" aria-label="Facebook" className="hover:text-amber-600 transition duration-700 delay-100 ease-in-out">
               <Facebook size={18} />
             </Link>
-            <Link href="www.x.com" target="_blank" aria-label="Twitter" className="hover:text-gray-900 transition duration-700 delay-100 ease-in-out">
+            <Link href="www.x.com" target="_blank" aria-label="Twitter" className="hover:text-amber-600 transition duration-700 delay-100 ease-in-out">
               <Twitter size={18} />
             </Link>
-            <Link href="www.instagram.com" target="_blank" aria-label="Instagram" className="hover:text-gray-900 transition duration-700 delay-100 ease-in-out">
+            <Link href="www.instagram.com" target="_blank" aria-label="Instagram" className="hover:text-amber-600 transition duration-700 delay-100 ease-in-out">
               <Instagram size={18} />
             </Link>
           </div>
