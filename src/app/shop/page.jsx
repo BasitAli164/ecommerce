@@ -2,8 +2,7 @@ import FilterField from "@/components/filter/FilterField";
 import Cart from "@/components/cart/Cart";
 import TextCart from "@/components/cart/TextCart";
 
-export default function Shop(props) {
-  console.log("Search params:",props.searchParams,props.params)
+export default function Shop() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center">
       {/* Video Hero Section */}
