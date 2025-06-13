@@ -80,7 +80,7 @@ export default function HomePageComponent() {
               quality ensures that you get the best value for your money.
             </p>
           </div>
-          <ButtonComp btnText={"Shop Now"} />
+          <Link href={'/shop'}><ButtonComp btnText={"Shop Now"} /></Link>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center bg-gray-300 p-5 gap-5 overflow-hidden">
