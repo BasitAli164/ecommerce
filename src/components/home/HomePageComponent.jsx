@@ -56,22 +56,22 @@ export default function HomePageComponent() {
         ))}
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center gap-5 bg-black/50 px-4 text-gray-400 text-center ">
+        <div className="absolute inset-0 flex flex-col justify-center items-center gap-5 bg-black/50 px-4 text-gray-400 text-center mt-20">
           <div className="flex flex-col justify-center items-center gap-2 max-w-5xl">
-            <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold font-pop">
+            <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold tracking-tight font-pop">
               Welcome to Our Shop
             </h1>
-            <h4 className="text-xl md:text-2xl lg:text-3xl font-bold font-pop">
+            <h4 className="text-md md:text-2xl lg:text-3xl font-semibold tracking-tight  font-pop">
               Discover our latest collection
             </h4>
-            <p className="text-md sm:text-lg lg:text-xl xl:text-2xl">
+            <p className="text-sm sm:text-md lg:text-lg xl:text-xl font-medium">
               Explore our wide range of high-quality products. We offer the best
               selection of goods for{" "}
-              <Link href={"/men"} className="font-bold text-xl underline">
+              <Link href={"/men"} className="font-semibold text-lg underline">
                 Men
               </Link>{" "}
               and{" "}
-              <Link href={"/women"} className="font-bold text-xl underline">
+              <Link href={"/women"} className="font-semibold text-lg underline">
                 Women
               </Link>
               . Whether you're looking for the latest trends or timeless
