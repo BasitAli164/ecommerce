@@ -52,7 +52,7 @@ export default function HomeFooter() {
             <h1 className="font-bold sm:text-2xl lg:text-4xl text-gray-300 ">
               {item.name}
             </h1>
-            <p className="sm:text-lg lg:text-xl font-thin text-center">
+            <p className="sm:text-lg lg:text-xl font-thin text-center text-gray-100">
               {item.description}
             </p>
           </div>

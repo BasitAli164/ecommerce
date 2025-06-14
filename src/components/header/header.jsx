@@ -93,7 +93,7 @@ export default function Header() {
               onClick={() => setMenuOpen(!menuOpen)}
             />
             {menuOpen && (
-              <ul className=" flex flex-col justify-center items-center  gap-4 absolute top-10 -right-4 w-24 bg-gray-300 shadow-lg rounded p-2 space-y-2 z-50">
+              <ul className=" flex flex-col justify-center items-center  gap-4 absolute top-9 -right-4 w-24 bg-gray-300 shadow-lg p-2 space-y-2 z-50">
                 {MENU_ITEMS.map(({ id, name, link }) => (
                   <li key={id}>
                     <Link
