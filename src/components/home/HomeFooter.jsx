@@ -46,7 +46,7 @@ export default function HomeFooter() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="h-[600px] w-[600px] md:w-[375px] flex flex-col justify-center items-center bg-cover bg-no-repeat transition duration-700 delay-100 ease-in-out transform hover:scale-[1.01] rounded-4xl hover:cursor-pointer"
+            className="h-[600px] w-[600px] md:w-[375px] flex flex-col justify-center items-center bg-cover bg-no-repeat transition duration-700 delay-100 ease-in-out transform hover:scale-[1.01] rounded-xl hover:cursor-pointer"
             style={{ backgroundImage: `url(${item.img})` }}
           >
             <h1 className="font-bold sm:text-2xl lg:text-4xl text-gray-300 ">
