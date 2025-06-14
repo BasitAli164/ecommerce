@@ -64,7 +64,7 @@ export default function HomePageComponent() {
             <h4 className="text-md md:text-xl lg:text-2xl  tracking-tight font-medium  font-pop">
               Discover our latest collection
             </h4>
-            <p className="text-sm sm:text-md  ">
+            <p className="text-sm sm:text-sm lg:text-lg  ">
               Explore our wide range of high-quality products. We offer the best
               selection of goods for{" "}
               <Link href={"/men"} className="font-semibold text-md underline">

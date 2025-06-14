@@ -46,7 +46,7 @@ export default function HomeFooter() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="h-[600px] w-[600px] md:w-[400px] flex flex-col justify-center items-center bg-cover bg-no-repeat transition duration-700 delay-100 ease-in-out transform hover:scale-[1.01] rounded-4xl hover:cursor-pointer"
+            className="h-[600px] w-[600px] md:w-[375px] flex flex-col justify-center items-center bg-cover bg-no-repeat transition duration-700 delay-100 ease-in-out transform hover:scale-[1.01] rounded-4xl hover:cursor-pointer"
             style={{ backgroundImage: `url(${item.img})` }}
           >
             <h1 className="font-bold sm:text-2xl lg:text-4xl text-gray-300 ">
@@ -62,7 +62,7 @@ export default function HomeFooter() {
         {cartData.map((item) => (
           <div
             key={item.id}
-            className="w-[600px] lg:w-[400px] h-[250px] rounded-xl bg-gray-200 p-5 overflow-hidden"
+            className="w-[600px] lg:w-[375px] h-[250px] rounded-xl bg-gray-200 p-5 overflow-hidden"
           >
             <h2 className="text-gray-800 font-semibold text-lg ">{item.title}</h2>
             <p className="text-gray-600 text-justify text-[17px]">{item.description}</p>
