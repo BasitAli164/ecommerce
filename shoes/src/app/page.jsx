@@ -1,9 +1,9 @@
-import Header from "@/components/header/header";
-import HomePageComponent from "@/components/home/HomePageComponent";
+import React from 'react'
+
 export default function Home() {
   return (
-  <>
-  <HomePageComponent/>  
-  </>
-  );
+    <div>
+      
+    </div>
+  )
 }
