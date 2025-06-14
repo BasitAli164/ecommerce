@@ -64,7 +64,7 @@ export default function HomePageComponent() {
             <h4 className="text-xl md:text-2xl lg:text-3xl font-bold font-pop">
               Discover our latest collection
             </h4>
-            <p className="text-md sm:text-lg lg:text-xl xl:text-2xl font-pop">
+            <p className="text-md sm:text-lg lg:text-xl xl:text-2xl ">
               Explore our wide range of high-quality products. We offer the best
               selection of goods for{" "}
               <Link href={"/men"} className="font-bold text-xl underline">
