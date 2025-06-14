@@ -61,17 +61,17 @@ export default function HomePageComponent() {
             <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold tracking-tight font-pop">
               Welcome to Our Shop
             </h1>
-            <h4 className="text-md md:text-2xl lg:text-3xl font-semibold tracking-tight  font-pop">
+            <h4 className="text-md md:text-xl lg:text-2xl  tracking-tight font-medium  font-pop">
               Discover our latest collection
             </h4>
-            <p className="text-sm sm:text-md lg:text-lg xl:text-xl font-medium">
+            <p className="text-sm sm:text-md  ">
               Explore our wide range of high-quality products. We offer the best
               selection of goods for{" "}
-              <Link href={"/men"} className="font-semibold text-lg underline">
+              <Link href={"/men"} className="font-semibold text-md underline">
                 Men
               </Link>{" "}
               and{" "}
-              <Link href={"/women"} className="font-semibold text-lg underline">
+              <Link href={"/women"} className="font-semibold text-md underline">
                 Women
               </Link>
               . Whether you're looking for the latest trends or timeless
