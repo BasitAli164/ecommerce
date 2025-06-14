@@ -49,7 +49,7 @@ export default function Header() {
       </div>
 
       {/* Main Navbar */}
-      <nav className="w-full bg-gray-300 flex items-center justify-between px-4 sm:px-6 py-2">
+      <nav className="w-full bg-gray-300 flex items-center justify-between px-4 sm:px-6 py-1">
         {/* Logo */}
         <Link href="/" className="shrink-0">
           <Image

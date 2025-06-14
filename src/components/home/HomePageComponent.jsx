@@ -56,7 +56,7 @@ export default function HomePageComponent() {
         ))}
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center gap-5 bg-black/50 px-4 text-gray-400 text-center mt-20">
+        <div className="absolute inset-0 flex flex-col justify-center items-center gap-5 bg-black/50 px-4 text-gray-400 text-center mt-18">
           <div className="flex flex-col justify-center items-center gap-2 max-w-5xl">
             <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold tracking-tight font-pop">
               Welcome to Our Shop
