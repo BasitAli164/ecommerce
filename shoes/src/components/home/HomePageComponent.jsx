@@ -81,7 +81,7 @@ export default function HomePageComponent() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center bg-gray-300 p-5 gap-5 overflow-hidden">
-        <h1 className="text-5xl font-bold text-gray-700">Explore Our Shoes</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-700 text-center">Explore Our Shoes</h1>
         <div className="flex flex-wrap justify-center items-center gap-5">
           <HomePageCart
             btnText="BestSellers"
