@@ -4,12 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import {
-  HelpCircleIcon,
-  ShoppingCartIcon,
-  User,
-  MenuIcon,
-} from "lucide-react";
+import { HelpCircleIcon, ShoppingCartIcon, User, MenuIcon } from "lucide-react";
 
 import logo from "../../../public/logo/logo.png";
 
@@ -43,18 +38,15 @@ export default function Header() {
   }, [pathname]);
 
   // Hide header on non-home pages
-  if (pathname === "/login" || pathname==="/signup") return null;
+  if (pathname === "/login" || pathname === "/signup") return null;
 
   return (
     <header className="fixed w-full z-50">
       {/* Promo Bar */}
       <div className="w-full bg-gray-200 text-center py-1 text-sm sm:text-base font-medium">
-        {
-          pathname==='/' &&(
-                    <p className="text-gray-800">{PROMO_MESSAGES[index]}</p>
-
-          )
-        }
+        {pathname === "/" && (
+          <p className="text-gray-800">{PROMO_MESSAGES[index]}</p>
+        )}
       </div>
 
       {/* Main Navbar */}
