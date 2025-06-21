@@ -3,7 +3,7 @@ import Link from "next/link";
 import ButtonComp from "../button/Herobutton";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import HomePageCart from "../cart/HomePageCart";
+import HomePageCart from "./HomePageCart";
 
 const bgImages = [
   "/backgroundImage/bg0.avif",

@@ -1,4 +1,4 @@
-import HomePageCartBtn from "../button/HomePageCartBtn";
+import HomePageCartBtn from "./HomePageCartBtn";
 
 function HomePageCart({ btnText, img, link, hoverImage }) {
   return (
