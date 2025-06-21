@@ -80,9 +80,9 @@ export default function HomePageComponent() {
           <ButtonComp btnText={"Shop Now"} />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center bg-gray-100 p-5 gap-5 overflow-hidden">
-        <h1 className="text-5xl font-bold text-gray-900">Explore Our Shoes</h1>
-        <div className="flex gap-5 items-center">
+      <div className="flex flex-col justify-center items-center bg-gray-300 p-5 gap-5 overflow-hidden">
+        <h1 className="text-5xl font-bold text-gray-700">Explore Our Shoes</h1>
+        <div className="flex flex-wrap justify-center items-center gap-5">
           <HomePageCart
             btnText="BestSellers"
             img="/HomeCartsImage/img1.webp"
