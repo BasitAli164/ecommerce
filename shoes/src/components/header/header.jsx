@@ -15,10 +15,9 @@ import logo from "../../../public/logo/logo.png";
 
 const MENU_ITEMS = [
   { id: 1, name: "Home", link: "/" },
-  { id: 2, name: "Product", link: "/product" },
-  { id: 3, name: "Service", link: "/service" },
-  { id: 4, name: "About", link: "/about" },
-  { id: 5, name: "Contact", link: "/contact" },
+  { id: 2, name: "Shop", link: "/Shop" },
+  { id: 3, name: "About", link: "/about" },
+  { id: 4, name: "Contact", link: "/contact" },
 ];
 
 const PROMO_MESSAGES = [
