@@ -1,94 +1,120 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/logo/logo.png";
-import { HelpCircleIcon, ShoppingCartIcon, User, MenuIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-const menulist = [
-  { id: 1, menuName: "Home", link: "/" },
-  { id: 2, menuName: "Product", link: "/product" },
-  { id: 3, menuName: "Service", link: "/service" },
-  { id: 4, menuName: "About", link: "/about" },
-  { id: 5, menuName: "Contact", link: "/contact" },
+import {
+  HelpCircleIcon,
+  ShoppingCartIcon,
+  User,
+  MenuIcon,
+} from "lucide-react";
+
+import logo from "../../../public/logo/logo.png";
+
+const MENU_ITEMS = [
+  { id: 1, name: "Home", link: "/" },
+  { id: 2, name: "Product", link: "/product" },
+  { id: 3, name: "Service", link: "/service" },
+  { id: 4, name: "About", link: "/about" },
+  { id: 5, name: "Contact", link: "/contact" },
 ];
 
-const listItem = [
+const PROMO_MESSAGES = [
   "Get 20% off your first purchase!",
   "Exclusive offers available now!",
-  "Free Shipping on orders over 50pkr!",
+  "Free Shipping on orders over 50 PKR!",
 ];
-export default function Header({ searchParams }) {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const [index, setIndex] = useState(0);
-  const pathName = usePathname();
 
+export default function Header() {
+  const [index, setIndex] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Only run ticker on homepage
   useEffect(() => {
-    if (pathName !== "/") return;
+    if (pathname !== "/") return;
+
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % listItem.length);
+      setIndex((prev) => (prev + 1) % PROMO_MESSAGES.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [pathName]);
+  }, [pathname]);
 
-  if (pathName !== "/") return null;
+  // Hide header on non-home pages
+  if (pathname !== "/") return null;
+
   return (
-    <div className="fixed w-full z-50">
-      <div className="w-full bg-[#7dcea0] flex justify-center items-center p-1">
-        <p>{listItem[index]}</p>
+    <header className="fixed w-full z-50">
+      {/* Promo Bar */}
+      <div className="w-full bg-[#7dcea0] text-center py-1 text-sm sm:text-base font-medium">
+        <p>{PROMO_MESSAGES[index]}</p>
       </div>
-      <div className="w-full flex items-center justify-evenly sm:justify-between bg-[#17a589] sm:px-5">
-        <div>
-          <Link href={"/"}>
-            {" "}
-            <Image
-              className="hover:cursor-pointer w-10 h-10 sm:w-20 sm:h-20"
-              src={logo}
-              alt="Logo"
-            />
-          </Link>
-        </div>
-        <div className="flex justify-center items-center">
-          <div className="flex items-center justify-center gap-5">
-            {menulist.map(({ id, menuName, link }) => (
-              <ul key={id}>
-                <Link
-                  className="font-bold text-lg hidden sm:block hover:underline"
-                  href={link}
-                >
-                  {menuName}
-                </Link>
-              </ul>
-            ))}
+
+      {/* Main Navbar */}
+      <nav className="w-full bg-[#17a589] flex items-center justify-between px-4 sm:px-6 py-2">
+        {/* Logo */}
+        <Link href="/" className="shrink-0">
+          <Image
+            src={logo}
+            alt="Company Logo"
+            width={80}
+            height={80}
+            className="w-10 h-10 sm:w-20 sm:h-20 object-contain"
+            priority
+          />
+        </Link>
+
+        {/* Desktop Menu */}
+        <ul className="hidden sm:flex gap-6 items-center">
+          {MENU_ITEMS.map(({ id, name, link }) => (
+            <li key={id}>
+              <Link
+                href={link}
+                className="text-white text-lg font-semibold hover:underline"
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Icons and Menu */}
+        <div className="flex items-center gap-4 text-white">
+          {/* Desktop Icons */}
+          <div className="hidden sm:flex gap-4 items-center">
+            <User className="w-6 h-6 cursor-pointer" />
+            <HelpCircleIcon className="w-6 h-6 cursor-pointer" />
+            <ShoppingCartIcon className="w-6 h-6 cursor-pointer" />
           </div>
-          <div className="relative sm:hidden">
+
+          {/* Mobile Icons: User + Menu */}
+          <div className="sm:hidden flex items-center gap-4 relative">
+            <User className="w-6 h-6 cursor-pointer" />
             <MenuIcon
-              className="sm:hidden cursor-pointer transition duration-700 delay-100 ease-in-out "
-              onClick={() => setToggleMenu(!toggleMenu)}
+              className="w-6 h-6 cursor-pointer"
+              onClick={() => setMenuOpen(!menuOpen)}
             />
-            {toggleMenu && (
-              <div className="bg-red-400 w-40 h-20 absolute top-8 -left-18 ">
-                {menulist.map(({ id, menuName, link }) => (
-                  <ul key={id} className="text-center">
+            {menuOpen && (
+              <ul className="absolute top-10 right-0 w-40 bg-white shadow-lg rounded p-2 space-y-2 z-50">
+                {MENU_ITEMS.map(({ id, name, link }) => (
+                  <li key={id}>
                     <Link
-                      className="font-bold text-lg hover:underline  "
                       href={link}
+                      className="block text-gray-800 text-base font-medium hover:underline"
+                      onClick={() => setMenuOpen(false)}
                     >
-                      {menuName}
+                      {name}
                     </Link>
-                  </ul>
+                  </li>
                 ))}
-              </div>
+              </ul>
             )}
           </div>
         </div>
-        <div className="flex items-center justify-center gap-2 sm:gap-5">
-          <User className="w-5 h-5 text-white sm:w-7 sm:h-7 hover:cursor-pointer" />
-          <HelpCircleIcon className="w-5 h-5 text-white sm:w-7 sm:h-7 hover:cursor-pointer" />
-          <ShoppingCartIcon className="w-5 h-5 text-white sm:w-7 sm:h-7 hover:cursor-pointer" />
-        </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
