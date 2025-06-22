@@ -88,13 +88,13 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Basit's Collection. All rights reserved.
           </p>
           <div className="flex gap-4 mt-2 md:mt-0">
-            <Link href="#" aria-label="Facebook">
+            <Link href="www.facebook.com" aria-label="Facebook">
               <Facebook size={18} />
             </Link>
-            <Link href="#" aria-label="Twitter">
+            <Link href="www.x.com" aria-label="Twitter">
               <Twitter size={18} />
             </Link>
-            <Link href="#" aria-label="Instagram">
+            <Link href="www.instagram.com" aria-label="Instagram">
               <Instagram size={18} />
             </Link>
           </div>
