@@ -1,14 +1,16 @@
 "use client";
 import Link from "next/link";
 import ButtonComp from "../button/button";
-import bg0 from "../../../public/backgroundImage/bg0.avif";
-import bg1 from "../../../public/backgroundImage/bg1.avif";
-import bg2 from "../../../public/backgroundImage/bg2.avif";
-import bg3 from "../../../public/backgroundImage/bg3.avif";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const bgImages = [bg0, bg1, bg2, bg3];
+const bgImages = [
+  "/backgroundImage/bg0.avif",
+  "/backgroundImage/bg1.avif",
+  "/backgroundImage/bg2.avif",
+  "/backgroundImage/bg3.avif",
+];
+
 
 export default function HomePageComponent() {
   const [index, setIndex] = useState(0);
