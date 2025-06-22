@@ -1,9 +1,19 @@
 import Link from "next/link";
 import ButtonComp from "../button/button";
-import bg1 from '../../../public/backgroundImage/'
+import bg0 from '../../../public/backgroundImage/bg0.avif'
+import bg1 from '../../../public/backgroundImage/bg1.avif'
+import bg2 from '../../../public/backgroundImage/bg2.avif'
+import bg3 from '../../../public/backgroundImage/bg3.avif'
+import { useEffect, useState } from "react";
 
-
+const bgImages=[bg0,bg1,bg2,bg3]
 export default function HomePageComponent() {
+  const [index,setIndex]=useState(0)
+  useEffect(()=>{
+    const interval=setInterval(()=>{
+      setIndex(prev=>(prev+1)%bgImages.length)
+    },3000)
+  },[])
   return (
     <div className={`w-full h-screen flex flex-col justify-center items-center gap-5`}>
       <div className="flex flex-col justify-center items-center gap-2">
