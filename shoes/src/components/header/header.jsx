@@ -15,7 +15,7 @@ import logo from "../../../public/logo/logo.png";
 
 const MENU_ITEMS = [
   { id: 1, name: "Home", link: "/" },
-  { id: 2, name: "Shop", link: "/Shop" },
+  { id: 2, name: "Shop", link: "/shop" },
   { id: 3, name: "About", link: "/about" },
   { id: 4, name: "Contact", link: "/contact" },
 ];
@@ -43,7 +43,7 @@ export default function Header() {
   }, [pathname]);
 
   // Hide header on non-home pages
-  if (pathname !== "/" && pathname!=='/login' && pathname!=='/signup') return null;
+  if (pathname === "/login" || pathname==="/signup") return null;
 
   return (
     <header className="fixed w-full z-50">
