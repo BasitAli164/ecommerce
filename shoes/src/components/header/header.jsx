@@ -98,12 +98,12 @@ export default function Header() {
               onClick={() => setMenuOpen(!menuOpen)}
             />
             {menuOpen && (
-              <ul className="absolute top-10 right-0 w-40 bg-white shadow-lg rounded p-2 space-y-2 z-50">
+              <ul className=" flex flex-col justify-center items-center  gap-4 absolute top-10 -right-4 w-52 bg-[#17a589] shadow-lg rounded p-2 space-y-2 z-50">
                 {MENU_ITEMS.map(({ id, name, link }) => (
                   <li key={id}>
                     <Link
                       href={link}
-                      className="block text-gray-800 text-base font-medium hover:underline"
+                      className="block text-gray-50 text-base font-medium hover:underline"
                       onClick={() => setMenuOpen(false)}
                     >
                       {name}
