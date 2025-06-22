@@ -44,7 +44,7 @@ export default function Header() {
   }, [pathname]);
 
   // Hide header on non-home pages
-  if (pathname !== "/") return null;
+  if (pathname !== "/" && pathname!=='/login' && pathname!=='/signup') return null;
 
   return (
     <header className="fixed w-full z-50">
