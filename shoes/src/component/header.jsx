@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import logo from '../../public/logo/logo.png'
-import { UserRound,HelpCircleIcon,ShoppingCartIcon } from 'lucide-react';
+import { HelpCircleIcon,ShoppingCartIcon, User } from 'lucide-react';
 const menulist=[
   {id:1,menuName:"Home",link:"/"},
   {id:2,menuName:"Product",link:"/product"},
@@ -32,6 +32,9 @@ export default function Header() {
             }
         </div>
         <div>
+          <User size={25} color="white" />
+          <HelpCircleIcon size={25} color="white" />
+          <ShoppingCartIcon size={25} color="white" />
           
         </div>
 
