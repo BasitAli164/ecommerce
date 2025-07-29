@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import logo from '../../public/logo/logo.png'
-import {  } from 'lucide-react';
+import { UserRound,HelpCircleIcon,ShoppingCartIcon } from 'lucide-react';
 const menulist=[
   {id:1,menuName:"Home",link:"/"},
   {id:2,menuName:"Product",link:"/product"},
