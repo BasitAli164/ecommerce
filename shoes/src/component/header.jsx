@@ -12,18 +12,18 @@ const menulist = [
 
 export default function Header() {
   return (
-    <div>
+    <div className="w-full flex items-center justify-between bg-sky-400 px-5">
       <div>
         <Image src={logo} alt="Logo" width={100} height={100} />
       </div>
-      <div>
+      <div className="flex items-center justify-center gap-5">
         {menulist.map(({ id, menuName, link }) => (
           <ul key={id}>
             <Link href={link}>{menuName}</Link>
           </ul>
         ))}
       </div>
-      <div>
+      <div className="flex items-center justify-center gap-5">
         <User size={25} color="white" />
         <HelpCircleIcon size={25} color="white" />
         <ShoppingCartIcon size={25} color="white" />
