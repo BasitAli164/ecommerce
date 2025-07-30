@@ -1,6 +1,6 @@
+import Image from "next/image"
 import Link from "next/link"
-
-export default function Header() {
+import logo from '../../public/logo/logo.png'
 const menulist=[
   {id:1,menuName:"Home",link:"/"},
   {id:2,menuName:"Product",link:"/product"},
@@ -8,10 +8,18 @@ const menulist=[
   {id:4,menuName:"About",link:"/about"},
   {id:5,menuName:"Contact",link:"/contact"},
 ]
+
+export default function Header() {
+
   return (
     <div>
         <div>
-            <img src="" alt="" />
+            <Image 
+            src={logo}
+            alt="Logo"
+            width={100}
+            height={100}
+            />
         </div>
         <div>
             {
