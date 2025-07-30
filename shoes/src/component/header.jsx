@@ -2,10 +2,11 @@ import Image from "next/image"
 import Link from "next/link"
 import logo from '../../public/logo/logo.png'
 const menulist=[
-  {id:1,menuName:"Men",link:"/"},
-  {id:2,menuName:"Women",link:"/product"},
-  {id:3,menuName:"Sale",link:"/service"},
- 
+  {id:1,menuName:"Home",link:"/"},
+  {id:2,menuName:"Product",link:"/product"},
+  {id:3,menuName:"Service",link:"/service"},
+  {id:4,menuName:"About",link:"/about"},
+  {id:5,menuName:"Contact",link:"/contact"},
 ]
 
 export default function Header() {
