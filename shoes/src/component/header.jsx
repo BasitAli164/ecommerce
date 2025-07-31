@@ -13,20 +13,8 @@ const menulist = [
 ];
 
 export default function Header() {
-  const [pageWidth,setPageWidth]=useState(null)
 
-  useEffect(()=>{
-    const handleWidth=()=>{
-      const width=window.document.body.offsetWidth
-      console.log("width is:",width)
-      if(width<786){
-        setPageWidth(width)
-      }
-    }
-    handleWidth()
-  },[pageWidth])
 
-  console.log("page width is: ",pageWidth)
   return (
     <div className="w-full flex items-center justify-between bg-[#17a589] px-5">
       <div>
