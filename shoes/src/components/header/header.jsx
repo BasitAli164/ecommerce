@@ -34,7 +34,7 @@ export default function Header({ searchParams }) {
 
   if (pathName !== "/") return null;
   return (
-    <>
+    <div className="fixed w-full z-50">
       <div className="w-full bg-[#7dcea0] flex justify-center items-center p-1">
         <p>{listItem[index]}</p>
       </div>
@@ -89,6 +89,6 @@ export default function Header({ searchParams }) {
           <ShoppingCartIcon className="w-5 h-5 text-white sm:w-7 sm:h-7 hover:cursor-pointer" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
