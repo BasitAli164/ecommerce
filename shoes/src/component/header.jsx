@@ -38,7 +38,7 @@ export default function Header() {
           </ul>
         ))}
       </div>
-      <div className="relative">
+      <div className="relative sm:hidden">
         <MenuIcon className="sm:hidden cursor-pointer transition duration-700 delay-100 ease-in-out " onClick={()=>setToggleMenu(!toggleMenu)}/>
           {
             toggleMenu &&(
