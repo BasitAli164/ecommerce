@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/logo/logo.png";
@@ -12,14 +13,23 @@ const menulist = [
 
 export default function Header() {
   return (
-    <div className="w-full flex items-center justify-between bg-sky-400 px-5">
+    <div className="w-full flex items-center justify-between bg-[#17a589] px-5">
       <div>
-        <Image src={logo} alt="Logo" width={100} height={100} />
+        <Link href={"/"}>
+          {" "}
+          <Image
+            className="hover:cursor-pointer"
+            src={logo}
+            alt="Logo"
+            width={100}
+            height={100}
+          />
+        </Link>
       </div>
-      <div className="flex items-center justify-center gap-5">
+      <div className="hidden sm:flex items-center justify-center gap-5">
         {menulist.map(({ id, menuName, link }) => (
           <ul key={id}>
-            <Link href={link}>{menuName}</Link>
+            <Link className="font-bold text-lg" href={link}>{menuName}</Link>
           </ul>
         ))}
       </div>
