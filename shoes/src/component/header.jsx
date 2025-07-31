@@ -4,6 +4,7 @@ import Link from "next/link";
 import logo from "../../public/logo/logo.png";
 import { HelpCircleIcon, ShoppingCartIcon, User ,MenuIcon} from "lucide-react";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 const menulist = [
   { id: 1, menuName: "Home", link: "/" },
   { id: 2, menuName: "Product", link: "/product" },
@@ -12,13 +13,36 @@ const menulist = [
   { id: 5, menuName: "Contact", link: "/contact" },
 ];
 
+const listItem=[
+  "Get 20% off your first purchase!",
+  "Exclusive offers available now!",
+  "Free Shipping on orders over 50pkr!"
+]
 export default function Header({searchParams}) {
-  console.log("SearchParams is: ",searchParams)
   const [toggleMenu , setToggleMenu]=useState(false)
+  const [index, setIndex]=useState(0)
+  const pathName=usePathname()
+  console.log("Path is: ",pathName)
   console.log("toggel: ",toggleMenu)
 
 
+
+  useEffect(()=>{
+    if(pathName!=='/')return;
+    const interval=setInterval(()=>{
+      setIndex((prev)=>(prev+1)%listItem.length)
+    },5000)
+
+    return ()=> clearInterval(interval)
+  },[pathName])
+
+
+  if(pathName!=="/") return null;
   return (
+    <>
+     <div className="w-full bg-[#7dcea0] flex justify-center items-center">
+      <p>{listItem[index]}</p>
+    </div>
     <div className="w-full flex items-center justify-evenly sm:justify-between bg-[#17a589] sm:px-5">
       <div>
         <Link href={"/"}>
@@ -61,5 +85,7 @@ export default function Header({searchParams}) {
         <ShoppingCartIcon className="w-5 h-5 text-white sm:w-7 sm:h-7 hover:cursor-pointer" />
       </div>
     </div>
+   
+    </>
   );
 }
