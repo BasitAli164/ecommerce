@@ -21,11 +21,10 @@ export default function Header() {
         <Link href={"/"}>
           {" "}
           <Image
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer w-20 h-20"
             src={logo}
             alt="Logo"
-            width={100}
-            height={100}
+            
           />
         </Link>
       </div>
