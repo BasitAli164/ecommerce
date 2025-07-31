@@ -12,7 +12,8 @@ const menulist = [
   { id: 5, menuName: "Contact", link: "/contact" },
 ];
 
-export default function Header() {
+export default function Header({searchParams}) {
+  console.log("SearchParams is: ",searchParams)
   const [toggleMenu , setToggleMenu]=useState(false)
   console.log("toggel: ",toggleMenu)
 
@@ -34,7 +35,7 @@ export default function Header() {
        <div className="flex items-center justify-center gap-5">
         {menulist.map(({ id, menuName, link }) => (
           <ul key={id}>
-            <Link className="font-bold text-lg hidden sm:block" href={link}>{menuName}</Link>
+            <Link className="font-bold text-lg hidden sm:block hover:underline" href={link}>{menuName}</Link>
           </ul>
         ))}
       </div>
@@ -45,7 +46,7 @@ export default function Header() {
               <div className="bg-red-400 w-40 h-20 absolute top-8 -left-18 ">
                 {menulist.map(({ id, menuName, link }) => (
           <ul key={id} className="text-center">
-            <Link className="font-bold text-lg " href={link}>{menuName}</Link>
+            <Link className="font-bold text-lg hover:underline  " href={link}>{menuName}</Link>
           </ul>
         ))}
               </div>
@@ -55,9 +56,9 @@ export default function Header() {
       </div>
      </div>
       <div className="flex items-center justify-center gap-2 sm:gap-5">
-        <User className="w-5 h-5 text-white sm:w-7 sm:h-7" />
-        <HelpCircleIcon className="w-5 h-5 text-white sm:w-7 sm:h-7" />
-        <ShoppingCartIcon className="w-5 h-5 text-white sm:w-7 sm:h-7" />
+        <User className="w-5 h-5 text-white sm:w-7 sm:h-7 hover:cursor-pointer" />
+        <HelpCircleIcon className="w-5 h-5 text-white sm:w-7 sm:h-7 hover:cursor-pointer" />
+        <ShoppingCartIcon className="w-5 h-5 text-white sm:w-7 sm:h-7 hover:cursor-pointer" />
       </div>
     </div>
   );
