@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/logo/logo.png";
-import { HelpCircleIcon, ShoppingCartIcon, User } from "lucide-react";
+import { HelpCircleIcon, ShoppingCartIcon, User ,MenuIcon} from "lucide-react";
 import { useEffect, useState } from "react";
 const menulist = [
   { id: 1, menuName: "Home", link: "/" },
@@ -13,6 +13,7 @@ const menulist = [
 ];
 
 export default function Header() {
+  const [toggleMenu , setToggleMenu]=useState(false)
 
 
   return (
@@ -28,7 +29,7 @@ export default function Header() {
           />
         </Link>
       </div>
-      <div className="hidden sm:flex items-center justify-center gap-5">
+      <div className="flex items-center justify-center gap-5">
         {menulist.map(({ id, menuName, link }) => (
           <ul key={id}>
             <Link className="font-bold text-lg" href={link}>{menuName}</Link>
