@@ -40,7 +40,7 @@ export default function Header({searchParams}) {
   if(pathName!=="/") return null;
   return (
     <>
-     <div className="w-full bg-[#7dcea0] flex justify-center items-center">
+     <div className="w-full bg-[#7dcea0] flex justify-center items-center p-1">
       <p>{listItem[index]}</p>
     </div>
     <div className="w-full flex items-center justify-evenly sm:justify-between bg-[#17a589] sm:px-5">
