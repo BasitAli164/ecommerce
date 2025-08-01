@@ -48,12 +48,12 @@ export default function Header() {
   return (
     <header className="fixed w-full z-50">
       {/* Promo Bar */}
-      <div className="w-full bg-gray-600 text-center py-1 text-sm sm:text-base font-medium">
+      <div className="w-full bg-gray-100 text-center py-1 text-sm sm:text-base font-medium">
         <p className="text-gray-900">{PROMO_MESSAGES[index]}</p>
       </div>
 
       {/* Main Navbar */}
-      <nav className="w-full bg-gray-500 flex items-center justify-between px-4 sm:px-6 py-2">
+      <nav className="w-full bg-gray-200 flex items-center justify-between px-4 sm:px-6 py-2">
         {/* Logo */}
         <Link href="/" className="shrink-0">
           <Image
@@ -84,9 +84,9 @@ export default function Header() {
         <div className="flex items-center gap-4 text-white">
           {/* Desktop Icons */}
           <div className="hidden sm:flex gap-4 items-center">
-            <User className="w-6 h-6 cursor-pointer" />
-            <HelpCircleIcon className="w-6 h-6 cursor-pointer" />
-            <ShoppingCartIcon className="w-6 h-6 cursor-pointer" />
+            <User className="w-6 h-6 cursor-pointer text-gray-900" />
+            <HelpCircleIcon className="w-6 h-6 cursor-pointer  text-gray-900" />
+            <ShoppingCartIcon className="w-6 h-6 cursor-pointer  text-gray-900" />
           </div>
 
           {/* Mobile Icons: User + Menu */}

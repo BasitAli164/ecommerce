@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import ButtonComp from "../button/button";
+import ButtonComp from "../button/Herobutton";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -31,14 +31,14 @@ export default function HomePageComponent() {
           src={bg}
           alt={`bg-${i}`}
           fill
-          className={`absolute top-0 left-0 object-cover transition-opacity duration-1000 ease-in-out ${
+          className={`absolute top-0 left-0 object-cover object-center transition-opacity duration-1000 ease-in-out ${
             i === index ? "opacity-100 z-0" : "opacity-0 z-0"
           }`}
         />
       ))}
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center gap-5 bg-black/50 px-4 text-white text-center ">
+      <div className="absolute inset-0 flex flex-col justify-center items-center gap-5 bg-black/50 px-4 text-gray-400 text-center ">
         <div className="flex flex-col justify-center items-center gap-2 max-w-5xl">
           <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold">Welcome to Our Shop</h1>
           <h4 className="text-xl md:text-2xl lg:text-3xl font-bold">Discover our latest collection</h4>
@@ -55,7 +55,7 @@ export default function HomePageComponent() {
             commitment to quality ensures that you get the best value for your money.
           </p>
         </div>
-        <ButtonComp bgColor={"#17a589"} btnText={"Shop Now"} />
+        <ButtonComp  btnText={"Shop Now"} />
       </div>
 
       <div>
