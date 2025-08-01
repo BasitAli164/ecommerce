@@ -83,13 +83,27 @@ export default function HomePageComponent() {
       <div className="flex flex-col justify-center items-center bg-gray-100 p-5 gap-5 overflow-hidden">
         <h1 className="text-5xl font-bold text-gray-900">Explore Our Shoes</h1>
         <div className="flex gap-5 items-center">
-          <HomePageCart btnText="BestSellers" img="/HomeCartsImage/img1.webp" />
+          <HomePageCart
+            btnText="BestSellers"
+            img="/HomeCartsImage/img1.webp"
+            link="/bestsellers"
+             />
+
           <HomePageCart
             btnText="New Arrivals"
             img="/HomeCartsImage/img2.webp"
+            link="/newarrivals"
           />
-          <HomePageCart btnText="Mens" img="/HomeCartsImage/img3.webp" />
-          <HomePageCart btnText="Womens" img="/HomeCartsImage/img4.webp" />
+          <HomePageCart
+           btnText="Mens" 
+           img="/HomeCartsImage/img3.webp"
+           link="/mens" 
+           />
+          <HomePageCart
+           btnText="Womens" 
+           img="/HomeCartsImage/img4.webp"
+           link="/womens" 
+           />
         </div>
       </div>
     </>

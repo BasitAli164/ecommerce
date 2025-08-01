@@ -1,9 +1,9 @@
 import HomePageCartBtn from "../button/HomePageCartBtn"
 
-function HomePageCart({btnText,img}) {
+function HomePageCart({btnText,img,link}) {
   return (
    <div className="w-72 h-96 flex justify-center items-center rounded-2xl bg-amber-400" style={{backgroundImage:`url(${img})`, backgroundPosition:"center",backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
-    <HomePageCartBtn btnText={btnText}/>   
+    <HomePageCartBtn btnText={btnText} link={link}/>   
    </div>
   )
 }
