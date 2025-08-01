@@ -23,6 +23,7 @@ export default function HomePageComponent() {
   }, []);
 
   return (
+    <>
     <div className="w-full h-screen relative overflow-hidden">
       {/* Background Images */}
       {bgImages.map((bg, i) => (
@@ -58,9 +59,16 @@ export default function HomePageComponent() {
         <ButtonComp  btnText={"Shop Now"} />
       </div>
 
-      <div>
+    
+    </div>
+      <div className="flex flex-col justify-center items-center bg-gray-100">
+        <h1 className="text-5xl font-bold text-gray-900">Explore Our Shoes</h1>
+        <div className="flex gap-5 items-center">
+
+        </div>
+        
 
       </div>
-    </div>
+    </>
   );
 }
