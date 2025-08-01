@@ -13,13 +13,13 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white ">
+    <footer className="bg-gray-300 text-gray-700 ">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand Info */}
         <div>
           <h2 className="text-xl font-bold mb-4">Basit's Collection</h2>
-          <p className="text-sm text-gray-300">
+          <p className="text-sm text-gray-700">
             Step into style with the latest sneakers, casuals, and sports shoes.
             Quality meets comfort at Basit's Collection.
           </p>
@@ -28,7 +28,7 @@ export default function Footer() {
         {/* Quick Links */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
+          <ul className="space-y-2 text-sm text-gray-700">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -47,7 +47,7 @@ export default function Footer() {
         {/* Customer Support */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Customer Support</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
+          <ul className="space-y-2 text-sm text-gray-700">
             <li>
               <Link href="/faq">FAQs</Link>
             </li>
@@ -66,9 +66,9 @@ export default function Footer() {
         {/* Contact + Newsletter */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Get in Touch</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
+          <ul className="space-y-2 text-sm text-gray-700">
             <li className="flex items-center gap-1">
-              <Mail size={40} /> basitdeveloper@gmail.com
+              <Mail size={16} /> basitdeveloper@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <Phone size={16} /> +92 3475495500
@@ -82,7 +82,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="border-t border-gray-700 py-4 text-sm text-center text-gray-400">
+      <div className="border-t border-gray-700 py-4 text-sm text-center text-gray-700">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6">
           <p>
             &copy; {new Date().getFullYear()} Basit's Collection. All rights reserved.
