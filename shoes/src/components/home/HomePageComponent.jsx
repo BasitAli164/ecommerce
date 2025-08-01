@@ -3,6 +3,7 @@ import Link from "next/link";
 import ButtonComp from "../button/Herobutton";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import HomePageCart from "../cart/HomePageCart";
 
 const bgImages = [
   "/backgroundImage/bg0.avif",
@@ -11,6 +12,20 @@ const bgImages = [
   "/backgroundImage/bg3.avif",
 ];
 
+const images=[
+  "/HomeCartsImage/img1.webp",
+  "/HomeCartsImage/img2.webp",
+  "/HomeCartsImage/img3.webp",
+  "/HomeCartsImage/img4.webp",
+]
+const hoverImages=[
+  "/HomeCartsImage/HoverImage/img1.webp",
+  "/HomeCartsImage/HoverImage/img2.jpg",
+  "/HomeCartsImage/HoverImage/img3.webp",
+  "/HomeCartsImage/HoverImage/img4.webp",
+]
+
+const btnText=["BestSellers","New Arrivals", "Mens","Womens"]
 
 export default function HomePageComponent() {
   const [index, setIndex] = useState(0);
@@ -61,9 +76,17 @@ export default function HomePageComponent() {
 
     
     </div>
-      <div className="flex flex-col justify-center items-center bg-gray-100">
+      <div className="flex flex-col justify-center items-center bg-gray-100 p-5 gap-5 overflow-hidden">
         <h1 className="text-5xl font-bold text-gray-900">Explore Our Shoes</h1>
         <div className="flex gap-5 items-center">
+          <HomePageCart btnText="BestSellers" img=  "/HomeCartsImage/img1.webp"
+/>
+          <HomePageCart btnText="New Arrivals" img=  "/HomeCartsImage/img2.webp"
+/>
+          <HomePageCart btnText="Mens" img=  "/HomeCartsImage/img3.webp"
+/>
+          <HomePageCart btnText="Womens" img=  "/HomeCartsImage/img4.webp"
+/>
 
         </div>
         

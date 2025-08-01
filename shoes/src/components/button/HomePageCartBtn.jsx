@@ -1,7 +1,7 @@
-import React from 'react'
+import Link from "next/link"
 
 export default function HomePageCartBtn({btnText}) {
   return (
-    <button className='px-8 py-3 bg-transparent text-white font-semibold uppercase'>{btnText}</button>
+    <Link href={'/'} className='px-8 py-3 bg-transparent text-white font-semibold uppercase border rounded-full '>{btnText}</Link>
   )
 }
