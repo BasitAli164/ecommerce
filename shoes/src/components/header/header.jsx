@@ -48,12 +48,12 @@ export default function Header() {
   return (
     <header className="fixed w-full z-50">
       {/* Promo Bar */}
-      <div className="w-full bg-[#7dcea0] text-center py-1 text-sm sm:text-base font-medium">
-        <p>{PROMO_MESSAGES[index]}</p>
+      <div className="w-full bg-gray-600 text-center py-1 text-sm sm:text-base font-medium">
+        <p className="text-gray-900">{PROMO_MESSAGES[index]}</p>
       </div>
 
       {/* Main Navbar */}
-      <nav className="w-full bg-[#17a589] flex items-center justify-between px-4 sm:px-6 py-2">
+      <nav className="w-full bg-gray-500 flex items-center justify-between px-4 sm:px-6 py-2">
         {/* Logo */}
         <Link href="/" className="shrink-0">
           <Image
@@ -72,7 +72,7 @@ export default function Header() {
             <li key={id}>
               <Link
                 href={link}
-                className="text-white text-lg font-semibold hover:underline"
+                className="text-gray-900 text-lg font-semibold hover:underline"
               >
                 {name}
               </Link>
