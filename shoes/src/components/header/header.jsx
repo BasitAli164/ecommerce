@@ -48,12 +48,12 @@ export default function Header() {
   return (
     <header className="fixed w-full z-50">
       {/* Promo Bar */}
-      <div className="w-full bg-gray-100 text-center py-1 text-sm sm:text-base font-medium">
-        <p className="text-gray-900">{PROMO_MESSAGES[index]}</p>
+      <div className="w-full bg-gray-200 text-center py-1 text-sm sm:text-base font-medium">
+        <p className="text-gray-800">{PROMO_MESSAGES[index]}</p>
       </div>
 
       {/* Main Navbar */}
-      <nav className="w-full bg-gray-200 flex items-center justify-between px-4 sm:px-6 py-2">
+      <nav className="w-full bg-gray-300 flex items-center justify-between px-4 sm:px-6 py-2">
         {/* Logo */}
         <Link href="/" className="shrink-0">
           <Image
@@ -72,7 +72,7 @@ export default function Header() {
             <li key={id}>
               <Link
                 href={link}
-                className="text-gray-900 text-lg font-semibold hover:underline"
+                className="text-gray-700 hover:text-gray-900 text-lg font-semibold hover:underline"
               >
                 {name}
               </Link>
@@ -81,12 +81,12 @@ export default function Header() {
         </ul>
 
         {/* Icons and Menu */}
-        <div className="flex items-center gap-4 text-white">
+        <div className="flex items-center gap-4 text-gray-700 hover:text-gray-900">
           {/* Desktop Icons */}
           <div className="hidden sm:flex gap-4 items-center">
-            <User className="w-6 h-6 cursor-pointer text-gray-900" />
-            <HelpCircleIcon className="w-6 h-6 cursor-pointer  text-gray-900" />
-            <ShoppingCartIcon className="w-6 h-6 cursor-pointer  text-gray-900" />
+            <User className="w-6 h-6 cursor-pointer text-gray-700 hover:text-gray-900" />
+            <HelpCircleIcon className="w-6 h-6 cursor-pointer  text-gray-700 hover:text-gray-900" />
+            <ShoppingCartIcon className="w-6 h-6 cursor-pointer  text-gray-700 hover:text-gray-900" />
           </div>
 
           {/* Mobile Icons: User + Menu */}
@@ -97,12 +97,12 @@ export default function Header() {
               onClick={() => setMenuOpen(!menuOpen)}
             />
             {menuOpen && (
-              <ul className=" flex flex-col justify-center items-center  gap-4 absolute top-10 -right-4 w-52 bg-[#17a589] shadow-lg rounded p-2 space-y-2 z-50">
+              <ul className=" flex flex-col justify-center items-end  gap-4 absolute top-10 -right-4 w-52 bg-transparent shadow-lg rounded p-2 space-y-2 z-50">
                 {MENU_ITEMS.map(({ id, name, link }) => (
                   <li key={id}>
                     <Link
                       href={link}
-                      className="block text-gray-50 text-base font-medium hover:underline"
+                      className="block text-gray-700 hover:text-gray-900 text-base font-medium hover:underline"
                       onClick={() => setMenuOpen(false)}
                     >
                       {name}
