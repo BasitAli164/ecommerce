@@ -30,16 +30,16 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" className="hover:text-gray-900">Home</Link>
             </li>
             <li>
-              <Link href="/shop">Shop</Link>
+              <Link href="/shop" className="hover:text-gray-900">Shop</Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact" className="hover:text-gray-900">Contact</Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/about" className="hover:text-gray-900">About</Link>
             </li>
           </ul>
         </div>
@@ -49,16 +49,16 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-3">Customer Support</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>
-              <Link href="/faq">FAQs</Link>
+              <Link href="/faq" className="hover:text-gray-900  ">FAQs</Link>
             </li>
             <li>
-              <Link href="/returns">Returns & Exchanges</Link>
+              <Link href="/returns" className="hover:text-gray-900 ">Returns & Exchanges</Link>
             </li>
             <li>
-              <Link href="/shipping">Shipping Info</Link>
+              <Link href="/shipping" className="hover:text-gray-900 ">Shipping Info</Link>
             </li>
             <li>
-              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/privacy-policy" className="hover:text-gray-900 ">Privacy Policy</Link>
             </li>
           </ul>
         </div>
@@ -88,13 +88,13 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Basit's Collection. All rights reserved.
           </p>
           <div className="flex gap-4 mt-2 md:mt-0">
-            <Link href="www.facebook.com" aria-label="Facebook">
+            <Link href="www.facebook.com" aria-label="Facebook" className="hover:text-gray-900 transition duration-700 delay-100 ease-in-out">
               <Facebook size={18} />
             </Link>
-            <Link href="www.x.com" aria-label="Twitter">
+            <Link href="www.x.com" aria-label="Twitter" className="hover:text-gray-900 transition duration-700 delay-100 ease-in-out">
               <Twitter size={18} />
             </Link>
-            <Link href="www.instagram.com" aria-label="Instagram">
+            <Link href="www.instagram.com" aria-label="Instagram" className="hover:text-gray-900 transition duration-700 delay-100 ease-in-out">
               <Instagram size={18} />
             </Link>
           </div>
