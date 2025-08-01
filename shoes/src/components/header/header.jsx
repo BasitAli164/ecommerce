@@ -72,7 +72,7 @@ export default function Header() {
             <li key={id}>
               <Link
                 href={link}
-                className="text-gray-700 hover:text-gray-900 text-lg font-semibold hover:underline"
+                className="text-gray-700 hover:text-gray-900 text-lg font-semibold hover:underline transition duration-700 delay-100 ease-in-out"
               >
                 {name}
               </Link>
