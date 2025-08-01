@@ -49,7 +49,12 @@ export default function Header() {
     <header className="fixed w-full z-50">
       {/* Promo Bar */}
       <div className="w-full bg-gray-200 text-center py-1 text-sm sm:text-base font-medium">
-        <p className="text-gray-800">{PROMO_MESSAGES[index]}</p>
+        {
+          pathname==='/' &&(
+                    <p className="text-gray-800">{PROMO_MESSAGES[index]}</p>
+
+          )
+        }
       </div>
 
       {/* Main Navbar */}
