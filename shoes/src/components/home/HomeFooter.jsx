@@ -41,8 +41,8 @@ const cartData = [
 ];
 export default function HomeFooter() {
   return (
-    <section className="w-full   overflow-hidden bg-gray-300">
-      <div className="  p-5 flex flex-wrap justify-evenly items-center  gap-2">
+    <section className="w-full overflow-hidden bg-gray-300  p-5">
+      <div className="  flex flex-wrap justify-evenly items-center  gap-2">
         {data.map((item) => (
           <div
             key={item.id}
@@ -58,7 +58,18 @@ export default function HomeFooter() {
           </div>
         ))}
       </div>
-      <div></div>
+      <div className="flex flex-wrap items-center justify-around mt-5">
+        {
+            cartData.map((item)=>(
+                <div key={item.id} className="w-[480px] h-[250px] rounded-xl bg-gray-100 p-5">
+                    <h2 className="text-gray-700 font-semibold ">{item.title}</h2>
+                    <p className="text-gray-700">{item.description}</p>
+
+                </div>
+                
+            ))
+        }
+      </div>
     </section>
   );
 }
