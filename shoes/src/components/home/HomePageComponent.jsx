@@ -4,6 +4,7 @@ import ButtonComp from "../button/Herobutton";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import HomePageCart from "./HomePageCart";
+import HomeFooter from "./HomeFooter";
 
 const bgImages = [
   "/backgroundImage/bg0.avif",
@@ -84,7 +85,7 @@ export default function HomePageComponent() {
         <h1 className="text-3xl md:text-5xl font-bold text-gray-700 text-center">
           Explore Our Shoes
         </h1>
-        <div className="flex flex-wrap justify-center items-center gap-5">
+        <div className="flex flex-wrap justify-center items-center gap-5 ">
           <HomePageCart
             btnText="BestSellers"
             img="/HomeCartsImage/img1.webp"
@@ -107,6 +108,9 @@ export default function HomePageComponent() {
             link="/womens"
           />
         </div>
+      </div>
+      <div>
+        <HomeFooter/>
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import HomePageCartBtn from "./HomePageCartBtn";
 function HomePageCart({ btnText, img, link, hoverImage }) {
   return (
     <div
-      className="w-[250px] sm:w-[350px] h-[250px] sm:h-[350px] flex justify-center items-center rounded-full bg-amber-400"
+      className="w-[250px] sm:w-[350px] h-[250px] sm:h-[350px] flex justify-center items-center rounded-full bg-amber-400 "
       style={{
         backgroundImage: `url(${img})`,
         backgroundPosition: "center",
