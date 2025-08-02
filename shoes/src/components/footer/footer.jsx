@@ -13,9 +13,9 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-300 text-gray-700 ">
+    <footer className="bg-gray-300 text-gray-700 border-t border-gray-700 ">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Info */}
         <div>
           <h2 className="text-xl font-bold mb-4">Basit's Collection</h2>
