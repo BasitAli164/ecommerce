@@ -99,7 +99,7 @@ export default function Header() {
                   <li key={id}>
                     <Link
                       href={link}
-                      className="block text-gray-700 hover:text-gray-900 text-base font-medium hover:underline"
+                      className="block text-gray-800 hover:text-gray-900 text-base font-medium hover:underline"
                       onClick={() => setMenuOpen(false)}
                     >
                       {name}
