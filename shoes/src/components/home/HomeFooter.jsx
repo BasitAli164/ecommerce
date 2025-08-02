@@ -14,7 +14,7 @@ const data = [
   {
     id: 3,
     name: "Breezy BestSellers",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit ",
     img: "/HomeCartsImage/img7.webp",
   },
 ];
@@ -24,19 +24,19 @@ const cartData = [
     id: 1,
     title: "Wear All Day Comfort",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores natus sed nam ",
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores natus sed nam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, vero ducimus assumenda veritatis nemo possimus ut iusto itaque ea eos! Quod vitae perspiciatis vel neque culpa ullam optio ipsum officiis. ",
   },
   {
     id: 2,
     title: "Sustainability In Every Step",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores natus sed nam ",
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores natus sed nam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, vero ducimus assumenda veritatis nemo possimus ut iusto itaque ea eos! Quod vitae perspiciatis vel neque culpa ullam optio ipsum officiis. ",
   },
   {
     id: 3,
     title: "Materials From The Earth",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores natus sed nam ",
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores natus sed nam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, vero ducimus assumenda veritatis nemo possimus ut iusto itaque ea eos! Quod vitae perspiciatis vel neque culpa ullam optio ipsum officiis. ",
   },
 ];
 export default function HomeFooter() {
@@ -58,12 +58,12 @@ export default function HomeFooter() {
           </div>
         ))}
       </div>
-      <div className="flex flex-wrap items-center justify-around mt-5">
+      <div className="flex flex-wrap items-center justify-around gap-5 :gap-3 mt-5">
         {
             cartData.map((item)=>(
-                <div key={item.id} className="w-[480px] h-[250px] rounded-xl bg-gray-100 p-5">
-                    <h2 className="text-gray-700 font-semibold ">{item.title}</h2>
-                    <p className="text-gray-700">{item.description}</p>
+                <div key={item.id} className="w-[480px] h-[250px] rounded-xl bg-gray-200 p-5">
+                    <h2 className="text-gray-800 font-semibold ">{item.title}</h2>
+                    <p className="text-gray-600 text-justify">{item.description}</p>
 
                 </div>
                 
