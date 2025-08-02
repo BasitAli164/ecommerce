@@ -82,8 +82,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="border-t border-gray-700 py-4 text-sm text-center text-gray-700">
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6">
+      <div className=" py-4 text-sm text-center text-gray-700">
+        <div className="border-t border-gray-700 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6">
           <p>
             &copy; {new Date().getFullYear()} Basit's Collection. All rights reserved.
           </p>
