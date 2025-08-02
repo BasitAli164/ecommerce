@@ -58,11 +58,11 @@ export default function HomeFooter() {
           </div>
         ))}
       </div>
-      <div className="flex flex-wrap items-center justify-around gap-5 :gap-3 mt-5">
+      <div className="flex flex-wrap items-center justify-center gap-5 :gap-3 mt-5">
         {cartData.map((item) => (
           <div
             key={item.id}
-            className="w-[600px] md:w-[480px] h-[250px] rounded-xl bg-gray-200 p-5"
+            className="w-[600px] lg:w-[480px] h-[250px] rounded-xl bg-gray-200 p-5"
           >
             <h2 className="text-gray-800 font-semibold ">{item.title}</h2>
             <p className="text-gray-600 text-justify">{item.description}</p>
