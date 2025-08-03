@@ -111,6 +111,7 @@ export default function HomePageComponent() {
       </div>
       <div>
         <HomeFooter/>
+        <Cart/>
       </div>
     </>
   );
