@@ -20,10 +20,11 @@ export default function Cart() {
             className="w-[300px] h-[300px] bg-center bg-cover bg-no-repeat "
             style={{ backgroundImage: `url(${item.image})` }}
           ></div>
-          <div >            <p className="text-xl font-semibold">{item.title}</p>
+          <div>
+            {" "}
+            <p className="text-xl font-semibold">{item.title}</p>
             <div className="flex justify-between items-center">
               <p>
-                
                 <RadioButton />
               </p>
               <p>${item.price}</p>

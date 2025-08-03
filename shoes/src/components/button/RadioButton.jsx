@@ -8,7 +8,7 @@ export default function RadioButton() {
     <>
     {
         colors.map((item,index)=>(
-            <button key={index} className={`px-2 py-2 mx-0.5 rounded-full `} style={{backgroundColor:item}}>            
+            <button key={index} className={`p-2.5 mx-0.5 rounded-full cursor-pointer `} style={{backgroundColor:item}} title={item}>            
     </button>
         ))
     }
