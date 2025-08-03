@@ -12,14 +12,9 @@ export default function Cart() {
   return <>
   {
     dammyData.map((item)=>(
-        <div key={item.id} className="w-[250px] h-[330px] p-3 rounded-3xl shadow bg-gray-200">
-            <div className="w-[200px]">
-                <Image
-                src={item.image}
-                alt={item.title}
-                width={300}
-                height={300}
-                />
+        <div key={item.id} className="w-[250px] h-[330px] p-3 rounded-3xl shadow bg-gray-200 text-black">
+            <div className="w-[200px] h-[200px] bg-amber-100 bg-center bg-cover bg-no-repeat " style={{backgroundImage:`url${item.image}`}}>
+                
             </div>
             <div className>
                 <p>{item.title}</p>
