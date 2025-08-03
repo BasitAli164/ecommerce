@@ -13,15 +13,15 @@ export default function Cart() {
   {
     dammyData.map((item)=>(
         <div key={item.id} className="w-[250px] h-[330px] p-3 rounded-3xl shadow bg-gray-200">
-            <div>
+            <div className="w-[200px]">
                 <Image
                 src={item.image}
                 alt={item.title}
-                width={100}
-                height={100}
+                width={300}
+                height={300}
                 />
             </div>
-            <div>
+            <div className>
                 <p>{item.title}</p>
                 <div>
                     <RadioButton/>

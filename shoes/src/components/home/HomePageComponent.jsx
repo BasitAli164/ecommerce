@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import HomePageCart from "./HomePageCart";
 import HomeFooter from "./HomeFooter";
+import Cart from "../cart/Cart";
 
 const bgImages = [
   "/backgroundImage/bg0.avif",
@@ -111,7 +112,9 @@ export default function HomePageComponent() {
       </div>
       <div>
         <HomeFooter/>
-        <Cart/>
+       <div className="flex gap-4 p-5">
+         <Cart/>
+       </div>
       </div>
     </>
   );
