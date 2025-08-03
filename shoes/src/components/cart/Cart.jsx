@@ -1,4 +1,5 @@
 import Image from "next/image";
+import RadioButton from "../button/RadioButton";
 
 const dammyData=[
     {id:1,title:"Shoe-1",price:120,image:"/HomeCartsImage/img1.webp"},
@@ -21,6 +22,11 @@ export default function Cart() {
                 />
             </div>
             <div>
+                <p>{item.title}</p>
+                <div>
+                    <RadioButton/>
+                    <p>${item.price}</p>
+                </div>
 
             </div>
 
