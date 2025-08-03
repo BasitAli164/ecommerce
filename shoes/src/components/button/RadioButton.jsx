@@ -1,5 +1,5 @@
 
-const colors=['red','blue','green','gray','aqua','brown']
+const colors=['red','blue','green','gray','aqua',]
 
 
 export default function RadioButton() {
