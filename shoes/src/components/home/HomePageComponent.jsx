@@ -112,9 +112,7 @@ export default function HomePageComponent() {
       </div>
       <div>
         <HomeFooter/>
-       <div className="flex gap-4 p-5">
-         <Cart/>
-       </div>
+       
       </div>
     </>
   );
