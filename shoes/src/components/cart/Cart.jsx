@@ -2,7 +2,7 @@ import Image from "next/image";
 import RadioButton from "../button/RadioButton";
 import { LucideShoppingCart } from "lucide-react";
 
-const dammyData = [
+export const dammyData = [
   {
     id: 1,
     title: "Shoe-1",
