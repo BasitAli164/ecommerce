@@ -62,7 +62,7 @@ export default function HomeFooter() {
         {cartData.map((item) => (
           <div
             key={item.id}
-            className="w-[600px] lg:w-[480px] h-[250px] rounded-xl bg-gray-200 p-5"
+            className="w-[600px] lg:w-[400px] h-[250px] rounded-xl bg-gray-200 p-5 overflow-hidden"
           >
             <h2 className="text-gray-800 font-semibold text-lg ">{item.title}</h2>
             <p className="text-gray-600 text-justify text-[17px]">{item.description}</p>
