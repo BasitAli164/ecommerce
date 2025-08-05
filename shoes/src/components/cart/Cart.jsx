@@ -32,7 +32,7 @@ export default function Cart() {
           <LucideShoppingCart />
 
           <div
-            className="w-[300px] h-[300px] bg-center bg-cover bg-no-repeat "
+            className="max-w-[300px] h-[300px] bg-center bg-cover bg-no-repeat "
             style={{ backgroundImage: `url(${item.image})` }}
           ></div>
           <div>
