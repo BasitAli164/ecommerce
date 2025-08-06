@@ -28,13 +28,12 @@ export default function Header() {
 
   // Only run ticker on homepage
   useEffect(() => {
-    if (pathname !== "/") return;
-
+    
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % PROMO_MESSAGES.length);
     }, 5000);
 
-    return () => clearInterval(interval);
+    
   }, [pathname]);
 
   // Hide header on non-home pages
@@ -44,9 +43,9 @@ export default function Header() {
     <header className="fixed w-full z-50">
       {/* Promo Bar */}
       <div className="w-full bg-gray-200 text-center py-1 text-sm sm:text-base font-medium">
-        {pathname === "/" && (
+        
           <p className="text-gray-800">{PROMO_MESSAGES[index]}</p>
-        )}
+     
       </div>
 
       {/* Main Navbar */}
