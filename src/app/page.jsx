@@ -1,9 +1,9 @@
-import Image from "next/image";
-
+import Header from "@/components/header/header";
+import HomePageComponent from "@/components/home/HomePageComponent";
 export default function Home() {
   return (
   <>
-  <h1 className="text-primary font-pajii">Hello</h1>
+  <HomePageComponent/>  
   </>
   );
 }
