@@ -6,6 +6,7 @@ import Image from "next/image";
 import HomePageCart from "./HomePageCart";
 import HomeFooter from "./HomeFooter";
 import Cart from "../cart/Cart";
+import TextCart from "../cart/TextCart";
 
 const bgImages = [
   "/backgroundImage/bg0.avif",
@@ -112,6 +113,7 @@ export default function HomePageComponent() {
       </div>
       <div>
         <HomeFooter/>
+        <TextCart/>
        
       </div>
     </>

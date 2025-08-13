@@ -1,6 +1,7 @@
 import FilterField from "@/components/filter/FilterField";
 import Cart from "@/components/cart/Cart";
 import HomeFooter from "@/components/home/HomeFooter";
+import TextCart from "@/components/cart/TextCart";
 
 export default function Shop(props) {
   console.log("Search params:",props.searchParams,props.params)
@@ -39,9 +40,7 @@ export default function Shop(props) {
           <Cart />
           {/* Add more <Cart /> components here or map through data */}
         </div>
-       <div className="mt-10">
-         <HomeFooter/>
-       </div>
+        <TextCart/>
       </div>
     </div>
   );
