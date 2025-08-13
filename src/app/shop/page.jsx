@@ -39,7 +39,9 @@ export default function Shop(props) {
           <Cart />
           {/* Add more <Cart /> components here or map through data */}
         </div>
-        <HomeFooter/>
+       <div className="mt-10">
+         <HomeFooter/>
+       </div>
       </div>
     </div>
   );
