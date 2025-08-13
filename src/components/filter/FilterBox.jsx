@@ -32,7 +32,7 @@ export default function FilterBox() {
                 <div key={index} className="flex items-center gap-2">
                   <input
                     type="checkbox"
-                    className="accent-amber-600"
+                    className="accent-amber-100"
                     id={`type-${index}`}
                   />
                   <p>{item}</p>
