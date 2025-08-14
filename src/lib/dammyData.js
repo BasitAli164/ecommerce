@@ -8,7 +8,7 @@ export const shoeColors=['darkred','darkblue','darkgreen','gray','black']
 
 // chcek list of Product Brands/Types
 
-productTypes=[
+export const productTypes=[
 "Everyday Sneakers","Fluffs","Golf","High Tops","Hiking Shoes","Running Shoes","Sandals","Slip Ons","Water-Repellent Shoes"]
 
 
