@@ -3,7 +3,7 @@ export const shoeSize=[6,6.5,7,7.5,8,8.5, 9,9.5, 10]
 
 // Colors of Shoes
 
-export const shoeColors=['darkred','darkblue','darkgreen','gray','black']
+export const shoeColors=['darkred','darkblue','darkgreen','gray','black',"beige","black","blue","brown","green","grey","orange","red","pink"]
 
 
 // chcek list of Product Brands/Types
