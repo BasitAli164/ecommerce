@@ -7,7 +7,7 @@ export default function FilterBox() {
   return (
     <div className="w-full">
       <div className="w-full max-w-[1200px] border border-gray-300 bg-white mt-2 p-4 rounded-lg shadow-lg text-black">
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           <div className="flex-1">
             <h3 className="font-semibold mb-2">Size</h3>
             <p className="text-sm mb-3">
@@ -49,14 +49,14 @@ export default function FilterBox() {
             </div>
             <div className="flex flex-col ">
               <h3 className="font-semibold mb-2 mt-2">Price</h3>
-              <div className="flex justify-center items-center gap-5">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-5">
                 <div className="  mb-5">
                   <p className="opacity-50  text-lg mb-1">From</p>
-                  <input className="border border-gray-400 rounded-full outline-none p-3 w-32 placeholder:text-[14px]" type="number" name="startPrice" id="startPrice" placeholder="Start Price" />
+                  <input className="border border-gray-400 rounded-full outline-none p-2 w-32 placeholder:text-[14px]" type="number" name="startPrice" id="startPrice" placeholder="Start Price" />
                 </div>
                 <div className="mb-5">
                   <p className="opacity-50 text-lg mb-1 ">To</p>
-                  <input className="border border-gray-400 rounded-full outline-none p-3 w-32 placeholder:text-[14px]" type="number" name="stopPrice" id="stopPrice" placeholder="Stop Price" />
+                  <input className="border border-gray-400 rounded-full outline-none p-2 w-32 placeholder:text-[14px]" type="number" name="stopPrice" id="stopPrice" placeholder="Stop Price" />
                 </div>
               </div>
 

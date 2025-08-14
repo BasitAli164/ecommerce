@@ -1,7 +1,8 @@
 import FilterField from "@/components/filter/FilterField";
 import Cart from "@/components/cart/Cart";
 
-export default function Shop() {
+export default function Shop(props) {
+  console.log("Search params:",props.searchParams,props.params)
   return (
     <div className="w-full min-h-screen flex flex-col items-center  py-10">
       <div className="w-full max-w-7xl  p-6">
