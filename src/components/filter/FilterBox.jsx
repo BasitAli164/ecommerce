@@ -52,11 +52,11 @@ export default function FilterBox() {
               <div className="flex justify-center items-center gap-5">
                 <div className="  mb-5">
                   <p className="opacity-50  text-lg mb-1">From</p>
-                  <input className="border border-gray-400 rounded-full outline-none p-3 w-32" type="number" name="" id="" />
+                  <input className="border border-gray-400 rounded-full outline-none p-3 w-32" type="number" name="startPrice" id="startPrice" placeholder="Start Price" />
                 </div>
                 <div className="mb-5">
                   <p className="opacity-50 text-lg mb-1 ">To</p>
-                  <input className="border border-gray-400 rounded-full outline-none p-3 w-32" type="number" name="" id="" />
+                  <input className="border border-gray-400 rounded-full outline-none p-3 w-32" type="number" name="stopPrice" id="stopPrice" placeholder="Stop price" />
                 </div>
               </div>
 
