@@ -1,5 +1,5 @@
 // Size of shoes
-export const shoeSize=[6,6.5,7,7.5,8,8.5, 9,9.5, 10]
+export const shoeSize=[3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8,8.5, 9,9.5, 10]
 
 // Colors of Shoes
 
@@ -9,7 +9,7 @@ export const shoeColors=['darkred','darkblue','darkgreen','gray','black',"beige"
 // chcek list of Product Brands/Types
 
 export const productTypes=[
-"Everyday Sneakers","Fluffs","Golf","High Tops","Hiking Shoes","Running Shoes","Sandals","Slip Ons","Water-Repellent Shoes"]
+"Everyday Sneakers","Fluffs","Golf","High Tops","Hiking Shoes","Running Shoes","Sandals","Slip Ons"]
 
 
 // Cart Data
