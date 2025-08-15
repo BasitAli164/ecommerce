@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import React from 'react'
 
 export default function AnnouncementBar() {
+  
   return (
     <div className='w-screen  bg-bgPrimary  '>
       <div className='w-full p-4 flex justify-around  items-center  overflow-hidden gap-10'>
