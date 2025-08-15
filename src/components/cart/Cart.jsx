@@ -10,7 +10,7 @@ export default function Cart() {
     <>
       {dammyDataForCarts.map((item) => (
         <div
-        onClick={()=>route.push(`shop/${item.id}`)}
+        onClick={()=>route.push(`shop/${item.title}`)}
           key={item.id}
           className="w-[320px] h-[420px]  flex flex-col  justify-center p-2 rounded-3xl shadow bg-gray-200 text-black cursor-pointer"
         >
