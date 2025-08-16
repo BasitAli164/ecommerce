@@ -24,13 +24,13 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="w-full h-12 flex justify-around items-center p-4 bg-amber-100">
+    <nav className="w-full h-12 flex justify-around items-center p-4 border-b">
       <h1 className="text-lg font-bold">Exclusive</h1>
 
-      <ul className="flex gap-4 bg-red-400">
+      <ul className="hidden sm:flex gap-5">
         {menulist.map((item) => (
           <li key={item.href} className="">
-            <Link href={item.href} className={pathname===item.href?"border-b-2 border-gray-300":""}>{item.label}</Link>
+            <Link href={item.href} className={pathname===item.href?"border-b-2 border-gray-400":""}>{item.label}</Link>
           </li>
         ))}
       </ul>
@@ -38,7 +38,7 @@ export default function Navbar() {
      <div className="flex gap-8">
        <div className="flex bg-[#F5F5F5] opacity-70 rounded-md p-1  ">
         <input
-          className="outline-none border-none"
+          className="outline-none border-none hidden sm:inline"
           placeholder="What are you looking for?"
           type="text"
           name=""
@@ -48,11 +48,11 @@ export default function Navbar() {
         />
         <SearchIcon onClick={filterProducts}/>
       </div>
-      <div className="flex bg-green-300">
+      <div className="flex gap-2">
         <Heart />
         <ShoppingCart />
         <User />
-        <Menu />
+        <Menu className="sm:hidden" />
       </div>
      </div>
     </nav>
