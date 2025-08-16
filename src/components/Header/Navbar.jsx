@@ -18,7 +18,7 @@ const menulist=[
 
 
   return (
-    <nav className=''>
+    <nav className='flex bg-amber-300'>
       <div>
         <h1>Exclusive</h1>
       </div>
