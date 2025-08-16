@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex bg-amber-300">
+    <nav className="w-full h-12 flex justify-around items-center p-4 bg-amber-100">
       <h1>Exclusive</h1>
 
       <ul className="flex bg-red-400">

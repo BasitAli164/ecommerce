@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function AnnouncementBar() {
   return (
     <div className="w-screen  bg-bgPrimary  ">
-      <div className="w-full p-4 flex justify-around  items-center  overflow-hidden gap-10">
+      <div className="w-full p-2 flex justify-around  items-center  overflow-hidden gap-10">
         <p className="text-secondaryText text-[10px] md:text-sm  text-center  ">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           <Link
