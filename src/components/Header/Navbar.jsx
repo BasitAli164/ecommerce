@@ -1,4 +1,4 @@
-import { Heart, SearchIcon, ShoppingCart } from "lucide-react";
+import { Heart, Menu, SearchIcon, ShoppingCart, User } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="flex bg-amber-300">
       <h1>Exclusive</h1>
 
-      <ul>
+      <ul className="flex bg-red-400">
         {menulist.map((item) => (
           <li key={item.href}>
             <Link href={item.href}>{item.label}</Link>
@@ -25,19 +25,20 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <div>
-        <input type="text" name="" id="" />
+      <div className="flex bg-gray-300">
+        <input
+          className="border border-solid border-fuchsia-600"
+          type="text"
+          name=""
+          id=""
+        />
         <SearchIcon />
       </div>
-      <div>
-        {pathname === "/signup" || pathname === "/signin" ? (
-          <></>
-        ) : (
-          <>
-            <Heart />
-            <ShoppingCart />
-          </>
-        )}
+      <div className="flex bg-green-300">
+        <Heart />
+        <ShoppingCart />
+        <User />
+        <Menu />
       </div>
     </nav>
   );
