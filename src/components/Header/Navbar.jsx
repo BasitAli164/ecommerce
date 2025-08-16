@@ -40,7 +40,7 @@ const menulist=[
       </div>
       <div>
         {
-          pathname==='/signup'?<>
+          pathname==='/signup' || pathname==='/signin'?<>
           </>:<><Heart/>
         <ShoppingCart/></>
         }
