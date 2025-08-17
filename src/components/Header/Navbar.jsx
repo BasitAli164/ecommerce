@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-amber-200 flex flex-col justify-around items-center p-2 border-b border-gray-400 border-solid">
+    <nav className="w-full flex flex-col justify-around items-center p-2 border-b border-gray-400 border-solid">
       <div className="w-full flex justify-between items-center">
         <h1 className="text-lg font-bold">Exclusive</h1>
         <div className="flex gap-2">
@@ -50,9 +50,9 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="w-[600px] md:w-60 flex justify-between items-center  bg-[#F5F5F5] opacity-70 rounded-full p-1  ">
+        <div className="w-[600px] md:w-60 flex justify-between items-center  bg-[#F5F5F5] opacity-70 rounded-sm p-1  ">
           <input
-            className="outline-none w-full md:w-60 rounded-full   "
+            className="outline-none w-full md:w-60 rounded-sm   "
             placeholder="What are you looking for?"
             type="text"
             name="searchfield"
