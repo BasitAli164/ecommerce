@@ -30,7 +30,7 @@ export default function Navbar() {
           <Heart />
           <ShoppingCart />
           <User />
-          <Menu className="md:hidden" />
+          <Menu className="md:hidden"  onClick={()=>setToggle(!toggle)}/>
         </div>
       </div>
 
@@ -67,6 +67,26 @@ export default function Navbar() {
 
 
       {/* mobile menu*/}
+      {
+        toggle &&(
+           <ul className="flex gap-3 mt-2">
+          {menulist.map((item) => (
+            <li key={item.href} className="text-md list-none">
+              <Link
+                href={item.href}
+                className={
+                  pathname === item.href ? "border-b-2 border-gray-400" : ""
+                }
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        )
+          
+          
+      }
     </nav>
   );
 }
