@@ -21,7 +21,7 @@ export default function Slider() {
     <div className="w-24 md:w-40 border-r-2 border-solid border-gray-200 p-2 md:p-5">
       {
         sliderMenuList.map((item)=>(
-            <p className="text-[10px] md:text-sm">
+            <p className="text-[10px] md:text-sm mt-2">
                 <Link className={pathname===item.href?"border-b border-gray-200 border-solid":""} href={item.href}>{item.label}</Link>
             </p>
         ))
