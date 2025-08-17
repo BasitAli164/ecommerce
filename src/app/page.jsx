@@ -1,9 +1,11 @@
+'use client'
+import Slider from "@/components/Slider/Slider"
 
 
 function Home() {
   return (
     <div className="">
-      <h1>Hello</h1>
+      <Slider/>
     </div>
   )
 }

@@ -1,4 +1,6 @@
+
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const sliderMenuList=[
     {href:"/womenfashion",label:"Women's Fashion"},
@@ -13,12 +15,14 @@ const sliderMenuList=[
 ]
 
 export default function Slider() {
+
+    const pathname=usePathname()
   return (
-    <div>
+    <div className="w-24 md:w-40 border-r-2 border-solid border-gray-200 p-2 md:p-5">
       {
-        links.map((item)=>(
-            <p>
-                <Link></Link>
+        sliderMenuList.map((item)=>(
+            <p className="text-[10px] md:text-sm">
+                <Link className={pathname===item.href?"border-b border-gray-200 border-solid":""} href={item.href}>{item.label}</Link>
             </p>
         ))
       }
