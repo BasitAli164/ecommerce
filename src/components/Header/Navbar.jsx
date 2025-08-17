@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full flex flex-col justify-around items-center p-2 border-b border-gray-400 border-solid">
+    <nav className="w-full flex flex-col justify-around items-center p-2 ">
       <div className="w-full flex justify-between items-center">
         <h1 className="text-lg font-bold">Exclusive</h1>
         <div className="flex gap-2">

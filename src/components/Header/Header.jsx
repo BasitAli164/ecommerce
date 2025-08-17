@@ -6,7 +6,7 @@ export default function Header() {
 
 
   return (
-    <header className="w-full border-b border-secondaryText border-solid fixed ">
+    <header className="w-full border-b border-gray-400 border-solid  ">
       <AnnouncementBar />
       <Navbar/>
     </header>
