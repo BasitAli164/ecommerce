@@ -63,6 +63,10 @@ export default function Navbar() {
           <SearchIcon onClick={filterProducts} />
         </div>
       </div>
+
+
+
+      {/* mobile menu*/}
     </nav>
   );
 }
