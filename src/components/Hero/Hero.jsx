@@ -5,14 +5,14 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="md:w-[892px] md:h-[344px] bg-bgPrimary mt-10 p-10">
-      <div className="flex justify-between items-center">
+    <div className="w-[400px] md:w-[892px]  md:h-[344px] bg-bgPrimary mt-10 p-2 md:p-10">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         <div className="flex flex-col  justify-center gap-4 ml-5  ">
           <div className="flex gap-3 justify-left items-center">
             <AppleIcon className="text-secondaryText size-14" />
             <p className="text-lg text-secondaryText">iPhone 14 Series</p>
           </div>
-          <h1 className="text-secondaryText text-6xl tracking-tight">
+          <h1 className="text-secondaryText text-4xl lg:text-6xl tracking-tight">
             Up to 10% off Voucher
           </h1>
           <div className="flex  gap-2">
@@ -39,9 +39,12 @@ export default function Hero() {
         className="flex justify-center items-center gap-5
       "
       >
-        <input type="radio" name="red" id="red" />
-        <input type="radio" name="blue" id="blue" />
-        <input type="radio" name="green" id="green" />
+        
+        <input type="radio" name="green" id="green"  className="size-5 "/>
+        <input type="radio" name="green" id="green"  className="size-5 "/>
+        <input type="radio" name="green" id="green"  className="size-5 "/>
+        <input type="radio" name="green" id="green"  className="size-5 "/>
+        <input type="radio" name="green" id="green"  className="size-5 "/>
       </div>
     </div>
   );
