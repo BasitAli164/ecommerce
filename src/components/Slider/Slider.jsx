@@ -16,7 +16,7 @@ const sliderMenuList = [
 export default function Slider() {
   const pathname = usePathname();
   return (
-    <div className="w-24 md:w-40 border-r-2 border-solid border-gray-200 p-2 md:p-5">
+    <div className="w-24 md:w-40 xl:w-48 border-r-2 border-solid border-gray-200 p-2 md:p-5">
       {sliderMenuList.map((item) => (
         <p className="text-[10px] md:text-sm mt-2">
           <Link

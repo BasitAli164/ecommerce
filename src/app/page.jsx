@@ -5,7 +5,7 @@ import Slider from "@/components/Slider/Slider"
 
 function Home() {
   return (
-    <div className="flex gap-2 md:gap-14">
+    <div className="flex gap-2 md:gap-8 xl:gap-14">
       <Slider/>
       <Hero/>
     </div>
