@@ -5,9 +5,9 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="w-[400px] md:w-[892px]  xl:w-[1000px]  md:h-[344px] xl:h-[400px] bg-bgPrimary mt-10 p-2 md:p-10">
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center">
-        <div className="flex flex-col  justify-center gap-4 ml-5  ">
+    <div className="w-[300px] h-[200px] md:w-[892px] md:h-[344px] bg-bgPrimary mt-10 p-10">
+      <div className="flex justify-between items-center">
+        <div className="hidden md:flex flex-col  justify-center gap-4 ml-5  ">
           <div className="flex gap-3 justify-left items-center">
             <AppleIcon className="text-secondaryText size-14" />
             <p className="text-lg text-secondaryText">iPhone 14 Series</p>
