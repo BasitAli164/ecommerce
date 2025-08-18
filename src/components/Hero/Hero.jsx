@@ -1,21 +1,38 @@
-import React from 'react'
+import { AppleIcon, MoveRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export default function Hero() {
   return (
-   <div className='w-[892px] h-[344px] bg-bgPrimary mt-10'>
-    <div>
-      <div>
-        
+    <div className="md:w-[892px] md:h-[344px] bg-bgPrimary mt-10 p-10">
+      <div className="flex justify-between items-center">
+        <div className="flex flex-col  justify-center gap-4 ml-5  ">
+          <div className="flex gap-3 justify-left items-center">
+            <AppleIcon className="text-secondaryText size-14" />
+            <p className="text-lg text-secondaryText">iPhone 14 Series</p>
+          </div>
+          <h1 className="text-secondaryText text-6xl tracking-tight">Up to 10% off Voucher</h1>
+          <Link className="text-secondaryText flex gap-2" href={""}>
+            Shop Now <MoveRight />{" "}
+          </Link>
+        </div>
+        <div className="text-center">
+          <Image
+            src={"/hero/iphon.jpg"}
+            alt="Iphone Image"
+            width={400}
+            height={300}
+            className="mt-10"
+          />
+        </div>
       </div>
-      <div>
-
+      <div className="flex justify-center items-center gap-5
+      ">
+        <input type="radio" name="" id="" />
+        <input type="radio" name="" id="" />
+        <input type="radio" name="" id="" />
       </div>
     </div>
-    <div>
-      <input type="radio" name="" id="" />
-      <input type="radio" name="" id="" />
-      <input type="radio" name="" id="" />
-    </div>
-   </div>
-  )
+  );
 }
