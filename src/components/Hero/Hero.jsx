@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="w-[300px] h-[275px] sm:w-[400px] sm:h-[350px] md:w-[692px] md:h-[344px] bg-bgPrimary mt-10 p-4 md:p-10 mb-10 md:mb-0">
+    <div className="w-[300px] h-[275px] sm:w-[600px] sm:h-[350px] md:w-[892px]  md:h-[344px] bg-bgPrimary mt-10 p-4 md:p-10 mb-10 md:mb-0">
       <div className="flex justify-between items-center">
         <div className="hidden md:flex flex-col  justify-center gap-4 ml-5  ">
           <div className="flex gap-3 justify-left items-center">
@@ -31,7 +31,7 @@ export default function Hero() {
             alt="Iphone Image"
             width={250}   
             height={250}       
-            className="md:mt-10 ml-4 sm:ml-13 md:ml-0 mt-5 sm:mt-8"
+            className="md:mt-10 ml-4 sm:ml-40 md:ml-0 mt-5 sm:mt-8"
           />
         </div>
       </div>
