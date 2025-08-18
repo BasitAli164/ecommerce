@@ -15,14 +15,14 @@ export default function Hero() {
           <h1 className="text-secondaryText text-6xl tracking-tight">
             Up to 10% off Voucher
           </h1>
-          <div className="flex gap-2">
+          <div className="flex  gap-2">
             <Link
               className="text-secondaryText  border-b border-gray-400 border-solid"
               href={""}
             >
               Shop Now{" "}
             </Link>
-            <MoveRight className="text-secondaryText" />
+            <MoveRight className="text-secondaryText size-4 mt-2" />
           </div>
         </div>
         <div className="text-center">
