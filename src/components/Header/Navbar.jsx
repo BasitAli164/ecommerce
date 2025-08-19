@@ -1,4 +1,4 @@
-import { HeartIcon, SearchIcon, ShoppingCart } from "lucide-react";
+import { HeartIcon, SearchIcon, ShoppingCart, User } from "lucide-react";
 import Link from "next/link";
 const menuList = [
   { href: "/", lable: "Home" },
@@ -8,25 +8,26 @@ const menuList = [
 ];
 export default function Navbar() {
   return (
-    <nav className="w-full bg-amber-400 flex flex-col justify-center items-center">
-      <div className="w-full bg-red-600 flex justify-between items-center">
-        <div>
-          <h1>Exclusive</h1>
+    <nav className="w-full bg-amber-400 flex flex-col justify-center items-center gap-1">
+      <div className="w-full bg-red-600 flex justify-around items-center py-2">
+       
+          <h1 className="font-bold text-lg sm:text-xl md:text-3xl">Exclusive</h1>
+        
+        <div className="flex justify-center items-center gap-3">
+          <ShoppingCart className="size-[16px] sm:size-[20px] md:size-[28px]" />
+          <HeartIcon className="size-[16px] sm:size-[20px] md:size-[28px]" />
+          <User className="size-[16px] sm:size-[20px] md:size-[28px]" />
         </div>
-        <div className="flex justify-center items-center">
+      </div>
+      <div className="flex justify-center items-center">
           <input
             type="text"
             name=""
             id=""
-            className="border-2 border-white border-solid"
+            className=" max-w-54 border-2 border-white border-solid"
           />
           <SearchIcon />
         </div>
-        <div className="flex justify-center items-center">
-          <ShoppingCart />
-          <HeartIcon />
-        </div>
-      </div>
       <div>
         <ul className="flex">
           {menuList.map((item) => (
