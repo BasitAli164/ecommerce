@@ -52,7 +52,7 @@ export default function Navbar() {
       </ul>
 
       <div className="flex justify-center items-center gap-2 ">
-        <div className="flex justify-center items-center border border-white  ">
+        <div className="flex justify-center items-center  ">
           <input
             type="text"
             name="searchfield"
