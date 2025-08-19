@@ -31,15 +31,7 @@ export default function Navbar() {
           <User className="size-[16px] sm:size-[20px] md:size-[28px]" />
         </div>
       </div>
-      <div className="flex justify-center items-center">
-        <input
-          type="text"
-          name=""
-          id=""
-          className=" max-w-54 border-2 border-white border-solid"
-        />
-        <SearchIcon />
-      </div>
+      
     </nav>
   );
 }
