@@ -18,7 +18,9 @@ export default function Navbar() {
       setWidth(width);
       if (width < 786) {
         console.log("inner");
-        setToggle((prev) => !prev);
+        setToggle(false);
+      }else{
+        setToggle(true)
       }
     };
     handleSearchBox();
@@ -35,21 +37,10 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-screen flex justify-around items-center py-4 bg-amber-500">
+    <nav className="w-screen flex justify-between px-4 sm:px-0 sm:justify-around items-center py-4 bg-amber-500">
       <h1 className="font-semibold text-lg  md:text-3xl">Exclusive</h1>
 
-      <ul className="flex justify-center items-center gap-3 text-lg ">
-        {menuList.map((item) => (
-          <li key={item.label}>
-            <Link
-              className={pathname === item.href ? "underline " : ""}
-              href={item.href}
-            >
-              {item.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      
 
       <div className="flex justify-center items-center gap-2 ">
         <div className="flex justify-center items-center  ">
@@ -57,16 +48,17 @@ export default function Navbar() {
             type="text"
             name="searchfield"
             id="searchfield"
+            value={searchField}
             onChange={(e) => setSearchField(e.target.value)}
-            onClick={() => setToggle(!toggle)}
+            onClick={() => width<786 && setToggle((prev)=>!prev)}
             className={
-              toggle ? "hidden sm:inline outline-none border-none" : ""
+              toggle ? "outline-none border border-white border-solid" : "hidden"
             }
           />
-          <SearchIcon />
+          <SearchIcon className="size-4 sm:size-6" />
         </div>
-        <ShoppingCart />
-        <HeartIcon />
+        <ShoppingCart className="size-4 sm:size-6" />
+        <HeartIcon className="size-4 sm:size-6" />
       </div>
     </nav>
   );
