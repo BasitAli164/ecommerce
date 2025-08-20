@@ -24,11 +24,11 @@ export default function Header() {
         <div>
             <div>
                 <input type="text" name="searchText" id="searchText" onChange={(e)=>setSearchText(e.target.value)}/>
-                <Search width={25} height={25}/>
+                <Search className='w-6'/>
             </div>
             <div>
-                <Heart/>
-                <ShoppingCart/>
+                <Heart className='w-6 '/>
+                <ShoppingCart className='w-6'/>
             </div>
         </div>
 
