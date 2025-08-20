@@ -13,7 +13,7 @@ export default function AnnouncementBar() {
          
         </div>
         <div className=" flex flex-col justify-center items-center gap-y-4">
-          <select name="language" id="language" className="text-secondaryText  outline-none rounded py-2 px-3 pr-8">
+          <select name="language" id="language" className="text-secondaryText  outline-none rounded py-2 px-3 md:pr-8">
             <option value="en-US" className="text-primaryText text-sm">English (US)</option>
             <option value="en-GB" className="text-primaryText text-sm">English (UK)</option>
             <option value="en-CA" className="text-primaryText text-sm">English (CA)</option>
