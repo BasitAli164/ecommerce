@@ -8,12 +8,12 @@ export default function Header() {
     const [searchText, setSearchText]=useState("")
     console.log(searchText)
   return (
-    <header>
+    <header className='w-full '>
     <AnnouncementBar/>
-    <nav className=''>
-        <div>
+    <nav className='bg-red-700 container  flex justify-between items-center py-5'>
+        <div className='max-w-[800px] border-2 border-black border-dashed  bg-amber-300 flex justify-between items-center gap-10'>
             <h1>Exclusive</h1>
-            <ul>
+            <ul className='flex justify-center items-center gap-4'>
                 <li><Link href={'/'}>Home</Link></li>
                 <li><Link href={'/contact'}>Contact</Link></li>
                 <li><Link href={'/about'}>About</Link></li>
@@ -21,12 +21,12 @@ export default function Header() {
                 
             </ul>
         </div>
-        <div>
-            <div>
-                <input type="text" name="searchText" id="searchText" onChange={(e)=>setSearchText(e.target.value)}/>
+        <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center'>
+                <input className='border border-black border-2 outline-none ' type="text" name="searchText" id="searchText" onChange={(e)=>setSearchText(e.target.value)}/>
                 <Search className='w-6'/>
             </div>
-            <div>
+            <div className='flex'>
                 <Heart className='w-6 '/>
                 <ShoppingCart className='w-6'/>
             </div>
