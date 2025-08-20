@@ -3,8 +3,8 @@ import React from "react";
 
 export default function AnnouncementBar() {
   return (
-    <div className="w-full h-auto sm:h-[48px] bg-bgPrimary ">
-      <div className="container max-w-[1400px] h-full flex flex-col sm:flex-row justify-around items-center gap-y-2 px-4 ">
+    <div className="w-full  sm:h-[48px] bg-bgPrimary ">
+      <div className="container max-w-[1400px] h-full flex flex-col sm:flex-row justify-around items-center gap-y-0.5 px-4 ">
         <div className="flex flex-col sm:flex-row justify-center items-center gap-x-2">
           <p className="font-poppins text-secondaryText  text-sm md:text-base text-center ">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
