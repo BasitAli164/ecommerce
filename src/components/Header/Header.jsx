@@ -8,9 +8,9 @@ export default function Header() {
     const [searchText, setSearchText]=useState("")
     console.log(searchText)
   return (
-    <>
+    <header>
     <AnnouncementBar/>
-    <header className=''>
+    <nav className=''>
         <div>
             <h1>Exclusive</h1>
             <ul>
@@ -32,8 +32,8 @@ export default function Header() {
             </div>
         </div>
 
-    </header>
+    </nav>
       
-    </>
+    </header>
   )
 }
