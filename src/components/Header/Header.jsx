@@ -10,10 +10,10 @@ export default function Header() {
   return (
     <header className='w-full'>
     <AnnouncementBar/>
-    <nav className='bg-red-700 container  flex justify-around items-center py-5'>
-        <div className='max-w-[1000px] border-2 border-black border-dashed  bg-amber-300 flex justify-between items-center gap-10'>
+    <nav className='w-full bg-red-700 container  flex justify-around items-center py-5'>
+        <div className='max-w-[1000px] border-2 border-black border-dashed  bg-amber-300 flex justify-between items-center gap-32'>
             <h1 className='text-3xl font-semibold'>Exclusive</h1>
-            <ul className='flex justify-center items-center gap-4'>
+            <ul className='flex justify-center items-center gap-6'>
                 <li><Link href={'/'}>Home</Link></li>
                 <li><Link href={'/contact'}>Contact</Link></li>
                 <li><Link href={'/about'}>About</Link></li>
@@ -21,7 +21,7 @@ export default function Header() {
                 
             </ul>
         </div>
-        <div className='flex justify-center items-center border-4 border-green-400'>
+        <div className='flex justify-center items-center gap-10 border-4 border-green-400'>
             <div className='flex justify-center items-center'>
                 <input className='border-2 border-black  outline-none ' type="text" name="searchText" id="searchText" onChange={(e)=>setSearchText(e.target.value)}/>
                 <Search className='w-6'/>
