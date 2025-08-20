@@ -15,6 +15,11 @@ export default function Header() {
     { href: "/signup", label: "SignUp" },
   ];
   console.log(searchText);
+
+
+  const handleSearchData=()=>{
+    /* work after making api*/
+  }
   return (
     <header className="w-full">
       <AnnouncementBar />
@@ -39,15 +44,15 @@ export default function Header() {
           </ul>
         </div>
         <div className="flex justify-center items-center gap-10 border-4 border-green-400">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center border-1 p-1 border-white border-dashed">
             <input
-              className="border-2 border-black  outline-none "
+              className="  outline-none "
               type="text"
               name="searchText"
               id="searchText"
               onChange={(e) => setSearchText(e.target.value)}
             />
-            <Search className="w-6" />
+            <Search className="w-6" onClick={handleSearchData}/>
           </div>
           <div className="flex">
             <Heart className="w-6 " />
