@@ -1,9 +1,12 @@
-import React from 'react'
+'use client'
+import  { useState } from 'react'
 import AnnouncementBar from './AnnouncementBar'
 import Link from 'next/link'
-import { Search } from 'lucide-react'
+import { Heart, Search, ShoppingCart } from 'lucide-react'
 
 export default function Header() {
+    const [searchText, setSearchText]=useState("")
+    console.log(searchText)
   return (
     <>
     <AnnouncementBar/>
@@ -20,8 +23,12 @@ export default function Header() {
         </div>
         <div>
             <div>
-                <input type="text" name="searchText" id="searchText" onChange={}
+                <input type="text" name="searchText" id="searchText" onChange={(e)=>setSearchText(e.target.value)}/>
                 <Search width={25} height={25}/>
+            </div>
+            <div>
+                <Heart/>
+                <ShoppingCart/>
             </div>
         </div>
 
