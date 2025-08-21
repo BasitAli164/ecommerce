@@ -1,6 +1,7 @@
 import { HeartIcon, SearchIcon, ShoppingCart, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 const menuList = [
   { href: "/", lable: "Home" },
   { href: "/contact", lable: "Contact" },
@@ -8,6 +9,32 @@ const menuList = [
   { href: "/signup", lable: "Sign Up" },
 ];
 export default function Navbar() {
+      const [innerWidth,setInnerWidth]=useState(window.innerWidth)
+      const [togle,setToggle]=useState(false)
+
+
+      console.log(innerWidth)
+
+  useEffect(()=>{
+    const handleInnerWidth=()=>{
+      if(innerWidth<800){
+        setInnerWidth(innerWidth)
+        setToggle(true)
+        console.log(innerWidth)
+
+        console.log("Width: ",innerWidth)
+      }else{
+        setToggle(false)
+
+      }
+
+    }
+
+    handleInnerWidth()
+    return ()=>removeEventListener("resize",handleInnerWidth)
+
+
+  },[])
 
     const pathname=usePathname()
   return (
