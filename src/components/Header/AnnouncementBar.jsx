@@ -3,8 +3,8 @@ import React from "react";
 
 export default function AnnouncementBar() {
   return (
-    <div className="w-full h-[48px] bg-[#]">
-      <div>
+    <div className="w-full h-[48px] bg-[#000] text-white">
+      <div className="flex">
         <div>
           <p>
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
