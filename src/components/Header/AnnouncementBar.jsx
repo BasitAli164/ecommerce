@@ -11,7 +11,11 @@ export default function AnnouncementBar() {
         </div>
         <div>
            <select name="language" id="language">
-            
+            <option value="en-US">English (United States)</option>
+            <option value="en-GB">English (United Kingdom)</option>
+            <option value="en-CA">English (Canada)</option>
+            <option value="en-AU">English (Australia)</option>
+            <option value="en-NZ">English (New Zeeland)</option>
             
            </select>
             
