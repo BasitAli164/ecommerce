@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AnnouncementBar() {
   return (
-    <div>
+    <div className="w-full h-[48px] bg-[#]">
       <div>
         <div>
           <p>
