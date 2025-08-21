@@ -3,6 +3,11 @@
 @import "tailwindcss";
 
 @theme{
-    #
+    /* Text Color */
+    --text-primary:"#000000";
+    --text-secondary:"#FAFAFA";
+    /* Background Color */
+    --color-primary:"#fafafa";
+    --color-secondary:"#000"
 
 }
