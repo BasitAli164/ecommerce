@@ -17,10 +17,14 @@ export default function Navbar() {
 
   useEffect(()=>{
     const handleInnerWidth=()=>{
-      if(innerWidth<800){
-        setInnerWidth(innerWidth)
+
+      const width= window.innerWidth
+      if(width<800){
+
+        addEventListener('resize',setInnerWidth(width))
+        // setInnerWidth(innerWidth)
         setToggle(true)
-        console.log(innerWidth)
+        console.log(width)
 
         console.log("Width: ",innerWidth)
       }else{
@@ -34,7 +38,7 @@ export default function Navbar() {
     return ()=>removeEventListener("resize",handleInnerWidth)
 
 
-  },[])
+  },[innerWidth])
 
     const pathname=usePathname()
   return (
