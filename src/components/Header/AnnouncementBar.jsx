@@ -10,9 +10,9 @@ export default function AnnouncementBar() {
             <Link href={'#'}>ShopNow</Link>
         </div>
         <div>
-           <select name="English-US" id="en-US">
-            <option value="English-GB">English-GB</option>
-            <option value="English-GB">English-GB</option>
+           <select name="language" id="language">
+            
+            
            </select>
             
         </div>
