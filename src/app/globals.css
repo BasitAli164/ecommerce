@@ -4,10 +4,11 @@
 
 @theme{
     /* Text Color */
-    --text-primary:"#000000";
-    --text-secondary:"#FAFAFA";
+    --color-primaryText:#000;
+    --color-secondaryText:#fafafa;
     /* Background Color */
-    --color-primary:"#fafafa";
-    --color-secondary:"#000"
+    --color-bgPrimary:#000;
+    --color-bgSecondary:#fafafa;
+    
 
 }

@@ -3,17 +3,17 @@ import React from "react";
 
 export default function AnnouncementBar() {
   return (
-    <div className="w-full h-[48px] bg-primary text-primary ">
-      <div className="container flex">
-        <div className="">
-          <p className="font-poppins">
+    <div className="w-full h-[48px] bg-bgPrimary ">
+      <div className="container max-w-[1400px] flex justify-around items-center">
+        <div className="flex gap-2">
+          <p className="font-poppins text-secondaryText">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           </p>
-            <Link className="underline" href={"#"}>ShopNow</Link>
+            <Link className="underline text-secondaryText" href={"#"}>ShopNow</Link>
          
         </div>
         <div>
-          <select name="language" id="language">
+          <select name="language" id="language" className="text-secondaryText outline-none">
             <option value="en-US">English (United States)</option>
             <option value="en-GB">English (United Kingdom)</option>
             <option value="en-CA">English (Canada)</option>
