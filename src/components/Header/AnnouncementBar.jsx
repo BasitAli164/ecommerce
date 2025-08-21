@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AnnouncementBar() {
   return (
-    <div className="w-full h-[48px] bg-[#000] text-[#FAFAFA] ">
+    <div className="w-full h-[48px] bg-primary text-primary ">
       <div className="container flex">
         <div className="">
           <p className="font-poppins">
