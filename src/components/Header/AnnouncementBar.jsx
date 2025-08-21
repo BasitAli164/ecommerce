@@ -3,13 +3,14 @@ import React from "react";
 
 export default function AnnouncementBar() {
   return (
-    <div className="w-full h-[48px] bg-[#000] text-white">
-      <div className="flex">
-        <div>
-          <p>
+    <div className="w-full h-[48px] bg-[#000] text-[#FAFAFA] ">
+      <div className="container flex">
+        <div className="">
+          <p className="font-poppins">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           </p>
-          <Link href={"#"}>ShopNow</Link>
+            <Link className="underline" href={"#"}>ShopNow</Link>
+         
         </div>
         <div>
           <select name="language" id="language">
