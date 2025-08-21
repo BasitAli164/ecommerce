@@ -9,6 +9,10 @@
     /* Background Color */
     --color-bgPrimary:#000;
     --color-bgSecondary:#fafafa;
+
+
+    /* Fonts */
+    --font-poppins:"poppins"
     
 
 }
