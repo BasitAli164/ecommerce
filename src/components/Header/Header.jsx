@@ -25,38 +25,35 @@ export default function Header() {
   return (
     <header className="border-b border-secondaryText border-solid fixed w-full">
       <AnnouncementBar />
-      <nav className="w-full flex   justify-between items-center p-8">
-        <div className="flex gap-20">
-          <h1 className="font-bold text-2xl text-secondaryText">Exclusive</h1>
-          <ul className=" gap-5 hidden sm:flex">
-            {links.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={pathname === link.href ? "active-link" : ""}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="flex">
-          <div className="flex">
-            <input
-              type="text"
-              name="searchText"
-              id="searchText"
-              onChange={(e) => setSearchText(e.target.value)}
-            />
-            <Search onClick={() => handleSearchData(searchText)} />
-          </div>
-          <div className="flex">
-            <Heart />
-            <ShoppingCart />
-          </div>
-        </div>
-      </nav>
+    <nav>
+  <div>
+    <h1>Exclusive</h1>
+    <ul>
+      {links.map((link) => (
+        <li key={link.href}>
+          <Link href={link.href}>{link.label}</Link>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div>
+    <div>
+      <input
+        type="text"
+        name="searchText"
+        id="searchText"
+        onChange={(e) => setSearchText(e.target.value)}
+      />
+      <Search onClick={() => handleSearchData(searchText)} />
+    </div>
+    <div>
+      <Heart />
+      <ShoppingCart />
+    </div>
+  </div>
+</nav>
+
     </header>
   );
 }
