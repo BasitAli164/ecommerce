@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [searchText, setSearchText] = useState("");
+  const [toggle,setToggle]=useState(false)
   const pathname = usePathname();
 
   const links = [
@@ -22,12 +23,12 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header className="border-b border-secondaryText border-solid">
       <AnnouncementBar />
-      <nav className="w-full bg-red-400 flex flex-col sm:flex-row  justify-between items-center p-8">
+      <nav className="w-full flex   justify-between items-center p-8">
         <div className="flex gap-20">
-          <h1>Exclusive</h1>
-          <ul className="flex gap-5">
+          <h1 className="font-bold text-2xl text-secondaryText">Exclusive</h1>
+          <ul className=" gap-5 hidden sm:flex">
             {links.map((link) => (
               <li key={link.href}>
                 <Link
