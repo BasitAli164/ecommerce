@@ -1,13 +1,30 @@
 import { HeartIcon, SearchIcon, ShoppingBag, ShoppingCart } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [searchField, setSearchField] = useState("");
+  const [width, setWidth]=useState(null)
   const [toggle,setToggle]=useState(false)
   const pathname = usePathname();
+  console.log(toggle)
 
+
+  useEffect(()=>{
+    const handleSearchBox=()=>{
+
+        const width=window.innerWidth
+        console.log(width)
+
+        setWidth(width)
+        if(width<786){
+            console.log("inner")
+            setToggle(!toggle)
+        }
+    }
+    handleSearchBox()
+  },[width])
   const menuList = [
     { href: "/", label: "Home" },
     { href: "/contact", label: "Contact" },
@@ -16,11 +33,10 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-screen h-20 flex flex-col sm:flex-row justify-between items-center p-4 bg-amber-500">
-      <div>
-        <h1>Exclusive</h1>
-      </div>
-      <ul className="flex">
+    <nav className="w-screen flex justify-around items-center py-4 bg-amber-500">
+        <h1 className="font-semibold text-lg  md:text-3xl">Exclusive</h1>
+     
+      <ul className="flex justify-center items-center gap-3 text-lg ">
         {menuList.map((item) => (
           <li key={item.label}>
             <Link
@@ -32,18 +48,19 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      <div className="flex justify-center items-center border border-white  ">
+      
+      <div className="flex justify-center items-center gap-2 ">
+        <div className="flex justify-center items-center border border-white  ">
         <input
           type="text"
           name="searchfield"
           id="searchfield"
           onChange={(e) => setSearchField(e.target.value)}
           onClick={()=>setToggle(!toggle)}
-          className="border border-white border-solid"
+          className={toggle?"hidden sm:inline outline-none border-none":""}
         />
         <SearchIcon />
       </div>
-      <div className="flex justify-center items-center gap-2 ">
         <ShoppingCart />
         <HeartIcon />
       </div>
