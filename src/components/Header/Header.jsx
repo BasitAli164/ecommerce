@@ -24,8 +24,8 @@ export default function Header() {
   return (
     <header className="">
       <AnnouncementBar />
-      <nav className="w-full bg-red-700 container  flex justify-around items-center py-5">
-        <div className="max-w-[1000px] border-2 border-black border-dashed  bg-amber-300 flex justify-between items-center gap-32">
+      <nav className="w-full bg-red-700   flex justify-around items-center py-5">
+        <div className="w-full max-w-[1000px] border-2 border-black border-dashed  bg-amber-300 flex justify-between items-center gap-32">
           <h1 className="text-2xl font-semibold tracking-[1px]">Exclusive</h1>
           <ul className="flex justify-center items-center gap-6">
             {links.map((link) => (
