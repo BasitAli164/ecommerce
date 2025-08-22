@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header>
       <AnnouncementBar />
-      <nav className="w-full bg-red-400 flex flex-col sm:flex-row  justify-between items-center px-8 ">
+      <nav className="w-full bg-red-400 flex flex-col sm:flex-row  justify-between items-center p-8">
         <div className="flex gap-20">
           <h1>Exclusive</h1>
           <ul className="flex gap-5">
