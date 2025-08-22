@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header>
       <AnnouncementBar />
-      <nav className="w-full bg-red-400 flex  justify-between items-center px-8 ">
+      <nav className="w-full bg-red-400 flex flex-col sm:flex-row  justify-between items-center px-8 ">
         <div className="flex gap-20">
           <h1>Exclusive</h1>
           <ul className="flex gap-5">
@@ -40,8 +40,8 @@ export default function Header() {
             ))}
           </ul>
         </div>
-        <div>
-          <div>
+        <div className="flex">
+          <div className="flex">
             <input
               type="text"
               name="searchText"
@@ -50,7 +50,7 @@ export default function Header() {
             />
             <Search onClick={() => handleSearchData(searchText)} />
           </div>
-          <div>
+          <div className="flex">
             <Heart />
             <ShoppingCart />
           </div>
