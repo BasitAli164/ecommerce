@@ -17,7 +17,8 @@ export default function Header() {
   console.log(searchText);
 
 
-  const handleSearchData=()=>{
+  const handleSearchData=(searchData)=>{
+    console.log("Search Data",searchData)
     /* work after making api*/
   }
   return (
@@ -52,7 +53,7 @@ export default function Header() {
               id="searchText"
               onChange={(e) => setSearchText(e.target.value)}
             />
-            <Search className="w-6" onClick={handleSearchData}/>
+            <Search className="w-6" onClick={()=>handleSearchData(searchText)}/>
           </div>
           <div className="flex">
             <Heart className="w-6 " />
