@@ -12,7 +12,7 @@ export default function AnnouncementBar() {
             <Link className="underline text-secondaryText font-semibold text-sm md:text-base" href={"#"}>ShopNow</Link>
          
         </div>
-        <div className=" flex flex-col justify-center items-center gap-y-4">
+        <div className=" hidden sm:flex flex-col justify-center items-center gap-y-4">
           <select name="language" id="language" className="text-secondaryText  outline-none rounded py-2 px-3 md:pr-4">
             <option value="en-US" className="text-primaryText text-sm">English (US)</option>
             <option value="en-GB" className="text-primaryText text-sm">English (UK)</option>

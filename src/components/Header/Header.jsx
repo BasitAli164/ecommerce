@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className="border-b border-secondaryText border-solid fixed w-full">
       <AnnouncementBar />
-      <nav className="w-full flex   justify-between items-center ">
+      <nav className="w-full flex   justify-between items-center p-8">
         <div className="flex gap-20">
           <h1 className="font-bold text-2xl text-secondaryText">Exclusive</h1>
           <ul className=" gap-5 hidden sm:flex">
