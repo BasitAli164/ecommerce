@@ -22,7 +22,7 @@ export default function Header() {
     /* work after making api*/
   }
   return (
-    <header className="w-full">
+    <header className="">
       <AnnouncementBar />
       <nav className="w-full bg-red-700 container  flex justify-around items-center py-5">
         <div className="max-w-[1000px] border-2 border-black border-dashed  bg-amber-300 flex justify-between items-center gap-32">
