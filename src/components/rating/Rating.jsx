@@ -1,10 +1,10 @@
 import { Star } from 'lucide-react'
 import React from 'react'
 
-export default function Rating(value,max=5) {
+export default function Rating({value,max=5}) {
     const stars=[]
 
-    for(i=1;i<=max;i++){
+    for(let i=1;i<=max;i++){
         if(i<=Math.floor(value)){
             stars.push(
                 <Star

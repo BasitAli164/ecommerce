@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Rating from "../rating/Rating";
 
 const sliderMenuList = [
   { href: "/womenfashion", label: "Women's Fashion" },
@@ -31,6 +32,8 @@ export default function Slider() {
           </Link>
         </p>
       ))}
+
+      <Rating value={3}/>
     </div>
   );
 }
