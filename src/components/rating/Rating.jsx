@@ -1,4 +1,4 @@
-import { Star } from 'lucide-react'
+import { Star, StarHalf } from 'lucide-react'
 import React from 'react'
 
 export default function Rating({value,max=5}) {
@@ -17,11 +17,16 @@ export default function Rating({value,max=5}) {
             )
         }else if(i-value<i && i>value){
             stars.push(
-                <Star
+                <StarHalf
                 key={i}
                 className='w-5 h-5 text-yellow-500'
                 />
             )
+        }else{
+            <Star
+            key={i}
+            className='w-5 h-5 text-yellow-500'
+            />
         }
     }
 
