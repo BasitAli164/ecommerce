@@ -79,3 +79,9 @@ export const heroData = [
     mainImage: "/Hero/iphon.jpg",
   },
 ];
+
+
+export const cartsData=[
+    {id:"1",title:"IPS LCD Gamming Monitor",oPrice:"$370",sPrice:"$300",ratingValue:4}
+
+]
