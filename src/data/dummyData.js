@@ -1,11 +1,4 @@
-
-export const dummyData=[
-    {text:"Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!"}
-]
-
-
-
-
+// Dummy Data
 
 export const heroData = [
   {
@@ -80,8 +73,115 @@ export const heroData = [
   },
 ];
 
-
-export const cartsData=[
-    {id:"1",title:"IPS LCD Gamming Monitor",oPrice:"$370",sPrice:"$300",ratingValue:4,totalRating:50},
-
-]
+export const cartsData = [
+  {
+    id: "1",
+    title: "IPS LCD Gaming Monitor",
+    oPrice: "$370",
+    sPrice: "$300",
+    ratingValue: 4,
+    totalRating: 50,
+    salesPer: "-25%",
+    image: "/product/lcd.png",
+  },
+  {
+    id: "2",
+    title: "Wireless Noise Cancelling Headphones",
+    oPrice: "$250",
+    sPrice: "$199",
+    ratingValue: 5,
+    totalRating: 120,
+    salesPer: "-20%",
+    image: "/product/headphones.png",
+  },
+  {
+    id: "3",
+    title: "Mechanical RGB Gaming Keyboard",
+    oPrice: "$120",
+    sPrice: "$89",
+    ratingValue: 4,
+    totalRating: 75,
+    salesPer: "-26%",
+    image: "/product/keyboard.png",
+  },
+  {
+    id: "4",
+    title: "Ergonomic Office Chair",
+    oPrice: "$450",
+    sPrice: "$360",
+    ratingValue: 4,
+    totalRating: 200,
+    salesPer: "-20%",
+    image: "/product/chair.png",
+  },
+  {
+    id: "5",
+    title: "4K Ultra HD Smart TV",
+    oPrice: "$1200",
+    sPrice: "$950",
+    ratingValue: 5,
+    totalRating: 310,
+    salesPer: "-21%",
+    image: "/product/tv.png",
+  },
+  {
+    id: "6",
+    title: "Portable Bluetooth Speaker",
+    oPrice: "$80",
+    sPrice: "$59",
+    ratingValue: 4,
+    totalRating: 90,
+    salesPer: "-26%",
+    image: "/product/speaker.png",
+  },
+  {
+    id: "7",
+    title: "Smartwatch Series 6",
+    oPrice: "$400",
+    sPrice: "$320",
+    ratingValue: 5,
+    totalRating: 150,
+    salesPer: "-20%",
+    image: "/product/smartwatch.png",
+  },
+  {
+    id: "8",
+    title: "Stainless Steel Microwave Oven",
+    oPrice: "$300",
+    sPrice: "$249",
+    ratingValue: 4,
+    totalRating: 60,
+    salesPer: "-17%",
+    image: "/product/microwave.png",
+  },
+  {
+    id: "9",
+    title: "Professional DSLR Camera",
+    oPrice: "$1500",
+    sPrice: "$1250",
+    ratingValue: 5,
+    totalRating: 95,
+    salesPer: "-17%",
+    image: "/product/camera.png",
+  },
+  {
+    id: "10",
+    title: "High-Performance Laptop",
+    oPrice: "$2000",
+    sPrice: "$1750",
+    ratingValue: 5,
+    totalRating: 220,
+    salesPer: "-12%",
+    image: "/product/laptop.png",
+  },
+  {
+    id: "11",
+    title: "Air Purifier with HEPA Filter",
+    oPrice: "$300",
+    sPrice: "$240",
+    ratingValue: 4,
+    totalRating: 70,
+    salesPer: "-20%",
+    image: "/product/airpurifier.png",
+  },
+];
