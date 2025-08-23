@@ -2,22 +2,17 @@ import React, { useEffect, useState } from "react";
 import { heroData } from "@/data/dummyData";
 import Link from "next/link";
 import { MoveLeft, MoveRight } from "lucide-react";
+import { useHero } from "@/context/heroContext";
+
 
 export default function Hero() {
-  const [index, setIndex] = useState(0);
-  const handleNext=()=>{
-    setIndex(prev=>(prev+1)%heroData.length)
 
-  }
+  const {index,handleNext,handlePrevious}=useHero()
   
-  const handlePrevious=()=>{
-    setIndex(prev=>(prev-1+heroData.length)%heroData.length)
-  }
-
 
   useEffect(()=>{
     const interval=setInterval(() => {
-      setIndex(prev=>(prev+1)%heroData.length)
+      handleNext()
     }, 30000);
 
     return ()=>clearInterval(interval)

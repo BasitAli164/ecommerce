@@ -6,8 +6,9 @@ export const heroContext=createContext();
 
 
 // Create Provider
-export default function heroProvider({children}) {
+export default function HeroProvider({children}) {
     const [index,setIndex]=useState(0)
+    console.log("Data from context",index)
 
     const handleNext=()=>{
         setIndex(prev=>(prev+1)%heroData.length)
