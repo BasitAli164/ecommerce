@@ -42,8 +42,8 @@ export default function Navbar() {
           <User className="size-[16px] sm:size-[20px] md:size-[28px]" />
           <Menu className="sm:hidden size-[16px] sm:size-[20px] md:size-[24px]" onClick={()=>setToggle(!togle)}/>
          <div className=" absolute top-0 -right-12 p-8 text-center sm:hidden">
-            {
-             togle &&(
+            
+             
                <ul>
                  {menuList.map((item) => (
               <li key={item} className="text-lg sm:text-xl">
@@ -51,8 +51,8 @@ export default function Navbar() {
               </li>
             ))}
               </ul>
-             )
-            }
+             
+            
           </div>
         </div>
       </div>
