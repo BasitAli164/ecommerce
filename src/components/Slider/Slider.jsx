@@ -18,7 +18,7 @@ export default function Slider() {
   return (
     <div className="w-full  md:w-40 xl:w-48 flex flex-wrap gap-4 md:flex-col border-b md:border-r-2 border-solid border-gray-200 p-2 md:p-5">
       {sliderMenuList.map((item) => (
-        <p className="text-[10px] md:text-sm mt-2 text-center">
+        <p key={item.href} className="text-[10px] md:text-sm mt-2 text-center">
           <Link
             className={
               pathname === item.href
