@@ -7,12 +7,12 @@ import { MoveRight } from "lucide-react";
 export default function Hero() {
   const [data, setData] = useState(heroData);
   return (
-    <div className=" max-w-10/12 w-full p-10  rounded-sm shadow-2xl bg-bgPrimary text-secondaryText">
+    <div className=" max-w-[90%] w-full  sm:p-5  rounded-sm shadow-2xl bg-bgPrimary text-secondaryText">
     
         {data.map((item) => (
-          <div key={item.id} className="w-full grid grid-cols-2">
-            <div>
-             <div className="flex items-center">
+          <div key={item.id} className="w-full flex flex-col-reverse sm:flex-row overflow-hidden">
+            <div className="flex flex-col gap-2 justify-center items-center">
+             <div className=" flex items-center">
                <img
                 src={item.logoImage}
                 alt={item.brandName}
@@ -20,7 +20,7 @@ export default function Hero() {
               />
               <p className="text-base sm:text-lg">{item.brandName}</p>
              </div>
-             <div className="my-4">
+             <div className="flex flex-col items-center  justify-center mb-10 sm:0 gap-4">
               <h1 className="text-xl sm:text-4xl text-left">Up to 10% off Voucher</h1>
               <div className="flex items-center gap-1">
                 <Link className="underline sm:text-lg" href={""}>Shop Now</Link>
@@ -29,8 +29,8 @@ export default function Hero() {
              </div>
 
             </div>
-            <div>
-              <img src={item.mainImage} alt={item.brandName}  className="w-52 sm:w-[500px] " />
+            <div className="flex justify-center">
+              <img src={item.mainImage} alt={item.brandName}  className="w-52 sm:w-[500px]  " />
             </div>
 
           </div>
@@ -47,3 +47,5 @@ export default function Hero() {
     </div>
   );
 }
+
+
