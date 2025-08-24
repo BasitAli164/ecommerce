@@ -20,7 +20,7 @@ export default function Navbar() {
     const handleInnerWidth=()=>{
 
       const width= window.innerWidth
-      if(width<700){
+      if(width<640){
 
        
         setInnerWidth(width)
@@ -52,7 +52,7 @@ export default function Navbar() {
         <div>
           {
             togle &&(
-              <ul className="flex justify-center items-center gap-2">
+              <ul className="flex justify-center items-center gap-4">
             {menuList.map((item) => (
               <li key={item} className="text-lg sm:text-xl">
                 <Link href={item.href} className={pathname===item.href?"underline ":""}>{item.lable}</Link>
@@ -64,11 +64,11 @@ export default function Navbar() {
         </div>
 
         <div className="flex justify-center items-center gap-3">
-          <SearchIcon className="size-[16px] sm:size-[20px] md:size-[28px]" />
-          <HeartIcon className="size-[16px] sm:size-[20px] md:size-[28px]" />
-          <ShoppingCart className="size-[16px] sm:size-[20px] md:size-[28px]" />
+          <SearchIcon className="size-[16px] sm:size-[20px] md:size-[24px]" />
+          <HeartIcon className="size-[16px] sm:size-[20px] md:size-[24px]" />
+          <ShoppingCart className="size-[16px] sm:size-[20px] md:size-[24px]" />
           <User className="size-[16px] sm:size-[20px] md:size-[28px]" />
-          <Menu className="sm:hidden size-[16px] sm:size-[20px] md:size-[28px]"/>
+          <Menu className="sm:hidden size-[16px] sm:size-[20px] md:size-[24px]"/>
         </div>
       </div>
       
