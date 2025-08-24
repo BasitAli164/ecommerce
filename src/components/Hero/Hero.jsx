@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { heroData } from "@/data/dummyData";
 import Link from "next/link";
-import { MoveRight } from "lucide-react";
+import { MoveLeft, MoveRight } from "lucide-react";
 
 export default function Hero() {
   const [data, setData] = useState(heroData);
@@ -36,13 +36,9 @@ export default function Hero() {
           </div>
         ))}
       
-      <div className="flex justify-center items-center ">
-        <input type="radio" name="color" id="" className="" />
-        <input type="radio" name="color" id="" className="" />
-        <input type="radio" name="color" id="" className="" />
-        <input type="radio" name="color" id="" className="" />
-        <input type="radio" name="color" id="" className="" />
-        <input type="radio" name="color" id="" className="" />
+      <div className="flex justify-between mx-10 items-center ">
+        <MoveLeft/>
+        <MoveRight/>
       </div>
     </div>
   );
