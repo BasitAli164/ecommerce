@@ -1,4 +1,5 @@
-import { HeartIcon, SearchIcon, ShoppingCart, User } from "lucide-react";
+'use client'
+import { HeartIcon, Menu, SearchIcon, ShoppingCart, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -9,8 +10,8 @@ const menuList = [
   { href: "/signup", lable: "Sign Up" },
 ];
 export default function Navbar() {
-      const [innerWidth,setInnerWidth]=useState(window.innerWidth)
-      const [togle,setToggle]=useState(false)
+      const [innerWidth,setInnerWidth]=useState(0)
+      const [togle,setToggle]=useState(true)
 
 
       console.log(innerWidth)
@@ -19,22 +20,25 @@ export default function Navbar() {
     const handleInnerWidth=()=>{
 
       const width= window.innerWidth
-      if(width<800){
+      if(width<700){
 
-        addEventListener('resize',setInnerWidth(width))
-        // setInnerWidth(innerWidth)
-        setToggle(true)
+       
+        setInnerWidth(width)
+        setToggle(false)
         console.log(width)
 
-        console.log("Width: ",innerWidth)
       }else{
-        setToggle(false)
+        setToggle(true)
 
       }
 
     }
 
     handleInnerWidth()
+    
+
+    window.addEventListener('resize',handleInnerWidth)
+
     return ()=>removeEventListener("resize",handleInnerWidth)
 
 
@@ -46,13 +50,17 @@ export default function Navbar() {
       <div className="w-full bg-red-600 flex justify-around items-center py-2">
         <h1 className="font-bold text-lg sm:text-xl md:text-3xl">Exclusive</h1>
         <div>
-          <ul className="flex justify-center items-center gap-2">
+          {
+            togle &&(
+              <ul className="flex justify-center items-center gap-2">
             {menuList.map((item) => (
               <li key={item} className="text-lg sm:text-xl">
                 <Link href={item.href} className={pathname===item.href?"underline ":""}>{item.lable}</Link>
               </li>
             ))}
           </ul>
+            )
+          }
         </div>
 
         <div className="flex justify-center items-center gap-3">
@@ -60,6 +68,7 @@ export default function Navbar() {
           <HeartIcon className="size-[16px] sm:size-[20px] md:size-[28px]" />
           <ShoppingCart className="size-[16px] sm:size-[20px] md:size-[28px]" />
           <User className="size-[16px] sm:size-[20px] md:size-[28px]" />
+          <Menu className="sm:hidden size-[16px] sm:size-[20px] md:size-[28px]"/>
         </div>
       </div>
       
