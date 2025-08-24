@@ -5,6 +5,10 @@ import { MoveLeft, MoveRight } from "lucide-react";
 
 export default function Hero() {
   const [data, setData] = useState(heroData);
+  const handleNext=()=>{
+
+  }
+  const handlePrevious=()=>{}
   return (
     <div className=" max-w-[90%] w-full  sm:p-5  rounded-sm shadow-2xl bg-bgPrimary text-secondaryText">
       {data.map((item) => (
@@ -44,8 +48,8 @@ export default function Hero() {
       ))}
 
       <div className="flex justify-between mx-5 items-center ">
-        <MoveLeft />
-        <MoveRight />
+        <MoveLeft onClick={handlePrevious} />
+        <MoveRight onClick={handleNext} />
       </div>
     </div>
   );
