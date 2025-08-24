@@ -9,7 +9,14 @@ export default function Hero() {
       <div className="flex flex-col-reverse md:flex-row justify-between items-center flex-wrap">
         <div className=" flex flex-col justify-center gap-4 ml-5">
           <div className="flex gap-3 items-center">
-            <AppleIcon className="text-secondaryText size-6 md:size-14" />
+             <Image
+    src="/hero/apple.png"
+    alt="Iphone Image"
+    width={75}
+    height={75}
+    priority
+    className="object-contain"
+  />
             <p className="text-sm md:text-lg text-secondaryText">iPhone 14 Series</p>
           </div>
           <h1 className="text-secondaryText text-lg md:text-4xl lg:text-6xl tracking-tight">
