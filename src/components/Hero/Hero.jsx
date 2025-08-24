@@ -1,17 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { heroData } from "@/data/dummyData";
 import Link from "next/link";
 import { MoveLeft, MoveRight } from "lucide-react";
 
 export default function Hero() {
-  const [data, setData] = useState(heroData);
+  const [index, setIndex] = useState(0);
   const handleNext=()=>{
+    setIndex(prev=>(prev+1)%heroData.length)
 
   }
-  const handlePrevious=()=>{}
+  
+  const handlePrevious=()=>{
+    setIndex(prev=>(prev-1+heroData.length)%heroData.length)
+  }
+
+
+  useEffect(()=>{
+    const interval=setInterval(() => {
+      setIndex(prev=>(prev+1)%heroData.length)
+    }, 3000);
+
+    return ()=>clearInterval(interval)
+  },[])
+
+
+  const item=heroData[index]
   return (
     <div className=" max-w-[90%] w-full  sm:p-5  rounded-sm shadow-2xl bg-bgPrimary text-secondaryText">
-      {data.map((item) => (
+      
         <div
           key={item.id}
           className="w-full flex flex-col-reverse sm:flex-row sm:gap-10 overflow-hidden"
@@ -45,7 +61,7 @@ export default function Hero() {
             />
           </div>
         </div>
-      ))}
+      
 
       <div className="flex justify-between mx-5 items-center ">
         <MoveLeft onClick={handlePrevious} />
