@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import { heroData } from "@/data/dummyData";
 import Link from "next/link";
@@ -10,7 +9,7 @@ export default function Hero() {
     <div className=" max-w-[90%] w-full  sm:p-5  rounded-sm shadow-2xl bg-bgPrimary text-secondaryText">
     
         {data.map((item) => (
-          <div key={item.id} className="w-full flex flex-col-reverse sm:flex-row overflow-hidden">
+          <div key={item.id} className="w-full flex flex-col-reverse sm:flex-row sm:gap-10 overflow-hidden">
             <div className="flex flex-col gap-2 justify-center items-center">
              <div className=" flex items-center">
                <img
@@ -29,14 +28,14 @@ export default function Hero() {
              </div>
 
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center items-center">
               <img src={item.mainImage} alt={item.brandName}  className="w-52 sm:w-[500px]  " />
             </div>
 
           </div>
         ))}
       
-      <div className="flex justify-between mx-10 items-center ">
+      <div className="flex justify-between mx-5 items-center ">
         <MoveLeft/>
         <MoveRight/>
       </div>
