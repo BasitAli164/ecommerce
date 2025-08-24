@@ -66,7 +66,7 @@ export const heroData = [
   },
   {
     id: "9",
-    logoImage: "/Hero/lapple.png",
+    logoImage: "/Hero/apple.png",
     brandName: "L'Oréal - Health & Beauty",
     title: "Flat 18% Off Skincare",
     mainImage: "/Hero/iphon.jpg",

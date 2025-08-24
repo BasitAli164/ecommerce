@@ -18,7 +18,7 @@ export default function Hero() {
   useEffect(()=>{
     const interval=setInterval(() => {
       setIndex(prev=>(prev+1)%heroData.length)
-    }, 3000);
+    }, 30000);
 
     return ()=>clearInterval(interval)
   },[])
@@ -37,13 +37,13 @@ export default function Hero() {
               <img
                 src={item.logoImage}
                 alt={item.brandName}
-                className="w-16 "
+                className="w-10 sm:w-16 "
               />
-              <p className="text-base sm:text-lg">{item.brandName}</p>
+              <p className="text-12 sm:text-lg">{item.brandName}</p>
             </div>
             <div className="flex flex-col items-center  justify-center mb-10 sm:0 gap-4">
-              <h1 className="text-xl sm:text-4xl text-left">
-                Up to 10% off Voucher
+              <h1 className="text-lg sm:text-4xl text-center">
+               {item.title}
               </h1>
               <div className="flex items-center gap-1">
                 <Link className="underline sm:text-lg" href={""}>
@@ -64,8 +64,8 @@ export default function Hero() {
       
 
       <div className="flex justify-between mx-5 items-center ">
-        <MoveLeft onClick={handlePrevious} />
-        <MoveRight onClick={handleNext} />
+        <MoveLeft onClick={handlePrevious}  className="cursor-pointer"/>
+        <MoveRight onClick={handleNext}  className="cursor-pointer"/>
       </div>
     </div>
   );
