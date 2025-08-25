@@ -8,5 +8,5 @@ export const dummyData=[
 
 
 export const heroData=[
-    {id:"1",logoImage:'/hero/apple.png',brandName:"iPhone 14 Series",title:" Up to 10% off Voucher",mainImage:"/hero/iphone.jpg"}
+    {id:"1",logoImage:'/Hero/apple.png',brandName:"iPhone 14 Series",title:" Up to 10% off Voucher",mainImage:"/Hero/iphon.jpg"}
 ]
