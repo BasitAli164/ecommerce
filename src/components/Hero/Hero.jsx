@@ -16,19 +16,19 @@ export default function Hero() {
           <div className=" flex flex-col justify-center gap-4 ml-5">
             <div className="flex gap-3 items-center">
               <Image
-                src="/hero/apple.png"
-                alt="Iphone Image"
+                src={item.logoImage}
+                alt={item.brandName}
                 width={75}
                 height={75}
                 priority
                 className="object-contain"
               />
               <p className="text-sm md:text-lg text-secondaryText">
-                iPhone 14 Series
+                {item.brandName}
               </p>
             </div>
             <h1 className="text-secondaryText text-lg md:text-4xl lg:text-6xl tracking-tight">
-              Up to 10% off Voucher
+             {item.title}
             </h1>
             <div className="flex gap-2">
               <Link
@@ -43,8 +43,8 @@ export default function Hero() {
 
           <div className="relative w-[250px] h-[250px] mx-auto md:mt-10 mt-5 sm:mt-8">
             <Image
-              src="/hero/iphon.jpg"
-              alt="Iphone Image"
+              src={item.mainImage}
+              alt={item.brandName}
               fill
               sizes="250px"
               priority
