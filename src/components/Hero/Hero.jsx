@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+
+
 export default function Hero() {
   return (
     <div className="max-w-[892px] w-full h-auto bg-bgPrimary mt-10 p-4 md:p-10 mb-10 md:mb-0 mx-auto rounded-sm">
