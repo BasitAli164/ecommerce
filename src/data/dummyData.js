@@ -7,5 +7,5 @@ export const dummyData=[
 
 
 export const heroData=[
-    {}
+    {logoImage:'/hero/apple.png',brandName:"iPhone 14 Series",}
 ]
