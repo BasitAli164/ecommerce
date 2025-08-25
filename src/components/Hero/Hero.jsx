@@ -1,8 +1,8 @@
 import { heroData } from "@/data/dummyData";
-import { AppleIcon, MoveRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import  { useState } from "react";
 
 export default function Hero() {
   const [data, setData] = useState(heroData);
