@@ -41,7 +41,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative w-[250px] h-[250px] mx-auto md:mt-10 mt-5 sm:mt-8">
+          <div className="relative w-[250px] h-[250px] mx-auto md:mt-10 mt-5 sm:mt-8 overflow-hidden">
             <Image
               src={item.mainImage}
               alt={item.brandName}

@@ -16,7 +16,7 @@ const sliderMenuList = [
 export default function Slider() {
   const pathname = usePathname();
   return (
-    <div className="w-full  md:w-40 xl:w-48 flex flex-wrap gap-4 md:flex-col border-b md:border-r-2 border-solid border-gray-200 p-2 md:p-5">
+    <div className="w-full  md:w-40 xl:w-48 flex flex-wrap gap-4 md:flex-col border-b md:border-b-0 md:border-r-2 border-solid border-gray-200 p-2 md:p-5">
       {sliderMenuList.map((item) => (
         <p key={item.href} className="text-[10px] md:text-sm mt-2 text-center">
           <Link
