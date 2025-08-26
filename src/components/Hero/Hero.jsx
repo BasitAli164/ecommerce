@@ -1,9 +1,49 @@
-import React from 'react'
+import Image from "next/image";
+import React, { useState } from "react";
+import { heroData } from "@/data/dummyData";
+import Link from "next/link";
+import { MoveRight } from "lucide-react";
 
 export default function Hero() {
+  const [data, setData] = useState(heroData);
   return (
-   <div>
+    <div className=" max-w-10/12 w-full p-10  rounded-sm shadow-2xl bg-bgPrimary text-secondaryText">
+    
+        {data.map((item) => (
+          <div key={item.id} className="w-full grid grid-cols-2">
+            <div>
+             <div className="flex items-center">
+               <img
+                src={item.logoImage}
+                alt={item.brandName}
+                className="w-16 "
+              />
+              <p className="text-base sm:text-lg">{item.brandName}</p>
+             </div>
+             <div className="my-4">
+              <h1 className="text-xl sm:text-4xl text-left">Up to 10% off Voucher</h1>
+              <div className="flex items-center gap-1">
+                <Link className="underline sm:text-lg" href={""}>Shop Now</Link>
+                <MoveRight className="size-3 sm:size-5" />
+              </div>
+             </div>
+
+            </div>
+            <div>
+              <img src={item.mainImage} alt={item.brandName}  className="w-52 sm:w-[500px] " />
+            </div>
+
+          </div>
+        ))}
       
-   </div>
-  )
+      <div className="flex justify-center items-center ">
+        <input type="radio" name="color" id="" className="" />
+        <input type="radio" name="color" id="" className="" />
+        <input type="radio" name="color" id="" className="" />
+        <input type="radio" name="color" id="" className="" />
+        <input type="radio" name="color" id="" className="" />
+        <input type="radio" name="color" id="" className="" />
+      </div>
+    </div>
+  );
 }
