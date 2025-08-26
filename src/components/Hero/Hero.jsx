@@ -37,33 +37,32 @@ export default function Hero() {
               >
                 Shop Now
               </Link>
-              <MoveRight className="text-secondaryText size-3 md:size-4 mt-2" />
+              <MoveRight  />
             </div>
           </div>
 
-          <div className="relative w-[250px] h-[250px] mx-auto md:mt-10 mt-5 sm:mt-8 overflow-hidden">
+          <div >
             <Image
               src={item.mainImage}
               alt={item.brandName}
-              fill
-              sizes="250px"
-              priority
-              className="object-contain"
+              width={10}
+              height={10}
+              
             />
           </div>
         </div>
       ))}
-      <div className="flex justify-center items-center gap-5 mt-10">
-        <input type="radio" name="color" className="size-2 accent-[#DB4444] " />
-        <input type="radio" name="color" className="size-3 accent-[#DB4444]" />
+      <div >
+        <input type="radio" name="color" />
+        <input type="radio" name="color"/>
         <input
           type="radio"
           name="color"
-          className="size-5 accent-[#DB4444]"
+          
           defaultChecked
         />
-        <input type="radio" name="color" className="size-3 accent-[#DB4444]" />
-        <input type="radio" name="color" className="size-2 accent-[#DB4444]" />
+        <input type="radio" name="color" />
+        <input type="radio" name="color" />
       </div>
     </div>
   );
