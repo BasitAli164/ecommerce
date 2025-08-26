@@ -1,15 +1,20 @@
+import { MoveRight } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Hero() {
   return (
-    <div className='w-full max-w-[892px] h-[344px]  bg-amber-300'>
-      <div className='grid grid-cols-2 justify-center items-center'>
-        <div>
-          <img src="/hero/apple.png" alt="brand name" className='size-10' />
-        </div>
-
+   <div>
+      <div>
+        
       </div>
-      
-    </div>
+      <div>
+      <input type="radio" name="radio" id="radio" className='accent-[#DB4444]'/>
+      <input type="radio" name="radio" id="radio" className='accent-[#DB4444]'/>
+      <input type="radio" name="radio" id="radio" defaultChecked className='accent-[#DB4444]'/>
+      <input type="radio" name="radio" id="radio" className='accent-[#DB4444]'/>
+      <input type="radio" name="radio" id="radio" className='accent-[#DB4444]'/>
+      </div>
+   </div>
   )
 }
