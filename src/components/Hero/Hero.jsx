@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Hero() {
   const [data, setData] = useState(heroData);
   return (
-    <div className="">
+    <div className="w-full flex flex-col  justify-center items-center bg-amber-500">
       {data.map((item) => (
         <div key={item.id}>
           <div>
