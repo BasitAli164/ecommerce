@@ -7,18 +7,15 @@ import { useState } from "react";
 export default function Hero() {
   const [data, setData] = useState(heroData);
   return (
-    <div className="w-full h-auto flex flex-col  justify-center items-center bg-primaryText text-secondaryText p-4">
+    <div className="max-w-[400px] w-full md:w-max-[800px] md:w-full h-auto flex flex-col  justify-center items-center bg-primaryText text-secondaryText rounded-lg shadow-2xl md:p-4 overflow-hidden">
       {data.map((item) => (
-        <div className="flex justify-center items-center gap-5" key={item.id}>
+        <div className="flex flex-col-reverse md:flow-row items-center gap-5" key={item.id}>
           <div className="">
             <div className="flex  items-center">
-              <Image
-                src={item.logoImage}
+              <img src={item.logoImage}
                 alt={item.brandName}
-                width={50}
-                height={50}
-                priority
-              />
+                className="size-10 md:size-16"
+                />
               <p className="text-[12px] md:text-lg ">{item.brandName}</p>
             </div>
             <h1 className="text-[14px] md:text-2xl font-bold">{item.title}</h1>
@@ -29,13 +26,10 @@ export default function Hero() {
           </div>
 
           <div>
-            <Image
-              src={item.mainImage}
-              alt={item.brandName}
-              width={250}
-              height={250}
-              className="mt-10"
-            />
+            <img src={item.mainImage}
+                alt={item.brandName}
+                className="size-[120px] md:size-16 mt-10"
+                />
           </div>
         </div>
       ))}
