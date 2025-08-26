@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Hero() {
   const [data, setData] = useState(heroData);
   return (
-    <div className="max-w-[400px] w-full md:w-max-[800px] md:w-full h-auto flex flex-col  justify-center items-center bg-primaryText text-secondaryText rounded-lg shadow-2xl md:p-4 overflow-hidden">
+    <div className="max-w-[400px] w-full sm:w-max-[800px] sm:w-full h-auto    flex flex-col  justify-center items-center bg-primaryText text-secondaryText rounded-lg shadow-2xl sm:p-4 overflow-hidden">
       {data.map((item) => (
         <div className="flex flex-col-reverse md:flow-row items-center gap-5" key={item.id}>
           <div className="">
