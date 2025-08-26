@@ -7,7 +7,7 @@ import  { useState } from "react";
 export default function Hero() {
   const [data, setData] = useState(heroData);
   return (
-    <div>
+    <div className="w-full bg-amber-300">
       {data.map((item) => (
         <div
           key={item.id}
