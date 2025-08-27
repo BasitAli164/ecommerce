@@ -1,4 +1,5 @@
 import React from 'react'
+import CountDownTime from '../CountDownTimer/CountDownTime'
 
 export default function FlashSales() {
   return (
@@ -10,8 +11,12 @@ export default function FlashSales() {
         </div>
         <div>
           <h2>Flash Sales</h2>
+          <CountDownTime/>
         </div>
 
+      </div>
+      <div>
+        
       </div>
       
     </div>
