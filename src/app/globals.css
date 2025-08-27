@@ -6,9 +6,11 @@
     /* Text Color */
     --color-primaryText:#000;
     --color-secondaryText:#fafafa;
+    --color-accent:#DB4444
     /* Background Color */
     --color-bgPrimary:#000;
     --color-bgSecondary:#fafafa;
+    --color-bgBtn:#DB4444
 
 
     /* Fonts */

@@ -9,7 +9,7 @@ export default function Cart({ prodDetail }) {
       <div className="w-[270px]  h-[250px]  bg-[#F5F5F5] flex  flex-col justify-between items-center">
         <div className="w-full flex justify-between ">
           {prodDetail.discount && (
-            <div className="bg-[#DB4444] w-[55px] h-[26px] flex justify-center items-center mt-3 ml-3 rounded-sm">
+            <div className="bg-bgBtn w-[55px] h-[26px] flex justify-center items-center mt-3 ml-3 rounded-sm">
               {prodDetail.discount}
             </div>
           )}
@@ -42,7 +42,7 @@ export default function Cart({ prodDetail }) {
       <div>
           <p>{prodDetail.title}</p>
           <div className="flex gap-3">
-            <span className="text-[#DB4444]">{prodDetail.sPrice}</span>
+            <span className="text-accent">{prodDetail.sPrice}</span>
             <span className="line-through text-[#000000] opacity-70">{prodDetail.oPrice}</span>
           </div>
           <div className="flex">
