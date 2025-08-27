@@ -28,7 +28,16 @@ export default function FlashSales() {
       
     </div>
     <div>
-      <Cart/>
+      {
+        cartData.map((item)=>(
+          <Cart key={item.id} prodDetail={item}/>
+        ))
+      }
+    </div>
+
+
+    <div>
+      <button className='px-10 py-4 bg-bgBtn text-center'>View All Products</button>
     </div>
     </div>
   )
