@@ -21,13 +21,13 @@ export default function Hero() {
 
   const item=heroData[index]
   return (
-    <div className=" max-w-[90%] w-full  sm:p-5  rounded-sm shadow-2xl bg-bgPrimary text-secondaryText">
+    <div className=" max-w-[90%] w-full  sm:p-5  rounded-sm shadow-2xl bg-bgPrimary text-secondaryText min-h-[400px]">
       
         <div
           key={item.id}
-          className="w-full flex flex-col-reverse sm:flex-row sm:gap-10 overflow-hidden"
+          className="w-full flex flex-col-reverse sm:flex-row sm:gap-10 overflow-hidden transition-all duration-500 ease-in-out"
         >
-          <div className="flex flex-col gap-2 justify-center items-center">
+          <div className="flex flex-col gap-2 justify-center items-center min-h-[200px]">
             <div className=" flex items-center">
               <img
                 src={item.logoImage}
@@ -48,11 +48,11 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center min-h-[300px]">
             <img
               src={item.mainImage}
               alt={item.brandName}
-              className="w-52 sm:w-[500px]  "
+              className="w-52 sm:w-[500px] h-[300px] object-contain "
             />
           </div>
         </div>
