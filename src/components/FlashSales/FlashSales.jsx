@@ -1,9 +1,15 @@
 import React from 'react'
 import CountDownTime from '../CountDownTimer/CountDownTime'
+import { MoveLeft, MoveRight } from 'lucide-react'
+import Cart from '../cart/Cart'
+import { useCart } from '@/context/cartContext'
+
 
 export default function FlashSales() {
+  const {cartData}=useCart()
   return (
     <div>
+      <div>
       <div>
         <div>
           <div className='w-5 h-8 bg-bgBtn '></div>
@@ -16,9 +22,14 @@ export default function FlashSales() {
 
       </div>
       <div>
-        
+        <MoveLeft/>
+        <MoveRight/>
       </div>
       
+    </div>
+    <div>
+      <Cart/>
+    </div>
     </div>
   )
 }
