@@ -44,9 +44,23 @@ export default function CountDownTime() {
 
 
   return (
-    <div>
-        
-      
+    <div className='flex gap-4 text-center'>
+        <div>
+            <span>Days</span>
+            <p className='text-2xl font-bold'>{timeLeft.days}</p>
+        </div>
+        <div>
+            <span>Hours</span>
+            <p className='text-2xl font-bold'>{timeLeft.hours}</p>
+        </div>
+        <div>
+            <span>Minutes</span>
+            <p className='text-2xl font-bold'>{timeLeft.minutes}</p>
+        </div>
+        <div>
+            <span>Seconds</span>
+            <p className='text-2xl font-bold'>{timeLeft.seconds}</p>
+        </div>
     </div>
   )
 }
