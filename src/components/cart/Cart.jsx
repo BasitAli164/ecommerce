@@ -46,7 +46,7 @@ export default function Cart({ prodDetail }) {
             <span className="line-through text-[#000000] opacity-70">{prodDetail.oPrice}</span>
           </div>
           <div className="flex">
-            <Rating value={prodDetail.ratingValue}/>({prodDetail.totalRating})
+            <Rating value={prodDetail.ratingValue}/><span className="text-primaryText opacity-70">{prodDetail.totalRating}</span>
           </div>
       </div>
     </div>
