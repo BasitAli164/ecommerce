@@ -1,7 +1,7 @@
   "use client"
   import React,{useRef} from 'react'
   import CountDownTime from '../CountDownTimer/CountDownTime'
-  import { MoveLeft, MoveRight } from 'lucide-react'
+  import { ChevronLeft, ChevronRight,MoveLeft, MoveRight } from 'lucide-react'
   import Cart from '../cart/Cart'
   import { useCart } from '@/context/cartContext'
   import Link from 'next/link'
@@ -40,9 +40,9 @@
           </div>
 
         </div>
-        <div className='flex justify-center items-center gap-4 sm:gap-6'>
-          <MoveLeft onClick={scrollLeft}/>
-          <MoveRight onClick={scrollRight}/>
+        <div className='hidden sm:flex justify-around sm:justify-center items-center gap-4 sm:gap-6'>
+          <ChevronLeft onClick={scrollLeft}/>
+          <ChevronRight onClick={scrollRight}/>
         </div>
         
       </div>
