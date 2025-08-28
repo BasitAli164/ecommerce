@@ -32,7 +32,7 @@ export default function Slider() {
           </Link>
         </p>
       ))}
-  <Cart/>
+
     </div>
   );
 }

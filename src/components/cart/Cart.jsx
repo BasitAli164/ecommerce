@@ -8,8 +8,8 @@ export default function Cart() {
     <div>
       {
         cartData.map(item=>(
-          <div>
-            <div>item</div>
+          <div key={item.id}>
+            <div>{item.title}</div>
             <div></div>
           </div>
         ))
