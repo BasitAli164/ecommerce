@@ -17,7 +17,7 @@ export default function CurrentMonth() {
             Best Selling Products
           </h2>
           <div className="hidden sm:block">
-          <Button btnLink={""} btnPx={6} btnPy={3} btnText={"View All"}/>
+          <Button btnLink={""} btnPx={20} btnPy={10} btnText={"View All"}/>
           </div>
         </div>
       </div>

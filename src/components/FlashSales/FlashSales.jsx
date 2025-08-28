@@ -56,7 +56,7 @@ export default function FlashSales() {
 
       <div className="flex justify-center items-center my-10">
         
-        <Button btnLink={""} btnPx={10} btnPy={3} btnText={"View All Products"}/>
+        <Button btnLink={""} btnPx={50} btnPy={12} btnText={"View All Products"}/>
       </div>
     </div>
   );
