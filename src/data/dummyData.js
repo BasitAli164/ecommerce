@@ -81,8 +81,8 @@ export const cartsData = [
     sPrice: "$300",
     ratingValue: 4,
     totalRating: 50,
-    discount: 25, // numeric discount value
-    inStock: true, // product available
+    discount: "-25%", // changed to string
+    inStock: true,
     image: "/product/lcd.png",
   },
   {
@@ -92,7 +92,7 @@ export const cartsData = [
     sPrice: "$199",
     ratingValue: 5,
     totalRating: 120,
-    discount: 20,
+    discount: "-20%",
     inStock: true,
     image: "/product/headphones.png",
   },
@@ -103,8 +103,8 @@ export const cartsData = [
     sPrice: "$89",
     ratingValue: 4,
     totalRating: 75,
-    discount: 26,
-    inStock: false, // out of stock
+    discount: "-26%",
+    inStock: false,
     image: "/product/keyboard.png",
   },
   {
@@ -114,7 +114,7 @@ export const cartsData = [
     sPrice: "$360",
     ratingValue: 4,
     totalRating: 200,
-    discount: 20,
+    discount: "-20%",
     inStock: true,
     image: "/product/chair.png",
   },
@@ -125,7 +125,7 @@ export const cartsData = [
     sPrice: "$950",
     ratingValue: 5,
     totalRating: 310,
-    discount: 21,
+    discount: "-21%",
     inStock: true,
     image: "/product/tv.png",
   },
@@ -136,7 +136,7 @@ export const cartsData = [
     sPrice: "$59",
     ratingValue: 4,
     totalRating: 90,
-    discount: 26,
+    discount: "-26%",
     inStock: true,
     image: "/product/speaker.png",
   },
@@ -147,7 +147,7 @@ export const cartsData = [
     sPrice: "$320",
     ratingValue: 5,
     totalRating: 150,
-    discount: 20,
+    discount: "-20%",
     inStock: false,
     image: "/product/smartwatch.png",
   },
@@ -158,7 +158,7 @@ export const cartsData = [
     sPrice: "$249",
     ratingValue: 4,
     totalRating: 60,
-    // discount: 17,
+    discount: "-17%", // added missing discount as string
     inStock: true,
     image: "/product/microwave.png",
   },
@@ -169,7 +169,7 @@ export const cartsData = [
     sPrice: "$1250",
     ratingValue: 5,
     totalRating: 95,
-    discount: 17,
+    discount: "-17%",
     inStock: true,
     image: "/product/camera.png",
   },
@@ -180,7 +180,7 @@ export const cartsData = [
     sPrice: "$1750",
     ratingValue: 5,
     totalRating: 220,
-    // discount: 12,
+    discount: "-12%", // added missing discount as string
     inStock: true,
     image: "/product/laptop.png",
   },
@@ -191,9 +191,10 @@ export const cartsData = [
     sPrice: "$240",
     ratingValue: 4,
     totalRating: 70,
-    // discount: 20,
+    discount: "-20%", // added missing discount as string
     inStock: false,
     image: "/product/airpurifier.png",
   },
 ];
+
 

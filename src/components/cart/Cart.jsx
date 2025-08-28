@@ -9,7 +9,7 @@ export default function Cart({ prodDetail }) {
       <div className="w-[270px]  h-[250px]  bg-[#F5F5F5] flex  flex-col justify-between items-center">
         <div className="w-full flex justify-between ">
           {prodDetail.discount && (
-            <div className="bg-bgBtn w-[55px] h-[26px] flex justify-center items-center mt-3 ml-3 rounded-sm">
+            <div className="bg-bgBtn w-[55px] h-[26px] flex justify-center items-center mt-3 ml-3 rounded-sm text-secondaryText">
               {prodDetail.discount}
             </div>
           )}
