@@ -7,6 +7,12 @@ export default function Cart() {
   return (
     <div>
       {
+        cartData.map(item=>(
+          <div>
+            <div>item</div>
+            <div></div>
+          </div>
+        ))
 
       }
     </div>
