@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function NewArrival() {
@@ -12,12 +13,18 @@ export default function NewArrival() {
           New Arrival
         </h2>
       </div>
-      <div className="w-full h-[300px] border border-solid grid grid-cols-2 gap-20 ">
-        <div className="bg-bgPrimary ">
+      <div className="w-full border border-solid grid grid-cols-2 gap-20 ">
+        <div className="bg-bgPrimary relative ">
           <figure>
-            <img src=".jpg" alt="A beautiful view of mountains" />
-            <figcaption>A beautiful mountain view during sunrise</figcaption>
+            <img src="/new/new1.png" alt="A beautiful view of mountains" />
+            {/* <figcaption className="text-secondaryText">A beautiful mountain view during sunrise</figcaption> */}
           </figure>
+          <div>
+            <h3>PlayStation 5</h3>
+            <p>Black and White version of the PS5 coming out on sale.</p>
+            <Link></Link>
+
+          </div>
         </div>
         <div></div>
       </div>
