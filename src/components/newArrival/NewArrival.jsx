@@ -12,13 +12,15 @@ export default function NewArrival() {
           New Arrival
         </h2>
       </div>
-        <div className="w-full h-[300px] border border-solid ">
-            <div className="">
-
-
-            </div>
-            <div></div>
+      <div className="w-full h-[300px] border border-solid grid grid-cols-2 gap-20 ">
+        <div className="bg-bgPrimary ">
+          <figure>
+            <img src=".jpg" alt="A beautiful view of mountains" />
+            <figcaption>A beautiful mountain view during sunrise</figcaption>
+          </figure>
         </div>
+        <div></div>
+      </div>
     </div>
   );
 }
