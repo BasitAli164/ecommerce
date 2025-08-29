@@ -13,10 +13,10 @@ export default function NewArrival() {
           New Arrival
         </h2>
       </div>
-      <div className="w-full border border-solid  ">
+      <div className="w-full border border-solid flex justify-center items-center gap-20 overflow-hidden ">
         <div className="bg-bgPrimary relative ">
           <div>
-            <img src="/new/new1.png" alt="A beautiful view of mountains" />
+            <img src="/new/new1.png" alt="Black and White version of the PS5 coming out on sale." className="" />
           </div>
           <div className="text-secondaryText absolute bottom-20 left-10">
             <h3 className="text-secondaryText text-sm md:text-lg font-semibold">
@@ -30,7 +30,25 @@ export default function NewArrival() {
             </Link>
           </div>
         </div>
-        <div></div>
+        <div className="flex flex-col justify-center items-center gap-20">
+            <div className="bg-bgPrimary relative">
+                <div>
+            <img src="/new/new2.jpg" alt="Black and White version of the PS5 coming out on sale." className="" />
+          </div>
+          <div className="text-secondaryText absolute bottom-20 left-10">
+            <h3 className="text-secondaryText text-sm md:text-lg font-semibold">
+              PlayStation 5
+            </h3>
+            <p className="text-[10px] md:text-[12px]">
+              Black and White version of the PS5 coming out on sale.
+            </p>
+            <Link href={""} className="underline text-[14px] sm:text-sm ">
+              Shop Now
+            </Link>
+          </div>
+            </div>
+            <div></div>
+        </div>
       </div>
     </div>
   );
