@@ -13,17 +13,22 @@ export default function NewArrival() {
           New Arrival
         </h2>
       </div>
-      <div className="w-full border border-solid grid grid-cols-2 gap-20 ">
+      <div className="w-full border border-solid grid grid-rows-2 md:grid-cols-2 gap-20 ">
         <div className="bg-bgPrimary relative ">
           <figure>
             <img src="/new/new1.png" alt="A beautiful view of mountains" />
             {/* <figcaption className="text-secondaryText">A beautiful mountain view during sunrise</figcaption> */}
           </figure>
           <div className="text-secondaryText absolute bottom-20 left-10">
-            <h3 className="text-secondaryText text-lg font-semibold">PlayStation 5</h3>
-            <p className="text-[10px]">Black and White version of the PS5 coming out on sale.</p>
-            <Link href={""} className="underline ">Shop Now</Link>
-
+            <h3 className="text-secondaryText text-sm md:text-lg font-semibold">
+              PlayStation 5
+            </h3>
+            <p className="text-[10px] md:text-[12px]">
+              Black and White version of the PS5 coming out on sale.
+            </p>
+            <Link href={""} className="underline text-[14px] sm:text-sm ">
+              Shop Now
+            </Link>
           </div>
         </div>
         <div></div>
