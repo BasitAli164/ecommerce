@@ -13,12 +13,11 @@ export default function NewArrival() {
           New Arrival
         </h2>
       </div>
-      <div className="w-full border border-solid grid grid-rows-2 md:grid-cols-2 gap-20 ">
+      <div className="w-full border border-solid  ">
         <div className="bg-bgPrimary relative ">
-          <figure>
+          <div>
             <img src="/new/new1.png" alt="A beautiful view of mountains" />
-            {/* <figcaption className="text-secondaryText">A beautiful mountain view during sunrise</figcaption> */}
-          </figure>
+          </div>
           <div className="text-secondaryText absolute bottom-20 left-10">
             <h3 className="text-secondaryText text-sm md:text-lg font-semibold">
               PlayStation 5
