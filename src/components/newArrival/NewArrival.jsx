@@ -12,8 +12,12 @@ export default function NewArrival() {
           New Arrival
         </h2>
       </div>
-        <div>
-            
+        <div className="w-full h-[300px] border border-solid ">
+            <div className="">
+
+
+            </div>
+            <div></div>
         </div>
     </div>
   );
