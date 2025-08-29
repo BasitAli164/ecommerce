@@ -19,10 +19,10 @@ export default function NewArrival() {
             <img src="/new/new1.png" alt="A beautiful view of mountains" />
             {/* <figcaption className="text-secondaryText">A beautiful mountain view during sunrise</figcaption> */}
           </figure>
-          <div>
-            <h3>PlayStation 5</h3>
-            <p>Black and White version of the PS5 coming out on sale.</p>
-            <Link></Link>
+          <div className="text-secondaryText absolute bottom-20 left-10">
+            <h3 className="text-secondaryText text-lg font-semibold">PlayStation 5</h3>
+            <p className="text-[10px]">Black and White version of the PS5 coming out on sale.</p>
+            <Link href={""} className="underline ">Shop Now</Link>
 
           </div>
         </div>
