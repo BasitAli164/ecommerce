@@ -11,8 +11,10 @@ export default function NewArrival() {
         <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-semibold">
           New Arrival
         </h2>
-       
       </div>
+        <div>
+            
+        </div>
     </div>
   );
 }
