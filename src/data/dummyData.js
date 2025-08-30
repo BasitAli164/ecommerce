@@ -1,77 +1,77 @@
-// Dummy Data
+  // Dummy Data
 
-export const heroData = [
-  {
-    id: "1",
-    logoImage: "/Hero/apple.png",
-    brandName: "Zara - Women's Fashion",
-    title: "Up to 25% Off New Arrivals",
-    mainImage: "/Hero/iphon.jpg",
-  },
-  {
-    id: "2",
-    logoImage: "/Hero/apple.png",
-    brandName: "Nike - Men's Fashion",
-    title: "Flat 20% Off on Sportswear",
-    mainImage: "/Hero/iphon.jpg",
-  },
-  {
-    id: "3",
-    logoImage: "/Hero/apple.png",
-    brandName: "Samsung Electronics",
-    title: "Save up to 15% on Smart Devices",
-    mainImage: "/Hero/iphon.jpg",
-  },
-  {
-    id: "4",
-    logoImage: "/Hero/apple.png",
-    brandName: "IKEA - Home & Lifestyle",
-    title: "Exclusive 10% Off Furniture",
-    mainImage: "/Hero/iphon.jpg",
-  },
-  {
-    id: "5",
-    logoImage: "/Hero/apple.png",
-    brandName: "Sehat - Medicine",
-    title: "Flat 12% Off Prescriptions",
-    mainImage: "/Hero/iphon.jpg",
-  },
-  {
-    id: "6",
-    logoImage: "/Hero/apple.png",
-    brandName: "Adidas - Sports & Outdoor",
-    title: "Grab 15% Off on Gear",
-    mainImage: "/Hero/iphon.jpg",
-  },
-  {
-    id: "7",
-    logoImage: "/Hero/apple.png",
-    brandName: "Pampers - Baby & Toys",
-    title: "Save 10% on Baby Essentials",
-    mainImage: "/Hero/iphon.jpg",
-  },
-  {
-    id: "8",
-    logoImage: "/Hero/apple.png",
-    brandName: "Nestlé - Groceries & Pets",
-    title: "Up to 8% Off Grocery Packs",
-    mainImage: "/Hero/iphon.jpg",
-  },
-  {
-    id: "9",
-    logoImage: "/Hero/apple.png",
-    brandName: "L'Oréal - Health & Beauty",
-    title: "Flat 18% Off Skincare",
-    mainImage: "/Hero/iphon.jpg",
-  },
-  {
-    id: "10",
-    logoImage: "/Hero/apple.png",
-    brandName: "Apple - Premium Electronics",
-    title: "Special 10% Voucher on iPhones",
-    mainImage: "/Hero/iphon.jpg",
-  },
-];
+  export const heroData = [
+    {
+      id: "1",
+      logoImage: "/Hero/apple.png",
+      brandName: "Zara - Women's Fashion",
+      title: "Up to 25% Off New Arrivals",
+      mainImage: "/Hero/iphon.jpg",
+    },
+    {
+      id: "2",
+      logoImage: "/Hero/apple.png",
+      brandName: "Nike - Men's Fashion",
+      title: "Flat 20% Off on Sportswear",
+      mainImage: "/Hero/iphon.jpg",
+    },
+    {
+      id: "3",
+      logoImage: "/Hero/apple.png",
+      brandName: "Samsung Electronics",
+      title: "Save up to 15% on Smart Devices",
+      mainImage: "/Hero/iphon.jpg",
+    },
+    {
+      id: "4",
+      logoImage: "/Hero/apple.png",
+      brandName: "IKEA - Home & Lifestyle",
+      title: "Exclusive 10% Off Furniture",
+      mainImage: "/Hero/iphon.jpg",
+    },
+    {
+      id: "5",
+      logoImage: "/Hero/apple.png",
+      brandName: "Sehat - Medicine",
+      title: "Flat 12% Off Prescriptions",
+      mainImage: "/Hero/iphon.jpg",
+    },
+    {
+      id: "6",
+      logoImage: "/Hero/apple.png",
+      brandName: "Adidas - Sports & Outdoor",
+      title: "Grab 15% Off on Gear",
+      mainImage: "/Hero/iphon.jpg",
+    },
+    {
+      id: "7",
+      logoImage: "/Hero/apple.png",
+      brandName: "Pampers - Baby & Toys",
+      title: "Save 10% on Baby Essentials",
+      mainImage: "/Hero/iphon.jpg",
+    },
+    {
+      id: "8",
+      logoImage: "/Hero/apple.png",
+      brandName: "Nestlé - Groceries & Pets",
+      title: "Up to 8% Off Grocery Packs",
+      mainImage: "/Hero/iphon.jpg",
+    },
+    {
+      id: "9",
+      logoImage: "/Hero/apple.png",
+      brandName: "L'Oréal - Health & Beauty",
+      title: "Flat 18% Off Skincare",
+      mainImage: "/Hero/iphon.jpg",
+    },
+    {
+      id: "10",
+      logoImage: "/Hero/apple.png",
+      brandName: "Apple - Premium Electronics",
+      title: "Special 10% Voucher on iPhones",
+      mainImage: "/Hero/iphon.jpg",
+    },
+  ];
 
 export const cartsData = [
   {
@@ -81,7 +81,8 @@ export const cartsData = [
     sPrice: "$300",
     ratingValue: 4,
     totalRating: 50,
-    salesPer: "-25%",
+    discount: 25, // numeric discount value
+    inStock: true, // product available
     image: "/product/lcd.png",
   },
   {
@@ -91,7 +92,8 @@ export const cartsData = [
     sPrice: "$199",
     ratingValue: 5,
     totalRating: 120,
-    salesPer: "-20%",
+    discount: 20,
+    inStock: true,
     image: "/product/headphones.png",
   },
   {
@@ -101,7 +103,8 @@ export const cartsData = [
     sPrice: "$89",
     ratingValue: 4,
     totalRating: 75,
-    salesPer: "-26%",
+    discount: 26,
+    inStock: false, // out of stock
     image: "/product/keyboard.png",
   },
   {
@@ -111,7 +114,8 @@ export const cartsData = [
     sPrice: "$360",
     ratingValue: 4,
     totalRating: 200,
-    salesPer: "-20%",
+    discount: 20,
+    inStock: true,
     image: "/product/chair.png",
   },
   {
@@ -121,7 +125,8 @@ export const cartsData = [
     sPrice: "$950",
     ratingValue: 5,
     totalRating: 310,
-    salesPer: "-21%",
+    discount: 21,
+    inStock: true,
     image: "/product/tv.png",
   },
   {
@@ -131,7 +136,8 @@ export const cartsData = [
     sPrice: "$59",
     ratingValue: 4,
     totalRating: 90,
-    salesPer: "-26%",
+    discount: 26,
+    inStock: true,
     image: "/product/speaker.png",
   },
   {
@@ -141,7 +147,8 @@ export const cartsData = [
     sPrice: "$320",
     ratingValue: 5,
     totalRating: 150,
-    salesPer: "-20%",
+    discount: 20,
+    inStock: false,
     image: "/product/smartwatch.png",
   },
   {
@@ -151,7 +158,8 @@ export const cartsData = [
     sPrice: "$249",
     ratingValue: 4,
     totalRating: 60,
-    salesPer: "-17%",
+    discount: 17,
+    inStock: true,
     image: "/product/microwave.png",
   },
   {
@@ -161,7 +169,8 @@ export const cartsData = [
     sPrice: "$1250",
     ratingValue: 5,
     totalRating: 95,
-    salesPer: "-17%",
+    discount: 17,
+    inStock: true,
     image: "/product/camera.png",
   },
   {
@@ -171,7 +180,8 @@ export const cartsData = [
     sPrice: "$1750",
     ratingValue: 5,
     totalRating: 220,
-    salesPer: "-12%",
+    discount: 12,
+    inStock: true,
     image: "/product/laptop.png",
   },
   {
@@ -181,7 +191,9 @@ export const cartsData = [
     sPrice: "$240",
     ratingValue: 4,
     totalRating: 70,
-    salesPer: "-20%",
+    discount: 20,
+    inStock: false,
     image: "/product/airpurifier.png",
   },
 ];
+
