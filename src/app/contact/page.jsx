@@ -10,7 +10,7 @@ export default function Contact() {
   <>
     {
       cartData.map((item)=>(
-        <Cart key={item.id} pordDetail={item}/>
+        <Cart key={item.id} prodDetail={item}/>
       ))
     }
   </>
