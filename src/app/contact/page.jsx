@@ -8,7 +8,11 @@ export default function Contact() {
   const {cartData}=useCart()
   return (
   <>
-    <Cart/>
+    {
+      cartData.map((item)=>(
+        <Cart key={item.id} pordDetail={item}/>
+      ))
+    }
   </>
    
       

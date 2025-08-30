@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import "./globals.css";
+import { CartProvider } from "@/context/cartContext";
 
 export const metadata = {
   title: "Exclusive | Online Shopping for Fashion, Electronics & More",
@@ -11,8 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="font-poppins">
-        <Header/>
+<CartProvider>
+          <Header/>
         {children}
+</CartProvider>
       </body>
     </html>
   );
