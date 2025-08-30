@@ -1,10 +1,10 @@
 
-export default function Cart() {
-    
+export default function Cart({pordDetail}) {
+    console.log("Cart data from Cart component:",pordDetail)
     
   return (
     <div>
-      hello
+     
     </div>
   )
 }
