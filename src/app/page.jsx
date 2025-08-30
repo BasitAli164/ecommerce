@@ -16,9 +16,7 @@ function Home() {
        </HeroProvider>
       </div>
     </div>
-    <CartProvider>
-      <Cart/>
-    </CartProvider>
+   
 
 
     </>

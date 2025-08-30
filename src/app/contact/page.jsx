@@ -1,10 +1,20 @@
+'use client'
+import Cart from '@/components/cart/Cart'
+import { CartProvider, useCart } from '@/context/cartContext'
 import React from 'react'
 
+
 export default function Contact() {
+  const {cartData}=useCart()
+  console.log(cartData)
   return (
     <div>
       
-      <h1 className='text-4xl '>Contact</h1>
+    <CartProvider>
+      <Cart/>
+    </CartProvider>
+   
+      
     </div>
   )
 }
