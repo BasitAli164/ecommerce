@@ -4,7 +4,8 @@ export default function Cart({pordDetail}) {
     
   return (
     <div>
-     
+     <div></div>
+     <div></div>
     </div>
   )
 }
