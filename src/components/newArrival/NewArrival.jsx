@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function NewArrival() {
@@ -16,8 +17,22 @@ export default function NewArrival() {
       </div>
 
 
-      <div>
-        
+      <div className="grid grid-cols-2 gap-10">
+        <div>
+            <div>
+                <img src="/new/new1.png" alt="Black and White version of the PS5 coming out on sale." />
+            </div>
+            <div>
+                <h3>PlayStation 5</h3>
+                <p>Black and White version of the PS5 coming out on sale.</p>
+                <Link href={""}>Shop Now</Link>
+            </div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+
       </div>
       
     </div>
