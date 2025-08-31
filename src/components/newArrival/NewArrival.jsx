@@ -16,7 +16,7 @@ export default function NewArrival() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-10">
+      <div className="">
         <div>
           <div>
             <img src="/new/new1.png" alt="PlayStation 5" />
@@ -38,7 +38,28 @@ export default function NewArrival() {
               <Link href={""}>Shop Now</Link>
             </div>
           </div>
-          <div></div>
+          <div>
+             <div>
+            <div>
+              <img src="/new/new3.png" alt="Speakers" />
+            </div>
+            <div>
+              <h3>Speakers</h3>
+              <p>Amazon wireless speakers</p>
+              <Link href={""}>Shop Now</Link>
+            </div>
+          </div>
+             <div>
+            <div>
+              <img src="/new/new4.png" alt="Perfume" />
+            </div>
+            <div>
+              <h3>Perfume</h3>
+              <p>GUCCI INTENSE OUD EDP</p>
+              <Link href={""}>Shop Now</Link>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
     </div>
