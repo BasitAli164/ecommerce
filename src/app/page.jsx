@@ -8,6 +8,7 @@ import Category from "@/components/Category/Category";
 import CurrentMonth from "@/components/Month/CurrentMonth";
 import Banner from "@/components/Banner/Banner";
 import NewArrival from "@/components/newArrival/NewArrival";
+import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 
 function Home() {
   const { cartData } = useCart();
@@ -27,6 +28,7 @@ function Home() {
         <CurrentMonth/>
         <Banner/>
         <NewArrival/>
+        <WhyChooseUs/>
       
     </>
   );
