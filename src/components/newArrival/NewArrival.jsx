@@ -3,7 +3,8 @@ import React from "react";
 export default function NewArrival() {
   return (
     <div className="w-full sm:max-w-[1170px] px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto mt-10 mb-5 ">
-      <div className="flex items-center gap-2">
+      <div>
+        <div className="flex items-center gap-2">
         <div className="w-3 h-8 bg-bgBtn "></div>
         <p className="text-accent font-bold text-lg sm:text-2xl">Fetured</p>
       </div>
@@ -11,6 +12,12 @@ export default function NewArrival() {
         <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-semibold">
           New Arrival
         </h2>
+      </div>
+      </div>
+
+
+      <div>
+        
       </div>
       
     </div>
