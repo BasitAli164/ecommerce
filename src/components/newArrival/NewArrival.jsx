@@ -16,7 +16,7 @@ export default function NewArrival() {
         </div>
       </div>
 
-      <div className="">
+      <div className="w-full grid grid-cols-2 gap-10">
         <div>
           <div>
             <img src="/new/new1.png" alt="PlayStation 5" />
