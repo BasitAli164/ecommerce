@@ -27,21 +27,22 @@ export default function NewArrival() {
             <Link href={""}>Shop Now</Link>
           </div>
         </div>
-        <div>
-          <div>
-            <div>
-              <img src="/new/new2.jpg" alt="Women’s Collections" />
-            </div>
-            <div>
+        <div className="flex flex-col gap-5">
+          <div className="flex bg-bgPrimary">
+            
+            <div className="text-secondaryText mt-10 ml-10">
               <h3>Women’s Collections</h3>
               <p>Featured woman collections that give you another vibe.</p>
               <Link href={""}>Shop Now</Link>
             </div>
-          </div>
-          <div>
-             <div>
             <div>
-              <img src="/new/new3.png" alt="Speakers" />
+              <img src="/new/new2.jpg" alt="Women’s Collections" className="w-[400px] transform scale-x-[-1] " />
+            </div>
+          </div>
+          <div className="flex gap-5 ">
+             <div className="bg-bgPrimary text-secondaryText">
+            <div>
+              <img src="/new/new3.png" alt="Speakers" className="w-[400px] " />
             </div>
             <div>
               <h3>Speakers</h3>
@@ -49,11 +50,11 @@ export default function NewArrival() {
               <Link href={""}>Shop Now</Link>
             </div>
           </div>
-             <div>
+             <div className="bg-bgPrimary">
             <div>
-              <img src="/new/new4.png" alt="Perfume" />
+              <img src="/new/new4.png" alt="Perfume" className="w-[300px]" />
             </div>
-            <div>
+            <div className="text-secondaryText">
               <h3>Perfume</h3>
               <p>GUCCI INTENSE OUD EDP</p>
               <Link href={""}>Shop Now</Link>
