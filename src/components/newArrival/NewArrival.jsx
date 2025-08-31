@@ -16,12 +16,12 @@ export default function NewArrival() {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-2 gap-10">
-        <div>
+      <div className="w-full grid grid-cols-2 gap-10 mt-10">
+        <div className="bg-bgPrimary">
           <div>
             <img src="/new/new1.png" alt="PlayStation 5" />
           </div>
-          <div>
+          <div className="text-secondaryText">
             <h3>PlayStation 5</h3>
             <p>Black and White version of the PS5 coming out on sale.</p>
             <Link href={""}>Shop Now</Link>
