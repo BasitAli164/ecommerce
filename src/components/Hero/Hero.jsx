@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { heroData } from "@/data/dummyData";
 import Link from "next/link";
-import { MoveLeft, MoveRight } from "lucide-react";
+import { ChevronLeft, ChevronRight,MoveRight } from "lucide-react";
 import { useHero } from "@/context/heroContext";
 
 
@@ -44,7 +44,7 @@ export default function Hero() {
                 <Link className="underline sm:text-lg" href={""}>
                   Shop Now
                 </Link>
-                <MoveRight className="size-3 sm:size-5" />
+                <MoveRight className="size-3 sm:size-5 mt-1" />
               </div>
             </div>
           </div>
@@ -59,8 +59,8 @@ export default function Hero() {
       
 
       <div className="flex justify-between mx-5 items-center ">
-        <MoveLeft onClick={handlePrevious}  className="cursor-pointer"/>
-        <MoveRight onClick={handleNext}  className="cursor-pointer"/>
+        <ChevronLeft onClick={handlePrevious}  className="cursor-pointer"/>
+        <ChevronRight onClick={handleNext}  className="cursor-pointer"/>
       </div>
     </div>
   );
