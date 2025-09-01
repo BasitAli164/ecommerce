@@ -221,7 +221,8 @@ export const categoryData=[
   {
     id:"6",
     categoryName:"Healty"
-  },{
+  },
+  {
     id:"7",
     categoryName:"Medicine"
   },

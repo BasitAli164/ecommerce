@@ -34,7 +34,7 @@ export default function Category() {
       </div>
         <div
         ref={scrollRef}
-         className="flex justify-center items-center gap-5 p-5 mb-10">
+         className="flex justify-center items-center gap-5 p-5 mb-10 overflow-x-auto scroll-smooth no-scrollbar">
             {
             categoryData.map((item)=>(
                 <div key={item.id} className="w-40 h-40  flex justify-center items-center border-[1px] p-5 text-center cursor-pointer">
