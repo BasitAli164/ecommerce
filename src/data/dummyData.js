@@ -197,4 +197,32 @@ export const cartsData = [
   },
 ];
 
+export const category=[
+  {
+    id:"1",
+    categoryName:"Electronics"
+  },
+  {
+    id:"2",
+    categoryName:"Medicine"
+  },
+  {
+    id:"3",
+    categoryName:"LifeStyle",
+  },
+  {
+    id:"4",
+    categoryName:"Sports",
+  },
+  {
+    id:"5",
+    categoryName:"Groceries"
+  },
+  {
+    id:"6",
+    categoryName:"Healty"
+  }
+
+]
+
 
