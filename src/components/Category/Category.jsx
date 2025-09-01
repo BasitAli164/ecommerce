@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { ChevronLeft,ChevronRight } from "lucide-react";
 import { categoryData } from "@/data/dummyData";
 
 export default function Category() {
     const scrollRef=useRef(null);
+    const [acticeId,setActiveId]=useState(categoryData[5].id)
+
 
     const scrollLeft=()=>{
         if(scrollRef.current){
@@ -37,7 +39,10 @@ export default function Category() {
          className="flex justify-center items-center gap-5 p-5 mb-10 overflow-x-auto scroll-smooth no-scrollbar">
             {
             categoryData.map((item)=>(
-                <div key={item.id} className="w-40 h-40 flex-shrink-0  flex justify-center items-center border-[1px] p-5 text-center cursor-pointer hover:bg-accent transition-all duration-700 ease-in-out delay-100 hover:text-secondaryText">
+                <div
+                 key={item.id} 
+                 onMouseEnter={()=>setActiveId(item.id)}
+                 className={`w-40 h-40 flex-shrink-0  flex justify-center items-center border-[1px] p-5  cursor-pointer transition-all duration-700 ease-in-out delay-100 ${acticeId===item.id ?"bg-accent text-secondaryText":"hover:bg-accent hover:text-secondaryText"}`}>
                     <h3 className="text-sm sm:text-lg lg:text-xl">{item.categoryName}</h3>                    
                 </div>
             ))
