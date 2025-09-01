@@ -29,8 +29,8 @@ export default function Category() {
             Browse By Category
           </h2>
           <div className="hidden sm:flex justify-around sm:justify-center items-center gap-4 sm:gap-6">
-          <ChevronLeft onClick={scrollLeft} />
-          <ChevronRight onClick={scrollRight} />
+          <ChevronLeft onClick={scrollLeft} className="cursor-pointer" />
+          <ChevronRight onClick={scrollRight} className="cursor-pointer" />
         </div>
         </div>
       </div>
