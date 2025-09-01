@@ -180,7 +180,7 @@ export const cartsData = [
     sPrice: "$1750",
     ratingValue: 5,
     totalRating: 220,
-    discount: 12,
+    // discount: 12,
     inStock: true,
     image: "/product/laptop.png",
   },
