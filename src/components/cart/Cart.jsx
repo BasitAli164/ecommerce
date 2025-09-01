@@ -33,7 +33,7 @@ export default function Cart({ prodDetail }) {
         ></div>
         {
           prodDetail.inStock ?(
-            <button className="w-full bg-[#000] text-center text-[#f5f5f5] p-2 " >Add To Cart</button>
+            <button className="w-full bg-[#000] text-center text-[#f5f5f5] p-2 text-lg font-semibold " >Add To Cart</button>
           ):(
             <></>
           )
