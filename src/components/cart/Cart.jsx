@@ -4,8 +4,8 @@ export default function Cart({ prodDetail }) {
   console.log("Cart data from Cart component:", prodDetail);
 
   return (
-    <div className="w-[270px] h-[350px] mt-2 border-2 border-s-lime-500 border-solid ">
-      <div className="w-[270px]  h-[250px] border-b-2 border-amber-800 bg-[#F5F5F5] flex  flex-col justify-between items-center">
+    <div className="w-[270px] h-[350px] mt-2 ">
+      <div className="w-[270px]  h-[250px]  bg-[#F5F5F5] flex  flex-col justify-between items-center">
         <div className="w-full flex justify-between ">
           {prodDetail.discount && (
             <div className="bg-[#DB4444] w-[55px] h-[26px] flex justify-center items-center mt-3 ml-3 rounded-sm">
