@@ -50,7 +50,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="w-[600px] md:w-60 flex justify-between items-center  bg-[#e9e9e9] opacity-70 rounded-full p-1  ">
+        <div className="w-[600px] md:w-60 flex justify-between items-center  bg-[#e9e9e9] opacity-70 rounded-sm p-1  ">
           <input
             className="outline-none w-full md:w-60 rounded-sm   "
             placeholder="What are you looking for?"
