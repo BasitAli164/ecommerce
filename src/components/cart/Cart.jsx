@@ -1,4 +1,5 @@
 import { Eye, Heart } from "lucide-react";
+import Rating from "../rating/Rating";
 
 export default function Cart({ prodDetail }) {
   console.log("Cart data from Cart component:", prodDetail);
@@ -31,7 +32,16 @@ export default function Cart({ prodDetail }) {
           className="w-[200px] h-[200px]"
         ></div>
       </div>
-      <div></div>
+      <div>
+          <p>{prodDetail.title}</p>
+          <div className="flex gap-3">
+            <span className="text-[#DB4444]">{prodDetail.sPrice}</span>
+            <span className="line-through text-[#000000] opacity-70">{prodDetail.oPrice}</span>
+          </div>
+          <div className="flex">
+            <Rating value={prodDetail.ratingValue}/>({prodDetail.totalRating})
+          </div>
+      </div>
     </div>
   );
 }
