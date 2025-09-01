@@ -31,6 +31,13 @@ export default function Cart({ prodDetail }) {
           }}
           className="w-[200px] h-[200px]"
         ></div>
+        {
+          prodDetail.inStock ?(
+            <button className="w-full bg-[#000] text-center text-[#f5f5f5] p-2 " >Add To Cart</button>
+          ):(
+            <></>
+          )
+        }
       </div>
       <div>
           <p>{prodDetail.title}</p>
