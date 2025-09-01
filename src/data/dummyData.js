@@ -197,52 +197,24 @@ export const cartsData = [
   },
 ];
 
-export const categoryData=[
-  {
-    id:"1",
-    categoryName:"Electronics"
-  },
-  {
-    id:"2",
-    categoryName:"Medicine"
-  },
-  {
-    id:"3",
-    categoryName:"LifeStyle",
-  },
-  {
-    id:"4",
-    categoryName:"Sports",
-  },
-  {
-    id:"5",
-    categoryName:"Groceries"
-  },
-  {
-    id:"6",
-    categoryName:"Healty"
-  },
-  {
-    id:"7",
-    categoryName:"Medicine"
-  },
-  {
-    id:"8",
-    categoryName:"LifeStyle",
-  },
-  {
-    id:"9",
-    categoryName:"Sports",
-  },
-  {
-    id:"10",
-    categoryName:"Groceries"
-  },
-  {
-    id:"11",
-    categoryName:"Healty"
-  }
+export const categoryData = [
+  { id: "1", categoryName: "Electronics" },
+  { id: "2", categoryName: "Medicine" },
+  { id: "3", categoryName: "LifeStyle" },
+  { id: "4", categoryName: "Sports" },
+  { id: "5", categoryName: "Groceries" },
+  { id: "6", categoryName: "Healty" },
+  { id: "7", categoryName: "Books" },
+  { id: "8", categoryName: "Toys" },
+  { id: "9", categoryName: "Furniture" },
+  { id: "10", categoryName: "Clothing" },
+  { id: "11", categoryName: "Shoes" },
+  { id: "12", categoryName: "Beauty & Personal Care" },
+  { id: "13", categoryName: "Automotive" },
+  { id: "14", categoryName: "Jewelry" },
+  { id: "15", categoryName: "Pet Supplies" },
+  { id: "16", categoryName: "Home Appliances" }
+];
 
-]
 
 

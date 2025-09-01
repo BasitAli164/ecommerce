@@ -37,7 +37,7 @@ export default function Category() {
          className="flex justify-center items-center gap-5 p-5 mb-10 overflow-x-auto scroll-smooth no-scrollbar">
             {
             categoryData.map((item)=>(
-                <div key={item.id} className="w-40 h-40  flex justify-center items-center border-[1px] p-5 text-center cursor-pointer">
+                <div key={item.id} className="w-40 h-40 flex-shrink-0  flex justify-center items-center border-[1px] p-5 text-center cursor-pointer hover:bg-accent transition-all duration-700 ease-in-out delay-100 hover:text-secondaryText">
                     <h3 className="text-sm sm:text-lg lg:text-xl">{item.categoryName}</h3>                    
                 </div>
             ))
