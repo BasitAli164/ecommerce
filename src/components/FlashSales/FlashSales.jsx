@@ -54,7 +54,7 @@ export default function FlashSales() {
       </div>
 
       <div className="flex justify-center items-center my-10">
-        <Link href={""} className="px-10 py-3 bg-bgBtn text-center">
+        <Link href={""} className="px-10 py-3 text-secondaryText bg-bgBtn text-center">
           View All Products
         </Link>
       </div>
