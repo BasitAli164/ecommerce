@@ -197,7 +197,7 @@ export const cartsData = [
   },
 ];
 
-export const category=[
+export const categoryData=[
   {
     id:"1",
     categoryName:"Electronics"
@@ -220,6 +220,25 @@ export const category=[
   },
   {
     id:"6",
+    categoryName:"Healty"
+  },{
+    id:"7",
+    categoryName:"Medicine"
+  },
+  {
+    id:"8",
+    categoryName:"LifeStyle",
+  },
+  {
+    id:"9",
+    categoryName:"Sports",
+  },
+  {
+    id:"10",
+    categoryName:"Groceries"
+  },
+  {
+    id:"11",
     categoryName:"Healty"
   }
 

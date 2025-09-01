@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { ChevronLeft,ChevronRight } from "lucide-react";
+import { categoryData } from "@/data/dummyData";
 
 export default function Category() {
     const scrollRef=useRef(null);
@@ -31,8 +32,17 @@ export default function Category() {
         </div>
         </div>
       </div>
-
-    
+        <div
+        ref={scrollRef}
+         className="flex justify-center items-center gap-5 p-5 mb-10">
+            {
+            categoryData.map((item)=>(
+                <div key={item.id} className="w-40 h-40  flex justify-center items-center border-[1px] p-5 text-center cursor-pointer">
+                    <h3 className="text-sm sm:text-lg lg:text-xl">{item.categoryName}</h3>                    
+                </div>
+            ))
+        }
+        </div>
     </div>
   );
 }
