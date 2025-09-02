@@ -94,7 +94,7 @@ export const cartsData = [
     totalRating: 120,
     discount: "-20%",
     inStock: true,
-    image: "/product/headphones.png",
+    image: "/product/headphone.jpg",
   },
   {
     id: "3",
@@ -105,7 +105,7 @@ export const cartsData = [
     totalRating: 75,
     discount: "-26%",
     inStock: false,
-    image: "/product/keyboard.png",
+    image: "/product/keyborad.png",
   },
   {
     id: "4",
@@ -127,7 +127,7 @@ export const cartsData = [
     totalRating: 310,
     discount: "-21%",
     inStock: true,
-    image: "/product/tv.png",
+    image: "/product/video.png",
   },
   {
     id: "6",

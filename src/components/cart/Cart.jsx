@@ -29,7 +29,7 @@ export default function Cart({ prodDetail }) {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          className="w-[200px] h-[200px]"
+          className="w-[200px] h-[200px] mb-5"
         ></div>
         {
           prodDetail.inStock ?(
