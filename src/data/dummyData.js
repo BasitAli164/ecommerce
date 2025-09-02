@@ -94,7 +94,7 @@ export const cartsData = [
     totalRating: 120,
     discount: "-20%",
     inStock: true,
-    image: "/product/headphone.jpg",
+    image: "/product/headphone.jpeg",
   },
   {
     id: "3",
