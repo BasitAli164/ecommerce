@@ -27,9 +27,9 @@ export default function Cart({ prodDetail }) {
             backgroundImage: `url(${prodDetail.image})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
+            backgroundSize: "contain",
           }}
-          className="w-[200px] h-[200px] mb-5"
+          className="w-[200px] h-[200px] mb-5 bg-transparent flex justify-center items-center "
         ></div>
         {
           prodDetail.inStock ?(
