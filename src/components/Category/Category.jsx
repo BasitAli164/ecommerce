@@ -21,7 +21,7 @@ export default function Category() {
         <p className="text-accent font-bold text-lg sm:text-2xl">Today's</p>
       </div>
       <div>
-        <div className="flex flex-col sm:flex-row sm:gap-16 lg:gap-32 sm:mt-10">
+        <div className="flex  justify-start sm:justify-between items-center sm:gap-16 lg:gap-32 sm:mt-10">
           <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-semibold">
             Category
           </h2>
