@@ -25,7 +25,7 @@ export default function FlashSales() {
   };
 
   return (
-    <div className="w-full sm:max-w-[1170px] px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto mt-10 mb-5">
+    <div className="w-full sm:max-w-[1170px] px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto mt-10 mb-5 border-b">
       <div className="flex justify-between items-center">
         <div>
           <div className="flex items-center gap-2">
@@ -53,7 +53,7 @@ export default function FlashSales() {
         ))}
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center my-10">
         <Link href={""} className="px-10 py-3 bg-bgBtn text-center">
           View All Products
         </Link>

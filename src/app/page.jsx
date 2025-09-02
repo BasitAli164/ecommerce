@@ -1,10 +1,10 @@
 "use client";
-import Cart from "@/components/cart/Cart";
 import Hero from "@/components/Hero/Hero";
 import Slider from "@/components/Slider/Slider";
 import HeroProvider from "@/context/heroContext";
 import { useCart } from "@/context/cartContext";
 import FlashSales from "@/components/FlashSales/FlashSales";
+import Category from "@/components/Category/Category";
 
 function Home() {
   const { cartData } = useCart();
@@ -18,9 +18,10 @@ function Home() {
           </HeroProvider>
         </div>
       </div>
-      <div>
+    
         <FlashSales />
-      </div>
+        <Category/>
+      
     </>
   );
 }
