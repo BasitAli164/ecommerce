@@ -7,7 +7,7 @@ export default function CurrentMonth() {
     const {cartData}=useCart()
     console.log("Cart data is :",cartData)
   return (
-    <div className="w-full sm:max-w-[1170px] px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto mt-10 mb-5 border-b">
+    <div className="w-full sm:max-w-[1170px] px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto mt-10 mb-5 ">
         <div className="flex items-center gap-2">
         <div className="w-3 h-8 bg-bgBtn "></div>
         <p className="text-accent font-bold text-lg sm:text-2xl">This Month</p>
@@ -23,7 +23,7 @@ export default function CurrentMonth() {
         </div>
       </div>
 
-      <div  className='flex justify-center items-center gap-5 overflow-x-auto no-scrollbar'>
+      <div  className='flex justify-center items-center gap-[30px] overflow-x-auto no-scrollbar mt-10'>
         {
         cartData.map((item)=>(
             <Cart key={item.id} prodDetail={item}/>
