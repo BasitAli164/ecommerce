@@ -1,11 +1,9 @@
 import { useCart } from "@/context/cartContext";
 import Link from "next/link";
-import React, { useRef } from "react";
 import Cart from "../cart/Cart";
 
 export default function CurrentMonth() {
   const { cartData } = useCart();
-  console.log("Cart data is :", cartData);
   return (
     <div className="w-full sm:max-w-[1170px] px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto mt-10 mb-5 ">
       <div className="flex items-center gap-2">
@@ -28,7 +26,7 @@ export default function CurrentMonth() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-[30px] overflow-x-auto no-scrollbar mt-10">
+      <div className="flex justify-center items-center gap-[30px] overflow-x-auto scroll-smooth no-scrollbar mt-10">
         {cartData.map((item) => (
           <Cart key={item.id} prodDetail={item} />
         ))}
