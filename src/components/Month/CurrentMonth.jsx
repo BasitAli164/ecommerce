@@ -1,7 +1,11 @@
+import { useCart } from '@/context/cartContext'
 import Link from 'next/link'
-import React from 'react'
+import React, { useRef } from 'react'
+import Cart from '../cart/Cart'
 
 export default function CurrentMonth() {
+    const {cartData}=useCart()
+    console.log("Cart data is :",cartData)
   return (
     <div className="w-full sm:max-w-[1170px] px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto mt-10 mb-5 border-b">
         <div className="flex items-center gap-2">
@@ -17,6 +21,14 @@ export default function CurrentMonth() {
                 <Link href={""} className='px-6 py-3 text-center bg-bgBtn text-secondaryText  rounded-sm'>View All</Link>
             </div>
         </div>
+      </div>
+
+      <div  className='flex justify-center items-center gap-5 overflow-x-auto no-scrollbar'>
+        {
+        cartData.map((item)=>(
+            <Cart key={item.id} prodDetail={item}/>
+        ))
+        }
       </div>
       
     </div>
