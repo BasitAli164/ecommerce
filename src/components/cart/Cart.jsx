@@ -2,7 +2,6 @@ import { Eye, Heart } from "lucide-react";
 import Rating from "../rating/Rating";
 
 export default function Cart({ prodDetail }) {
-  console.log("Cart data from Cart component:", prodDetail);
 
   return (
     <div className="w-[270px] h-[350px] mt-2 ">
