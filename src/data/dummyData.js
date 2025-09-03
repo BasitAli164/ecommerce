@@ -82,7 +82,7 @@ export const cartsData = [
     ratingValue: 4,
     totalRating: 50,
     discount: "-25%", // changed to string
-    inStock: true,
+    inStock: false,
     image: "/product/lcd.png",
   },
   {
@@ -115,7 +115,7 @@ export const cartsData = [
     ratingValue: 4,
     totalRating: 200,
 
-    inStock: true,
+    inStock: false,
     image: "/product/chair.png",
   },
   {
@@ -126,7 +126,7 @@ export const cartsData = [
     ratingValue: 5,
     totalRating: 310,
 
-    inStock: true,
+    inStock: false,
     image: "/product/video.png",
   },
   {
@@ -159,7 +159,7 @@ export const cartsData = [
     ratingValue: 4,
     totalRating: 60,
 
-    inStock: true,
+    inStock: false,
     image: "/product/microwave.png",
   },
   {
@@ -170,7 +170,7 @@ export const cartsData = [
     ratingValue: 5,
     totalRating: 95,
     discount: "-17%",
-    inStock: true,
+    inStock: false,
     image: "/product/camera.png",
   },
   {
@@ -181,7 +181,7 @@ export const cartsData = [
     ratingValue: 5,
     totalRating: 220,
     discount: "-12%", // added missing discount as string
-    inStock: true,
+    inStock: false,
     image: "/product/laptop.png",
   },
   {
@@ -192,7 +192,7 @@ export const cartsData = [
     ratingValue: 4,
     totalRating: 70,
     discount: "-20%", // added missing discount as string
-    inStock: false,
+    inStock: true,
     image: "/product/airpurifier.png",
   },
 ];
