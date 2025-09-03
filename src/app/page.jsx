@@ -6,6 +6,7 @@ import { useCart } from "@/context/cartContext";
 import FlashSales from "@/components/FlashSales/FlashSales";
 import Category from "@/components/Category/Category";
 import CurrentMonth from "@/components/Month/CurrentMonth";
+import Banner from "@/components/Banner/Banner";
 
 function Home() {
   const { cartData } = useCart();
@@ -23,6 +24,7 @@ function Home() {
         <FlashSales />
         <Category/>
         <CurrentMonth/>
+        <Banner/>
       
     </>
   );
