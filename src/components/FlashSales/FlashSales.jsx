@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, MoveLeft, MoveRight } from "lucide-react";
 import Cart from "../cart/Cart";
 import { useCart } from "@/context/cartContext";
 import Link from "next/link";
+import Button from "../Button/Button";
 
 export default function FlashSales() {
   // Create a ref for the scrollable container
@@ -54,9 +55,8 @@ export default function FlashSales() {
       </div>
 
       <div className="flex justify-center items-center my-10">
-        <Link href={""} className="px-10 py-3 text-secondaryText bg-bgBtn text-center">
-          View All Products
-        </Link>
+        
+        <Button btnLink={""} btnPx={10} btnPy={3} btnText={"View All Products"}/>
       </div>
     </div>
   );
