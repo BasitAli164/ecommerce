@@ -1,6 +1,6 @@
 import React from "react";
 import CountDownTime from "../CountDownTimer/CountDownTime";
-import Link from "next/link";
+import Button from "../Button/Button";
 
 export default function Banner() {
   return (
@@ -12,10 +12,16 @@ export default function Banner() {
             <CountDownTime/>
         </div>
         <div>
-            <Link href={''} className="px-">Buy Now</Link>
+           <Button btnLink={""} btnPx={8} btnPy={3} btnText={"Buy Now"}/>
         </div>
       </div>
-      <div></div>
+      <div className="flex justify-center items-center min-h-[300px]">
+          <img
+            src='/Banner/banner.png'
+            alt="Banner Image"
+            className="w-52 sm:w-[500px] h-[300px] object-contain "
+          />
+        </div>
     </div>
   );
 }
