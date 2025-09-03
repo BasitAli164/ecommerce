@@ -1,6 +1,7 @@
 import { useCart } from "@/context/cartContext";
 import Link from "next/link";
 import Cart from "../cart/Cart";
+import Button from "../Button/Button";
 
 export default function CurrentMonth() {
   const { cartData } = useCart();
@@ -16,12 +17,7 @@ export default function CurrentMonth() {
             Best Selling Products
           </h2>
           <div className="hidden sm:block">
-            <Link
-              href={""}
-              className="px-6 py-3 text-center bg-bgBtn text-secondaryText  rounded-sm"
-            >
-              View All
-            </Link>
+          <Button btnLink={""} btnPx={6} btnPy={3} btnText={"View All"}/>
           </div>
         </div>
       </div>
