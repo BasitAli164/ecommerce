@@ -36,7 +36,7 @@ export default function Footer() {
           <h1 className="text-xl font-bold mb-3">Exclusive</h1>
           <p className="text-sm mb-2">Subscribe</p>
           <p className="text-xs mb-4">Get 10% off your first order</p>
-          <div className="flex items-center border border-gray-500 rounded-lg overflow-hidden">
+          <div className="flex items-center  overflow-hidden">
             <InputField
               name={"email"}
               type="email"

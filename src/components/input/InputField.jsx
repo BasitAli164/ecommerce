@@ -25,7 +25,7 @@ const InputField = ({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className={`w-full border rounded-lg px-3 py-2 focus:outline-none 
+          className={`w-full border-b  px-3 py-2 focus:outline-none 
             ${Icon ? "pr-10" : "pr-3"}`} // extra space on right if icon exists
           {...rest}
         />
