@@ -47,10 +47,10 @@ export default function SignUp() {
           onChange={(e) => setUserData(e.target.value)}
         />
       </div>
-      <div>
+      <div className="inline-flex flex-col  gap-4 mt-5">
         <Button
           btnLink={""}
-          btnPx={60}
+          btnPx={80}
           btnPy={15}
           btnText="Create Account"
           bgColor="#DB4444"
@@ -59,7 +59,7 @@ export default function SignUp() {
 
         <Button
           btnLink={""}
-          btnPx={60}
+          btnPx={80}
           btnPy={15}
           btnText="Sign up with Google"
           bgColor="transparent"
