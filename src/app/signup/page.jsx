@@ -24,7 +24,7 @@ export default function SignUp() {
           type="text"
           placeholder="Name"
           value={userData.fullName}
-          onChange={(e) => e.target.value}
+          onChange={(e) => setUserData(e.target.value)}
         />
         <InputField
           id="email"
@@ -32,7 +32,7 @@ export default function SignUp() {
           type="email"
           placeholder="Email"
           value={userData.email}
-          onChange={(e) => e.target.value}
+          onChange={(e) => setUserData(e.target.value)}
         />
         <InputField
           id="password"
@@ -40,15 +40,28 @@ export default function SignUp() {
           type="password"
           placeholder="Password"
           value={userData.password}
-          onChange={(e) => e.target.value}
+          onChange={(e) => setUserData(e.target.value)}
         />
       </div>
       <div>
-                <Button btnLink={""} btnPx={60} btnPy={15} btnText="Create Account" bgColor="#DB4444" textColor="#fafafa"/>
-              
-                <Button btnLink={""} btnPx={60} btnPy={15} btnText="Sign up with Google" bgColor="transparent" btnBorder={1} icon={FcGoogle}/>
+        <Button
+          btnLink={""}
+          btnPx={60}
+          btnPy={15}
+          btnText="Create Account"
+          bgColor="#DB4444"
+          textColor="#fafafa"
+        />
 
-
+        <Button
+          btnLink={""}
+          btnPx={60}
+          btnPy={15}
+          btnText="Sign up with Google"
+          bgColor="transparent"
+          btnBorder={1}
+          icon={FcGoogle}
+        />
       </div>
     </div>
   );
