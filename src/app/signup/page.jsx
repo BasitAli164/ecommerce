@@ -12,9 +12,12 @@ export default function SignUp() {
     password: "",
   });
   return (
-    <div className="w-screen h-screen">
-      <div></div>
+    <div className="w-full h-screen grid grid-cols-1 sm:grid-cols-2  justify-center items-center p-5 gap-20">
       <div>
+        <img src="/signUp/signUp.jpg" alt="Sign up"  />
+      </div>
+      <div>
+        <div>
         <h1>Create an account</h1>
         <p>Enter your details below</p>
       </div>
@@ -67,6 +70,7 @@ export default function SignUp() {
         <div>
           <p>Already have account?</p> <Link href={"/signin"}>Log in</Link>
         </div>
+      </div>
       </div>
     </div>
   );
