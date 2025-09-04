@@ -1,6 +1,7 @@
 "use client";
 import Button from "@/components/Button/Button";
 import InputField from "@/components/input/InputField";
+import Link from "next/link";
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 
@@ -62,6 +63,10 @@ export default function SignUp() {
           btnBorder={1}
           icon={FcGoogle}
         />
+
+        <div>
+          <p>Already have account?</p> <Link href={"/login"}>Log in</Link>
+        </div>
       </div>
     </div>
   );
