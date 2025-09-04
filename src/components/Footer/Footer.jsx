@@ -31,7 +31,6 @@ export default function Footer() {
     <footer className="w-full bg-bgPrimary text-gray-200 pt-10 pb-6">
       {/* Top Section */}
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-        
         {/* Exclusive / Subscribe */}
         <div>
           <h1 className="text-xl font-bold mb-3">Exclusive</h1>
@@ -47,7 +46,15 @@ export default function Footer() {
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 bg-gray-800 text-sm text-gray-200 focus:outline-none"
             /> */}
-            <InputField name={"email"} type="email" onChange={(e)=>setEmail(e.target.value)} placeholder={"Enter your email"} id={"email"} value={email} icon={Mail}/>
+            <InputField
+              name={"email"}
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder={"Enter your email"}
+              id={"email"}
+              value={email}
+              icon={Mail}
+            />
 
             {/* <button className="bg-red-500 text-white px-2 py-2 text-sm cursor-pointer">
               Subscribe
@@ -58,7 +65,9 @@ export default function Footer() {
         {/* Support */}
         <div>
           <h2 className="text-lg font-semibold mb-3">Support</h2>
-          <p className="text-sm">111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh</p>
+          <p className="text-sm">
+            111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh
+          </p>
           <p className="text-sm mt-2">exclusive@gmail.com</p>
           <p className="text-sm mt-1">+88015-88888-9999</p>
         </div>
@@ -100,31 +109,33 @@ export default function Footer() {
           <h2 className="text-lg font-semibold mb-3">Download App</h2>
           <p className="text-xs mb-4">Save $ with App New User Only</p>
           <div className="flex space-x-4 items-center mb-4">
-  <Link href={""}>
-    <img
-      src="/footer/QRcode.jpg"
-      alt="QR-Code"
-      className="w-24 h-24 object-contain border"
-    />
-  </Link>
+            <Link href={""}>
+              <img
+                src="/footer/QRcode.jpg"
+                alt="QR-Code"
+                className="w-24 h-24 object-contain border"
+              />
+            </Link>
 
-  <div className="flex flex-col space-y-2"> {/* controlled gap */}
-    <Link href={""}>
-      <img
-        src="/footer/google.png"
-        alt="Google"
-        className="w-28 object-contain"
-      />
-    </Link>
-    <Link href={""}>
-      <img
-        src="/footer/apple.png"
-        alt="Apple"
-        className="w-28 object-contain"
-      />
-    </Link>
-  </div>
-</div>
+            <div className="flex flex-col space-y-2">
+              {" "}
+              {/* controlled gap */}
+              <Link href={""}>
+                <img
+                  src="/footer/google.png"
+                  alt="Google"
+                  className="w-28 object-contain"
+                />
+              </Link>
+              <Link href={""}>
+                <img
+                  src="/footer/apple.png"
+                  alt="Apple"
+                  className="w-28 object-contain"
+                />
+              </Link>
+            </div>
+          </div>
 
           {/* Social Icons */}
           <div className="flex space-x-4 mt-3">
