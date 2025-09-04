@@ -43,7 +43,9 @@ export default function SignUp() {
         />
       </div>
       <div>
-                <Button btnLink={""} btnPx={60} btnPy={15} btnText="Create Account" bgColor=""/>
+                <Button btnLink={""} btnPx={60} btnPy={15} btnText="Create Account" bgColor="#DB4444" textColor="#fafafa"/>
+              
+                <Button btnLink={""} btnPx={60} btnPy={15} btnText="Sign up with Google" bgColor="transparent" btnBorder={1}/>
 
 
       </div>
