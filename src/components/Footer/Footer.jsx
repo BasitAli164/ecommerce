@@ -1,11 +1,9 @@
 "use client";
 import {
-  ArrowLeftRight,
-  AtSign,
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
-  Mail,
+  Send,
   TwitterIcon,
 } from "lucide-react";
 import Link from "next/link";
@@ -39,7 +37,6 @@ export default function Footer() {
           <p className="text-sm mb-2">Subscribe</p>
           <p className="text-xs mb-4">Get 10% off your first order</p>
           <div className="flex items-center border border-gray-500 rounded-lg overflow-hidden">
-            
             <InputField
               name={"email"}
               type="email"
@@ -47,10 +44,8 @@ export default function Footer() {
               placeholder={"Enter your email"}
               id={"email"}
               value={email}
-              icon={AtSign}
+              icon={Send}
             />
-
-          
           </div>
         </div>
 
