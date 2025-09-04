@@ -1,5 +1,7 @@
 "use client";
 import {
+  ArrowLeftRight,
+  AtSign,
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
@@ -37,15 +39,7 @@ export default function Footer() {
           <p className="text-sm mb-2">Subscribe</p>
           <p className="text-xs mb-4">Get 10% off your first order</p>
           <div className="flex items-center border border-gray-500 rounded-lg overflow-hidden">
-            {/* <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 bg-gray-800 text-sm text-gray-200 focus:outline-none"
-            /> */}
+            
             <InputField
               name={"email"}
               type="email"
@@ -53,12 +47,10 @@ export default function Footer() {
               placeholder={"Enter your email"}
               id={"email"}
               value={email}
-              icon={Mail}
+              icon={AtSign}
             />
 
-            {/* <button className="bg-red-500 text-white px-2 py-2 text-sm cursor-pointer">
-              Subscribe
-            </button> */}
+          
           </div>
         </div>
 

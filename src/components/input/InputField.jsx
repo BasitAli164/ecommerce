@@ -1,4 +1,3 @@
-
 const InputField = ({
   label,
   type = "text",
@@ -12,10 +11,13 @@ const InputField = ({
 }) => {
   return (
     <div className="flex flex-col w-full">
-      {label && <label htmlFor={id} className="mb-1 text-sm font-medium">{label}</label>}
+      {label && (
+        <label htmlFor={id} className="mb-1 text-sm font-medium">
+          {label}
+        </label>
+      )}
 
       <div className="relative">
-        {Icon && <Icon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />}
         <input
           type={type}
           name={name}
@@ -24,9 +26,12 @@ const InputField = ({
           onChange={onChange}
           placeholder={placeholder}
           className={`w-full border rounded-lg px-3 py-2 focus:outline-none 
-            ${Icon ? "pl-10" : "pl-3"}`}
+            ${Icon ? "pr-10" : "pr-3"}`} // extra space on right if icon exists
           {...rest}
         />
+        {Icon && (
+          <Icon className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+        )}
       </div>
     </div>
   );
