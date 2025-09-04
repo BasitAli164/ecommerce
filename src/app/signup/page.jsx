@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/components/Button/Button";
 import InputField from "@/components/input/InputField";
 import React, { useState } from "react";
 
@@ -40,6 +41,11 @@ export default function SignUp() {
           value={userData.password}
           onChange={(e) => e.target.value}
         />
+      </div>
+      <div>
+                <Button btnLink={""} btnPx={60} btnPy={15} btnText="Create Account" bgColor=""/>
+
+
       </div>
     </div>
   );
