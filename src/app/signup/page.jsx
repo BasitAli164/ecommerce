@@ -2,6 +2,7 @@
 import Button from "@/components/Button/Button";
 import InputField from "@/components/input/InputField";
 import React, { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
 
 export default function SignUp() {
   const [userData, setUserData] = useState({
@@ -45,7 +46,7 @@ export default function SignUp() {
       <div>
                 <Button btnLink={""} btnPx={60} btnPy={15} btnText="Create Account" bgColor="#DB4444" textColor="#fafafa"/>
               
-                <Button btnLink={""} btnPx={60} btnPy={15} btnText="Sign up with Google" bgColor="transparent" btnBorder={1}/>
+                <Button btnLink={""} btnPx={60} btnPy={15} btnText="Sign up with Google" bgColor="transparent" btnBorder={1} icon={FcGoogle}/>
 
 
       </div>
