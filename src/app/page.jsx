@@ -22,14 +22,13 @@ function Home() {
           </HeroProvider>
         </div>
       </div>
-    
-        <FlashSales />
-        <Category/>
-        <CurrentMonth/>
-        <Banner/>
-        <NewArrival/>
-        <WhyChooseUs/>
-      
+
+      <FlashSales />
+      <Category />
+      <CurrentMonth />
+      <Banner />
+      <NewArrival />
+      <WhyChooseUs />
     </>
   );
 }
