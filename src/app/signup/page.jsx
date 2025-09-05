@@ -16,7 +16,7 @@ export default function SignUp() {
       <div>
         <img src="/signUp/signUp.jpg" alt="Sign up" />
       </div>
-      <div className="w-[500px]">
+      <div className="w-[300px]">
         <div>
           <h1>Create an account</h1>
           <p>Enter your details below</p>
@@ -47,7 +47,7 @@ export default function SignUp() {
             onChange={(e) => setUserData(e.target.value)}
           />
         </div>
-        <div className="inline-flex flex-col  gap-4 mt-5">
+        <div className="flex flex-col  gap-4 mt-5">
           <Button
             btnLink={""}
             btnPx={60}
