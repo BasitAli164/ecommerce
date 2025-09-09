@@ -3,11 +3,18 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 
-const links=[
+const accountsLinks=[
   {id:1,link:'',title:"My Account"},
   {id:2,link:'',title:"Cart"},
   {id:3,link:'',title:"Wishlist"},
   {id:4,link:'',title:"Shop"}
+]
+
+const quickLinks=[
+  {id:1,link:'/policy',title:"Privacy Policy"},
+  {id:2,link:'/termsOfUse',title:"Terms of Use"},
+  {id:3,link:'/faq',title:"FAQ"},
+  {id:4,link:"/contact",title:"Contact"}
 ]
 
 
@@ -40,14 +47,26 @@ export default function Footer() {
       </div>
       <div>
         <h2>Account</h2>
-        {
-          links.map((item)=>(
+        <div>
+          {
+          accountsLinks.map((item)=>(
             <Link key={item.id} href={item.link}>{item.title}</Link>
           ))
         }
         
+        </div>
       </div>
-      <div></div>
+      <div>
+        <h2>Quick Link</h2>
+        <div>
+          {
+            quickLinks.map((item)=>(
+              <Link key={item.id} href={item.link}>{item.title}</Link>
+            ))
+          }
+        </div>
+
+      </div>
       <div></div>
     </div>
   );
