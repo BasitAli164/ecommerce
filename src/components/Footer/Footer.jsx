@@ -1,4 +1,5 @@
 "use client";
+import { FacebookIcon, InstagramIcon, LinkedinIcon, TwitchIcon, TwitterIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -78,6 +79,12 @@ export default function Footer() {
             <img src="/footer/google.png" alt="Google" />
             <img src="/footer/apple.png" alt="Apple" />
           </div>
+        </div>
+        <div>
+          <FacebookIcon/>
+          <TwitterIcon/>
+          <InstagramIcon/>
+          <LinkedinIcon/>
         </div>
       </div>
     </div>
