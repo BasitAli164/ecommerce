@@ -71,7 +71,13 @@ export default function Footer() {
         <h2>Download App</h2>
         <p>Save $ with App New User Only</p>
         <div>
-          
+          <div>
+            <img src="/footer/QRcode.jpg" alt="QR-Code" />
+          </div>
+          <div>
+            <img src="/footer/google.png" alt="Google" />
+            <img src="/footer/apple.png" alt="Apple" />
+          </div>
         </div>
       </div>
     </div>
