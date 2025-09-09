@@ -1,27 +1,30 @@
 "use client";
-import { FacebookIcon, InstagramIcon, LinkedinIcon, TwitchIcon, TwitterIcon } from "lucide-react";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  TwitchIcon,
+  TwitterIcon,
+} from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 
+const accountsLinks = [
+  { id: 1, link: "", title: "My Account" },
+  { id: 2, link: "", title: "Cart" },
+  { id: 3, link: "", title: "Wishlist" },
+  { id: 4, link: "", title: "Shop" },
+];
 
-const accountsLinks=[
-  {id:1,link:'',title:"My Account"},
-  {id:2,link:'',title:"Cart"},
-  {id:3,link:'',title:"Wishlist"},
-  {id:4,link:'',title:"Shop"}
-]
-
-const quickLinks=[
-  {id:1,link:'/policy',title:"Privacy Policy"},
-  {id:2,link:'/termsOfUse',title:"Terms of Use"},
-  {id:3,link:'/faq',title:"FAQ"},
-  {id:4,link:"/contact",title:"Contact"}
-]
-
+const quickLinks = [
+  { id: 1, link: "/policy", title: "Privacy Policy" },
+  { id: 2, link: "/termsOfUse", title: "Terms of Use" },
+  { id: 3, link: "/faq", title: "FAQ" },
+  { id: 4, link: "/contact", title: "Contact" },
+];
 
 export default function Footer() {
   const [email, setEmail] = useState("");
-
 
   return (
     <div className="w-full h-[300px] ">
@@ -42,31 +45,29 @@ export default function Footer() {
       </div>
       <div>
         <h2>Support</h2>
-        <p>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
+        <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
         <p>exclusive@gmail.com</p>
         <p>+88015-88888-9999</p>
       </div>
       <div>
         <h2>Account</h2>
         <div>
-          {
-          accountsLinks.map((item)=>(
-            <Link key={item.id} href={item.link}>{item.title}</Link>
-          ))
-        }
-        
+          {accountsLinks.map((item) => (
+            <Link key={item.id} href={item.link}>
+              {item.title}
+            </Link>
+          ))}
         </div>
       </div>
       <div>
         <h2>Quick Link</h2>
         <div>
-          {
-            quickLinks.map((item)=>(
-              <Link key={item.id} href={item.link}>{item.title}</Link>
-            ))
-          }
+          {quickLinks.map((item) => (
+            <Link key={item.id} href={item.link}>
+              {item.title}
+            </Link>
+          ))}
         </div>
-
       </div>
       <div>
         <h2>Download App</h2>
@@ -81,10 +82,10 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <FacebookIcon/>
-          <TwitterIcon/>
-          <InstagramIcon/>
-          <LinkedinIcon/>
+          <FacebookIcon />
+          <TwitterIcon />
+          <InstagramIcon />
+          <LinkedinIcon />
         </div>
       </div>
     </div>
