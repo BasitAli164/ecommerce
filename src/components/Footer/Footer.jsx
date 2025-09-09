@@ -28,6 +28,7 @@ export default function Footer() {
 
   return (
     <div className="w-full h-[300px] ">
+      <div className="">
       <div>
         <h1>Exclusive</h1>
         <p>Subscribe</p>
@@ -88,6 +89,10 @@ export default function Footer() {
           <LinkedinIcon />
         </div>
       </div>
+    </div>
+    <div>
+      <p> &copy; Copyright Rimel 2022. All right reserved</p>
+    </div>
     </div>
   );
 }
