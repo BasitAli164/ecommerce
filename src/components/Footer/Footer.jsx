@@ -67,7 +67,13 @@ export default function Footer() {
         </div>
 
       </div>
-      <div></div>
+      <div>
+        <h2>Download App</h2>
+        <p>Save $ with App New User Only</p>
+        <div>
+          
+        </div>
+      </div>
     </div>
   );
 }
