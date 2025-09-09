@@ -3,10 +3,12 @@ import {
   FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
+  Mail,
   TwitterIcon,
 } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
+import InputField from "../input/InputField";
 
 const accountsLinks = [
   { id: 1, link: "", title: "My Account" },
@@ -36,7 +38,7 @@ export default function Footer() {
           <p className="text-sm mb-2">Subscribe</p>
           <p className="text-xs mb-4">Get 10% off your first order</p>
           <div className="flex items-center border border-gray-500 rounded-lg overflow-hidden">
-            <input
+            {/* <input
               type="email"
               name="email"
               id="email"
@@ -44,10 +46,12 @@ export default function Footer() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 bg-gray-800 text-sm text-gray-200 focus:outline-none"
-            />
-            <button className="bg-red-500 text-white px-2 py-2 text-sm cursor-pointer">
+            /> */}
+            <InputField name={"email"} type="email" onChange={(e)=>setEmail(e.target.value)} placeholder={"Enter your email"} id={"email"} value={email} icon={Mail}/>
+
+            {/* <button className="bg-red-500 text-white px-2 py-2 text-sm cursor-pointer">
               Subscribe
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -95,19 +99,33 @@ export default function Footer() {
         <div>
           <h2 className="text-lg font-semibold mb-3">Download App</h2>
           <p className="text-xs mb-4">Save $ with App New User Only</p>
-          <div className="flex space-x-4 items-center   mb-4">
-            <Link href={""}>
-            <img
-              src="/footer/QRcode.jpg"
-              alt="QR-Code"
-              className="w-20 h-20 object-contain border"
-            />
-            </Link>
-            {/* <div className="flex flex-col ">
-             <Link href={""}> <img src="/footer/google.png" alt="Google" className="w-20" /></Link>
-              <Link href={""}><img src="/footer/apple.png" alt="Apple" className="w-20" /></Link>
-            </div> */}
-          </div>
+          <div className="flex space-x-4 items-center mb-4">
+  <Link href={""}>
+    <img
+      src="/footer/QRcode.jpg"
+      alt="QR-Code"
+      className="w-24 h-24 object-contain border"
+    />
+  </Link>
+
+  <div className="flex flex-col space-y-2"> {/* controlled gap */}
+    <Link href={""}>
+      <img
+        src="/footer/google.png"
+        alt="Google"
+        className="w-28 object-contain"
+      />
+    </Link>
+    <Link href={""}>
+      <img
+        src="/footer/apple.png"
+        alt="Apple"
+        className="w-28 object-contain"
+      />
+    </Link>
+  </div>
+</div>
+
           {/* Social Icons */}
           <div className="flex space-x-4 mt-3">
             <FacebookIcon className="w-5 h-5 cursor-pointer hover:text-accent transition duration-300 delay-100 ease-in-out" />
