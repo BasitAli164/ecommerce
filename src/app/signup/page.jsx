@@ -26,7 +26,7 @@ export default function SignUp() {
 
       {/* Right Form Section */}
       <div className="flex h-full items-center justify-center">
-        <div className="w-full max-w-md bg-white  p-8 sm:p-10">
+        <div className="w-full max-w-md  p-8 sm:p-10">
           {/* Heading */}
           <div className="mb-6 text-center">
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">
@@ -77,7 +77,7 @@ export default function SignUp() {
           <div className="flex flex-col gap-4 mt-8">
             <Button
               btnLink={""}
-              btnPx={60}
+              btnPx={40}
               btnPy={14}
               btnText="Create Account"
               bgColor="#DB4444"
@@ -86,7 +86,7 @@ export default function SignUp() {
 
             <Button
               btnLink={""}
-              btnPx={60}
+              btnPx={40}
               btnPy={14}
               btnText="Sign up with Google"
               bgColor="transparent"
