@@ -11,7 +11,6 @@ export default function UserMenu() {
   // Close when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setOpen(false);
       }
@@ -65,7 +64,7 @@ export default function UserMenu() {
             <Star size={18} /> <Link href="/reviews">My Reviews</Link>
           </li>
           <li
-            className="px-4 py-2 hover:bg-gray-100 flex items-center gap-2 text-red-500"
+            className="px-4 py-2 hover:bg-gray-100 flex items-center gap-2 text-accent"
             onClick={handleLinkClick}
           >
             <LogOut size={18} /> <button>Logout</button>
