@@ -27,7 +27,7 @@ const InputField = ({
       <div className="relative">
         {/* Left Icon (optional) */}
         {Icon && (
-          <Icon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+          <Icon className="absolute right-3 top-1/2 -translate-y-1/2 rotate-45 text-gray-400 w-5 h-5" />
         )}
 
         {/* Input field */}
