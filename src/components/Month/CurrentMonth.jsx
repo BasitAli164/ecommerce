@@ -1,5 +1,5 @@
 import { useCart } from "@/context/cartContext";
-import Link from "next/link";
+import { Eye, Heart } from "lucide-react";
 import Cart from "../cart/Cart";
 import Button from "../Button/Button";
 
@@ -24,7 +24,7 @@ export default function CurrentMonth() {
 
       <div className="flex justify-center items-center gap-[30px] overflow-x-auto scroll-smooth no-scrollbar mt-10">
         {cartData.map((item) => (
-          <Cart key={item.id} prodDetail={item} />
+          <Cart key={item.id} prodDetail={item}  icons={[Heart, Eye]}  />
         ))}
       </div>
     </div>

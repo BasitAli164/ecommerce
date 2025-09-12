@@ -1,10 +1,9 @@
 "use client";
 import React, { useRef } from "react";
 import CountDownTime from "../CountDownTimer/CountDownTime";
-import { ChevronLeft, ChevronRight, MoveLeft, MoveRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Eye, Heart } from "lucide-react";
 import Cart from "../cart/Cart";
 import { useCart } from "@/context/cartContext";
-import Link from "next/link";
 import Button from "../Button/Button";
 
 export default function FlashSales() {
@@ -50,7 +49,7 @@ export default function FlashSales() {
         className="flex gap-[30px] mt-10 overflow-x-auto scroll-smooth no-scrollbar"
       >
         {cartData.map((item) => (
-          <Cart key={item.id} prodDetail={item} />
+          <Cart key={item.id} prodDetail={item}  icons={[Heart, Eye]}  />
         ))}
       </div>
 
