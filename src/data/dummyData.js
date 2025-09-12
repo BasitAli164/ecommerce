@@ -215,3 +215,8 @@ export const categoryData = [
   { id: "15", categoryName: "Pet Supplies" },
   { id: "16", categoryName: "Home Appliances" },
 ];
+
+
+export const wishlistData=[
+  
+]
