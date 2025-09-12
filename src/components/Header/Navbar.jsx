@@ -30,10 +30,16 @@ export default function Navbar() {
       <div className="w-full flex justify-between items-center">
         <h1 className="text-lg font-bold">Exclusive</h1>
         <div className="flex gap-4 items-center">
-          <Heart />
+          <Link href={'/wishlist'}>
+           
+            <Heart />
+          </Link>
           <CartIcon cartCount={3} /> {/* Example: cart has 3 items */}
           <UserMenu />
-          <Menu className="md:hidden cursor-pointer" onClick={() => setToggle(!toggle)} />
+          <Menu
+            className="md:hidden cursor-pointer"
+            onClick={() => setToggle(!toggle)}
+          />
         </div>
       </div>
 
@@ -44,7 +50,9 @@ export default function Navbar() {
             <li key={item.href} className="text-lg">
               <Link
                 href={item.href}
-                className={pathname === item.href ? "border-b-2 border-gray-400" : ""}
+                className={
+                  pathname === item.href ? "border-b-2 border-gray-400" : ""
+                }
               >
                 {item.label}
               </Link>
@@ -74,7 +82,9 @@ export default function Navbar() {
             <li key={item.href} className="text-md list-none">
               <Link
                 href={item.href}
-                className={pathname === item.href ? "border-b-2 border-gray-400" : ""}
+                className={
+                  pathname === item.href ? "border-b-2 border-gray-400" : ""
+                }
               >
                 {item.label}
               </Link>
