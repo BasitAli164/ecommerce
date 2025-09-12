@@ -217,7 +217,7 @@ export const categoryData = [
 ];
 
 
-export const wishlistData = [
+export const wishListData = [
   {
     id: "1",
     title: "Wireless Noise Cancelling Headphones",

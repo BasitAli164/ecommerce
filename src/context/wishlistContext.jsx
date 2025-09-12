@@ -1,14 +1,23 @@
+
+'use client'
+import { wishListData } from "@/data/dummyData";
 import { useState,createContext,useContext } from "react";
 
 
 export const wishlistContext=createContext();
 
-export default wishlistProvider=({children})=>{
-    const [wishlistData,setWishlistData]=useState()
+export  const wishlistProvider=({children})=>{
+    const [wishlistData,setWishlistData]=useState(wishListData)
 
 
-    return <wishlistContext.Provider >
+    return <wishlistContext.Provider value={{wishlistData}} >
         {children}
     </wishlistContext.Provider>
 
+}
+
+
+// custome hook
+export const useWishlist=()=>{
+    return useContext(wishlistContext)
 }

@@ -2,6 +2,7 @@ import Header from "@/components/Header/Header";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/context/cartContext";
+import { wishlistProvider } from "@/context/wishlistContext";
 import Footer from "@/components/Footer/Footer";
 
 const poppins = Poppins({
@@ -20,11 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}`}>
       <body className="overflow-x-hidden">
-        <CartProvider>
+        <wishlistProvider>
+          <CartProvider>
           <Header />
           {children}
           <Footer />
         </CartProvider>
+        </wishlistProvider>
       </body>
     </html>
   );
