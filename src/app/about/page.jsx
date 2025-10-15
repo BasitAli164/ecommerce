@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <div className='w-full  h-screen '>
-     <div className='flex flex-col sm:flex-row justify-center items-center gap-10 mt-20'>
+     <div className='flex flex-col sm:flex-row justify-center items-center gap-10 mt-20 '>
        <div className='flex justify-center flex-col text-justify w-[800px] gap-10 ml-20'>
          <h1 className='text-3xl font-bold tracking-wider'>Our Story</h1>
         <div>
