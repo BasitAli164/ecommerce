@@ -1,4 +1,29 @@
+import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import React from "react";
+import {HomeIcon, DollarSignIcon, Handbag} from 'lucide-react'
+
+const data=[
+  {
+    icon:HomeIcon,
+    quantity:"10.5k",
+    description:"Sallers active our site"
+  },
+  {
+    icon:DollarSignIcon,
+    quantity:"33k",
+    description:"Mopnthly Product Sale"
+  },
+  {
+    icon:Handbag,
+    quantity:"45.5k",
+    description:"Customer active in our site"
+  },
+  {
+    icon:HomeIcon,
+    quantity:"10.5k",
+    description:"Sallers active our site"
+  },
+]
 
 export default function About() {
   return (
@@ -26,10 +51,16 @@ export default function About() {
           <img
             src="/about/about1.jpg"
             alt="joy-of-shopping"
-            className="w-full max-w-md rounded-xl shadow-md object-cover"
+            className="w-full max-w-xl shadow-md object-cover"
           />
         </div>
       </div>
+      <div>
+        <div>
+          
+        </div>
+      </div>
+      <WhyChooseUs/>
     </div>
   );
 }
