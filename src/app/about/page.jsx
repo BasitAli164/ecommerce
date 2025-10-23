@@ -1,5 +1,6 @@
+'use client'
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
-import React from "react";
+import React, { useState } from "react";
 import {Store,DollarSign,ShoppingBag, Coins} from 'lucide-react'
 
 const data=[
@@ -30,6 +31,7 @@ const data=[
 ]
 
 export default function About() {
+  const [activeId,setActiveId]=useState(data[2].id)
   return (
     <div className="w-full min-h-screen px-6 py-16 bg-white">
       <div className="flex flex-col sm:flex-row md:flex-row justify-center items-center gap-12 md:gap-20">
@@ -62,10 +64,21 @@ export default function About() {
       <div className="flex justify-center items-center gap-8 mt-40 ">
         {
           data.map((item)=>(
-            <div key={item.id} className="w-52 h-40 border flex flex-col items-center justify-center">
-              <p>{item.icon}</p>
+            <div
+             key={item.id} 
+             className={`w-52 h-40 border flex flex-col items-center justify-center cursor-pointer transition duration-700 delay-100 ease-in-out rounded-sm
+             ${activeId==item.id
+              ?"bg-accent text-secondaryText"
+              :"hover:bg-accent hover:text-secondaryText"
+             }
+              
+              `}
+             onMouseEnter={()=>setActiveId(item.id)}
+             >
+
+              <p className="mb-2">{item.icon}</p>
               <h4 className="font-bold text-xl">{item.quantity}</h4>
-              <p>{item.description}</p>
+              <p className="mt-2 text-sm">{item.description}</p>
 
             </div>
           ))
