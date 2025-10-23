@@ -34,7 +34,7 @@ export default function About() {
   const [activeId, setActiveId] = useState(data[1].id);
   return (
     <div className="w-full min-h-screen px-6 py-16 bg-white">
-      <div className="flex flex-col sm:flex-row md:flex-row justify-center items-center gap-12 md:gap-20">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20">
         {/* --- Text Section --- */}
         <div className="flex flex-col text-justify max-w-2xl gap-8">
           <h1 className="text-4xl font-bold tracking-wide text-gray-800">
@@ -65,11 +65,11 @@ export default function About() {
           <img
             src="/about/about1.jpg"
             alt="joy-of-shopping"
-            className="w-full max-w-xl shadow-md object-cover"
+            className="hidden md:inline w-full mt-20 min-w-[300px] max-w-[500px] h-auto shadow-md object-cover"
           />
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row ml-5 items-center gap-8 mt-40 ">
+      <div className="flex flex-col sm:flex-row ml-5 items-center gap-8 mt-10 md:mt-40 ">
         {data.map((item) => (
           <div
             key={item.id}
