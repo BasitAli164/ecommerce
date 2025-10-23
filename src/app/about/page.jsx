@@ -1,25 +1,29 @@
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import React from "react";
-import {Store,DollarSign,ShoppingBag} from 'lucide-react'
+import {Store,DollarSign,ShoppingBag, Coins} from 'lucide-react'
 
 const data=[
   {
-    icon:Store,
+    id:1,
+    icon:<Store/>,
     quantity:"10.5k",
     description:"Sallers active our site"
   },
   {
-    icon:DollarSign,
+    id:2,
+    icon:<DollarSign/>,
     quantity:"33k",
     description:"Mopnthly Product Sale"
   },
   {
-    icon:ShoppingBag,
+    id:3,
+    icon:<ShoppingBag/>,
     quantity:"45.5k",
     description:"Customer active in our site"
   },
   {
-    icon:,
+    id:4,
+    icon:<Coins/>,
     quantity:"25k",
     description:"Sallers active our site"
   },
@@ -28,7 +32,7 @@ const data=[
 export default function About() {
   return (
     <div className="w-full min-h-screen px-6 py-16 bg-white">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20">
+      <div className="flex flex-col sm:flex-row md:flex-row justify-center items-center gap-12 md:gap-20">
         {/* --- Text Section --- */}
         <div className="flex flex-col text-justify max-w-2xl gap-8">
           <h1 className="text-4xl font-bold tracking-wide text-gray-800">
@@ -55,10 +59,17 @@ export default function About() {
           />
         </div>
       </div>
-      <div>
-        <div>
-          
-        </div>
+      <div className="flex justify-center items-center gap-8 mt-40 ">
+        {
+          data.map((item)=>(
+            <div key={item.id} className="w-52 h-40 border flex flex-col items-center justify-center">
+              <p>{item.icon}</p>
+              <h4 className="font-bold text-xl">{item.quantity}</h4>
+              <p>{item.description}</p>
+
+            </div>
+          ))
+        }
       </div>
       <WhyChooseUs/>
     </div>
