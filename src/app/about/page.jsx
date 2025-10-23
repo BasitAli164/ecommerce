@@ -3,32 +3,33 @@ import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import React, { useState } from "react";
 import {Store,DollarSign,ShoppingBag, Coins} from 'lucide-react'
 
-const data=[
+const data = [
   {
-    id:1,
-    icon:<Store/>,
-    quantity:"10.5k",
-    description:"Sallers active our site"
+    id: 1,
+    icon: Store,
+    quantity: "10.5k",
+    description: "Sellers active on our site",
   },
   {
-    id:2,
-    icon:<DollarSign/>,
-    quantity:"33k",
-    description:"Mopnthly Product Sale"
+    id: 2,
+    icon: DollarSign,
+    quantity: "33k",
+    description: "Monthly Product Sale",
   },
   {
-    id:3,
-    icon:<ShoppingBag/>,
-    quantity:"45.5k",
-    description:"Customer active in our site"
+    id: 3,
+    icon: ShoppingBag,
+    quantity: "45.5k",
+    description: "Customers active on our site",
   },
   {
-    id:4,
-    icon:<Coins/>,
-    quantity:"25k",
-    description:"Sallers active our site"
+    id: 4,
+    icon: Coins,
+    quantity: "25k",
+    description: "Annual gross sale in our site",
   },
-]
+];
+
 
 export default function About() {
   const [activeId,setActiveId]=useState(data[2].id)
@@ -76,7 +77,7 @@ export default function About() {
              onMouseEnter={()=>setActiveId(item.id)}
              >
 
-              <p className="mb-2">{item.icon}</p>
+              <p className="mb-2"><item.icon className={`w-10 h-10 ${activeId?"":""}`}/></p>
               <h4 className="font-bold text-xl">{item.quantity}</h4>
               <p className="mt-2 text-sm">{item.description}</p>
 
