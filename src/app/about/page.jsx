@@ -1,37 +1,11 @@
 "use client";
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import React, { useState } from "react";
-import { Store, DollarSign, ShoppingBag, Coins } from "lucide-react";
+import { aboutPageData } from "@/data/dummyData";
 
-const data = [
-  {
-    id: 1,
-    icon: Store,
-    quantity: "10.5k",
-    description: "Sellers active on our site",
-  },
-  {
-    id: 2,
-    icon: DollarSign,
-    quantity: "33k",
-    description: "Monthly Product Sale",
-  },
-  {
-    id: 3,
-    icon: ShoppingBag,
-    quantity: "45.5k",
-    description: "Customers active on our site",
-  },
-  {
-    id: 4,
-    icon: Coins,
-    quantity: "25k",
-    description: "Annual gross sale in our site",
-  },
-];
 
 export default function About() {
-  const [activeId, setActiveId] = useState(data[1].id);
+  const [activeId, setActiveId] = useState(aboutPageData[1].id);
   return (
     <div className="w-full min-h-screen px-6 py-16 bg-white">
       <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20">
@@ -69,8 +43,8 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row ml-5 items-center gap-8 mt-10 md:mt-40 ">
-        {data.map((item) => (
+      <div className="flex flex-col sm:flex-row ml-5 justify-center items-center gap-20 mt-10 md:mt-40 ">
+        {aboutPageData.map((item) => (
           <div
             key={item.id}
             className={`w-52 h-40 border flex flex-col items-center justify-center cursor-pointer transition duration-700 delay-100 ease-in-out rounded-sm

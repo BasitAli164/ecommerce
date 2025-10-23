@@ -1,4 +1,6 @@
 // Dummy Data
+import { Store, DollarSign, ShoppingBag, Coins } from "lucide-react";
+
 
 export const heroData = [
   {
@@ -326,3 +328,30 @@ export const wishListData = [
   },
 ];
 
+
+export const aboutPageData = [
+  {
+    id: 1,
+    icon: Store,
+    quantity: "10.5k",
+    description: "Sellers active on our site",
+  },
+  {
+    id: 2,
+    icon: DollarSign,
+    quantity: "33k",
+    description: "Monthly Product Sale",
+  },
+  {
+    id: 3,
+    icon: ShoppingBag,
+    quantity: "45.5k",
+    description: "Customers active on our site",
+  },
+  {
+    id: 4,
+    icon: Coins,
+    quantity: "25k",
+    description: "Annual gross sale in our site",
+  },
+];
