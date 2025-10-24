@@ -375,7 +375,7 @@ export const teamDetailInAboutPage=[
   {
     id:3,
     img:'/about/per1.png',
-    teamName:"Product DEsigner",
+    teamName:"Product Designer",
     prof:"Founder & Chairman",
     icon:[Twitter,Instagram,Linkedin]
   },
