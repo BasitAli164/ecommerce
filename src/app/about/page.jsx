@@ -10,7 +10,7 @@ export default function About() {
     <div className="w-full min-h-screen px-6 py-16 bg-white">
       <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-20">
         {/* --- Text Section --- */}
-        <div className="flex flex-col text-justify max-w-2xl gap-8">
+        <div className="flex flex-col text-justify max-w-xl gap-8">
           <h1 className="text-4xl font-bold tracking-wide text-gray-800">
             Our Story
           </h1>
@@ -43,7 +43,7 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row ml-5 justify-center items-center gap-20 mt-10 md:mt-40 ">
+      <div className="flex flex-col sm:flex-row ml-28  items-center gap-20 mt-10 md:mt-40 ">
         {aboutPageData.map((item) => (
           <div
             key={item.id}
@@ -70,6 +70,20 @@ export default function About() {
             <p className="mt-2 text-sm text-center">{item.description}</p>
           </div>
         ))}
+      </div>
+      <div className="flex flex-col sm:flex-row ml-28 items-center gap-20 mt-10
+      md:mt-40">
+        <div>
+          <div>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <p>Name</p>
+            <p>Professional</p>
+            <div>icon</div>
+          </div>
+        </div>
+
       </div>
       <WhyChooseUs />
     </div>
