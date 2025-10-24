@@ -360,7 +360,7 @@ export const aboutPageData = [
 export const teamDetailInAboutPage=[
   {
     id:1,
-    img:'/about/per1.png',
+    img:'/about/per3.png',
     teamName:"Tom Cruise",
     prof:"Founder & Chairman",
     icon:[Twitter,Instagram,Linkedin]
@@ -374,7 +374,7 @@ export const teamDetailInAboutPage=[
   },
   {
     id:3,
-    img:'/about/per3.png',
+    img:'/about/per1.png',
     teamName:"Product DEsigner",
     prof:"Founder & Chairman",
     icon:[Twitter,Instagram,Linkedin]
