@@ -1,7 +1,7 @@
 "use client";
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import React, { useState } from "react";
-import { aboutPageData } from "@/data/dummyData";
+import { aboutPageData, teamDetailInAboutPage } from "@/data/dummyData";
 
 
 export default function About() {
@@ -73,15 +73,27 @@ export default function About() {
       </div>
       <div className="flex flex-col sm:flex-row ml-28 items-center gap-20 mt-10
       md:mt-40">
-        <div>
-          <div>
-            <img src="" alt="" />
-          </div>
-          <div>
-            <p>Name</p>
-            <p>Professional</p>
-            <div>icon</div>
-          </div>
+        <div className="flex gap-4">
+          {
+            teamDetailInAboutPage.map((item)=>(
+              <div key={item.id}  className="w-[370px] h-[564px] ">
+                <div className="w-full h-[430px] border-2 flex justify-center items-center">
+                  <img src={item.img} alt={item.teamName} className="w-[294px] h-[397px]" />
+                </div>
+                <div className="flex flex-col gap-y-2">
+                  <p>{item.teamName}</p>
+                  <p>{item.prof}</p>
+                  <p className="flex gap-2">
+                    {item.icon.map((Icon,index)=>(
+                    <span key={index}><Icon/></span>
+                  ))}
+                  </p>
+                </div>
+
+              </div>
+            ))
+          }
+          
         </div>
 
       </div>

@@ -1,5 +1,5 @@
 // Dummy Data
-import { Store, DollarSign, ShoppingBag, Coins } from "lucide-react";
+import { Store, DollarSign, ShoppingBag, Coins, Twitter, Instagram, Linkedin } from "lucide-react";
 
 
 export const heroData = [
@@ -355,3 +355,28 @@ export const aboutPageData = [
     description: "Annual gross sale in our site",
   },
 ];
+
+
+export const teamDetailInAboutPage=[
+  {
+    id:1,
+    img:'/about/per1.png',
+    teamName:"Tom Cruise",
+    prof:"Founder & Chairman",
+    icon:[Twitter,Instagram,Linkedin]
+  },
+  {
+    id:2,
+    img:'/about/per2.png',
+    teamName:"Emma Watson",
+    prof:"Managing Director",
+    icon:[Twitter,Instagram,Linkedin]
+  },
+  {
+    id:3,
+    img:'/about/per3.png',
+    teamName:"Product DEsigner",
+    prof:"Founder & Chairman",
+    icon:[Twitter,Instagram,Linkedin]
+  },
+]
