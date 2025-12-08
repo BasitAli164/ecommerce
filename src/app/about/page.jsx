@@ -76,7 +76,7 @@ export default function About() {
       >
         <div className="flex flex-wrap gap-4">
           {teamDetailInAboutPage.map((item) => (
-            <div key={item.id} className="w-[370px] h-[564px]  ">
+            <div key={item.id} className="w-[350px] h-[564px]  ">
               <div className="w-full h-[430px] flex justify-center items-center bg-[#e9e9e9]">
                 <img
                   src={item.img}
