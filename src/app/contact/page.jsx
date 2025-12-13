@@ -32,7 +32,9 @@ export default function Contact() {
         </div>
       </div>
       <div>
-        <form action=""></form>
+        <form >
+          
+        </form>
         
       </div>
     </div>
