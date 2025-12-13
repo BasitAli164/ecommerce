@@ -1,5 +1,5 @@
 
-    // 'use client'
+    'use client'
     import { wishListData } from "@/data/dummyData.js";
     import { useState,createContext,useContext } from "react";
 
