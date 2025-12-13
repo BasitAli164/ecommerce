@@ -1,5 +1,4 @@
 'use client'
-import Cart from '@/components/cart/Cart'
 import {  Mail, PhoneCallIcon } from 'lucide-react'
 import React from 'react'
 
@@ -33,7 +32,7 @@ export default function Contact() {
       </div>
       <div>
         <form >
-          
+
         </form>
         
       </div>
