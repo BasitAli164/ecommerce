@@ -46,7 +46,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen flex justify-center items-start bg-gray-50 px-4 py-16">
+    <div className="min-h-screen contain-content flex justify-center items-start bg-gray-50 px-4 py-16">
       <div className="max-w-6xl w-full flex flex-col lg:flex-row gap-10">
 
         {/* Left Column: Contact Info */}
@@ -114,7 +114,7 @@ export default function Contact() {
               placeholder="Your Message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent resize-none h-32"
+              className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent resize-none h-60"
             ></textarea>
 
             {/* Error / Success */}

@@ -144,14 +144,14 @@ export const cartsData = [
   },
   {
     id: "7",
-    title: "Smartwatch Series 6",
+    title: "Smartwatch ",
     oPrice: "$400",
     sPrice: "$320",
     ratingValue: 5,
     totalRating: 150,
 
     inStock: false,
-    image: "/product/smartwatch.png",
+    image: "product\ladiescloth.jpg",
   },
   {
     id: "8",
@@ -162,7 +162,7 @@ export const cartsData = [
     totalRating: 60,
 
     inStock: false,
-    image: "/product/microwave.png",
+    image: "/product/ladiesbag.png",
   },
   {
     id: "9",
